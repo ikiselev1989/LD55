@@ -25,6 +25,9 @@ export default abstract class Construction extends Actor {
 
 	}
 
+	protected addObjects() {
+	}
+
 	private unregisterEvents() {
 		game.input.pointers.events.unpipe(this.events);
 		game.events.unpipe(this.events);
