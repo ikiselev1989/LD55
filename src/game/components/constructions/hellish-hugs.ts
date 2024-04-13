@@ -10,7 +10,7 @@ export default class HellishHugs extends Construction {
 	formSprite = <Sprite>res.assets.getFrameSprite(Assets.FORMS__ELLIPSE);
 
 	protected addObjects() {
-		const length = 16;
+		const length = Math.floor(16 * this.scale.x);
 		let starAngle = 0;
 		const offset = 450;
 
