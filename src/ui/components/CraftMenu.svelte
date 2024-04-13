@@ -6,6 +6,7 @@
 
 	const placeRectangle = () => (<Stage>game.currentScene).placeCircular();
 	const placeHellishHugs = () => (<Stage>game.currentScene).placeHellishHugs();
+	const placeFireballs = () => (<Stage>game.currentScene).placeFireballs();
 	const placeManaCandles = () => (<Stage>game.currentScene).placeManaCandles();
 	const placeTombstone = () => (<Stage>game.currentScene).placeTombstone();
 </script>
@@ -14,6 +15,7 @@
 	<CraftButton on:click={placeRectangle}>&#9632;</CraftButton>
 	<CraftButton on:click={placeHellishHugs}>&#9679;</CraftButton>
 	<CraftButton on:click={placeManaCandles}>&#9650;</CraftButton>
+	<CraftButton on:click={placeFireballs}>&#9679;</CraftButton>
 	<CraftButton on:click={placeTombstone}>&#9670;</CraftButton>
 </div>
 

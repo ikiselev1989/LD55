@@ -8,6 +8,7 @@ import { STAGE_EVENTS } from '@/enums';
 import StageBg from '@/game/components/stage-bg';
 import Caster from '@/game/components/caster';
 import ZAxisSortSystem from '@/game/partials/z-axis-sort-system';
+import Fireballs from '@/game/components/constructions/fireballs';
 
 export default class Stage extends Scene {
 	onInitialize() {
@@ -19,6 +20,10 @@ export default class Stage extends Scene {
 	onActivate() {
 		this.addBg();
 		this.addCaster();
+	}
+
+	placeFireballs() {
+		this.placeConstruction(new Fireballs());
 	}
 
 	placeCircular() {

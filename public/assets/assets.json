@@ -288,10 +288,34 @@
         "y": 0.927536
       }
     },
-    "saw/hor": {
+    "fireballs/1": {
       "frame": {
         "x": 1810,
         "y": 1578,
+        "w": 107,
+        "h": 58
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 107,
+        "h": 58
+      },
+      "sourceSize": {
+        "w": 107,
+        "h": 58
+      },
+      "pivot": {
+        "x": 0.551402,
+        "y": 0.965517
+      }
+    },
+    "saw/hor": {
+      "frame": {
+        "x": 1810,
+        "y": 1640,
         "w": 92,
         "h": 52
       },
