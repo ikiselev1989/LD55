@@ -4,7 +4,6 @@ precision mediump float;
 uniform float u_time_ms;
 uniform sampler2D u_graphic;
 uniform sampler2D u_noise;
-uniform float scale;
 
 in vec2 v_uv;
 in vec2 v_screenuv;

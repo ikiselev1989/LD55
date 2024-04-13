@@ -6,6 +6,7 @@ import Tombstone from '@/game/components/constructions/tombstone';
 import type Construction from '@/game/components/construction';
 import { STAGE_EVENTS } from '@/enums';
 import StageBg from '@/game/components/stage-bg';
+import Caster from '@/game/components/caster';
 
 export default class Stage extends Scene {
 	onInitialize() {
@@ -14,6 +15,7 @@ export default class Stage extends Scene {
 
 	onActivate() {
 		this.addBg();
+		this.addCaster();
 	}
 
 	placeCircular() {
@@ -34,6 +36,10 @@ export default class Stage extends Scene {
 
 	private addBg() {
 		this.add(new StageBg());
+	}
+
+	private addCaster() {
+		this.add(new Caster());
 	}
 
 	private placeConstruction(construction: Construction) {
