@@ -18,6 +18,11 @@
   user-select: none;
 
   @include typography;
+
+  &:focus,
+  &:focus-within {
+    visibility: hidden;
+  }
 }
 
 body {

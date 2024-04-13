@@ -4,7 +4,7 @@
 	export { className as class };
 </script>
 
-<button tabindex='-1' class='{className}' on:click>
+<button class='{className}' on:click>
 	<slot />
 </button>
 
@@ -14,6 +14,6 @@
 
     padding: 15px 20px;
     box-sizing: border-box;
-		pointer-events: auto;
+    pointer-events: auto;
   }
 </style>

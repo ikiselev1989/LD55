@@ -12,4 +12,9 @@ export enum INPUT_EVENT {
 	LEFT = 'LEFT',
 	RIGHT = 'RIGHT',
 	USE = 'USE',
+	CONSTRUCTION_ROTATE = 'CONSTRUCTION_ROTATE',
+}
+
+export enum STAGE_EVENTS {
+	CANCEL_CONSTRUCTION = 'cancelConstruction'
 }

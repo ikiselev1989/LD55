@@ -1,4 +1,4 @@
-import { Buttons, Keys } from 'excalibur';
+import { Buttons, Keys, PointerButton } from 'excalibur';
 import type { GlobalInputMapping } from '@/types';
 import { INPUT_EVENT } from '@/enums';
 
@@ -17,10 +17,15 @@ export const globalInputMapping: GlobalInputMapping = {
 	[INPUT_EVENT.ACCEPT]: {
 		keys: [Keys.Space, Keys.Enter, Keys.NumpadEnter],
 		gamepad: [xBoxGamepadMapping.A],
+		pointer: [PointerButton.Left],
+	},
+	[INPUT_EVENT.CONSTRUCTION_ROTATE]: {
+		keys: [Keys.Space],
 	},
 	[INPUT_EVENT.DECLINE]: {
 		keys: [Keys.Esc, Keys.Escape],
 		gamepad: [xBoxGamepadMapping.B],
+		pointer: [PointerButton.Right],
 	},
 	[INPUT_EVENT.UP]: {
 		keys: [Keys.Up],

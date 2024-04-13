@@ -18,6 +18,7 @@ import { globalInputMapping } from '@/buttons.config';
 import { addToArrayWithoutDuplication } from '@/game/utils';
 import { GLOBAL_KEYS_EVENTS } from '@/enums';
 import { input } from '@/stores';
+import Stage from '@/game/scenes/Stage';
 
 class Game extends Engine {
 	private gamepad!: Gamepad | null;
@@ -36,8 +37,13 @@ class Game extends Engine {
 			pointerScope: PointerScope.Canvas,
 			scrollPreventionMode: ScrollPreventionMode.All,
 			displayMode: DisplayMode.FitScreen,
-			backgroundColor: Color.fromHex('#242424'),
+			backgroundColor: Color.fromHex('#30322A'),
 			antialiasing: true,
+			scenes: {
+				stage: {
+					scene: Stage,
+				},
+			},
 		});
 
 		config.showFps && this.showFpsCounter();
@@ -46,6 +52,8 @@ class Game extends Engine {
 
 	onInitialize() {
 		this.registerEvents();
+
+		this.goToScene('stage');
 	}
 
 	public start() {
@@ -154,7 +162,8 @@ class Game extends Engine {
 		);
 	}
 
-	async play() {}
+	async play() {
+	}
 
 	private showFpsCounter() {
 		const fpsPane = new Pane();

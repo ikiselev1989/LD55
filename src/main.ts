@@ -8,7 +8,7 @@ class Main {
 	constructor() {
 		this.startGame();
 		this.initUi();
-		screen.startMenu();
+		screen.game();
 	}
 
 	async startGame() {

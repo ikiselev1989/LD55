@@ -1,6 +1,7 @@
 import { get, writable } from 'svelte/store';
 import { SvelteComponent } from 'svelte';
 import StartMenu from '@/ui/screens/StartMenu.svelte';
+import Game from '@/ui/screens/Game.svelte';
 
 export const screen = (() => {
 	const { subscribe, set } = writable<typeof SvelteComponent>();
@@ -8,6 +9,7 @@ export const screen = (() => {
 	return {
 		subscribe,
 		startMenu: () => set(StartMenu),
+		game: () => set(Game),
 	};
 })();
 
