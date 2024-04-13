@@ -72,6 +72,7 @@ class Game extends Engine {
 		cb: (progress: number) => void,
 		duration: number,
 		abortController = new AbortController(),
+		endless = false,
 	) {
 		const signal = abortController.signal;
 
@@ -83,11 +84,12 @@ class Game extends Engine {
 				let elapsed = yield;
 				totalTime += elapsed;
 
-				const currentTime = clamp(totalTime / duration, 0, 1);
+				const tt = endless ? (totalTime % duration) / duration : totalTime / duration;
+				const currentTime = clamp(tt, 0, 1);
 
 				cb && cb(currentTime);
 
-				if (totalTime >= duration) return;
+				if (!endless && totalTime >= duration) return;
 			}
 		});
 	}

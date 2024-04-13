@@ -9,15 +9,14 @@ export default class Fireballs extends Construction {
 	formSprite = <Sprite>res.assets.getFrameSprite(Assets.FORMS__ELLIPSE);
 
 	protected addObjects() {
-		const length = 4;
+		const length = Math.floor(8 * this.scale.x);
 		let startAngle = toRadians(0);
 		const offset = 440;
 
 		for (let i = 0; i < length; i++) {
 			const fb = new Fireball({
 				pos: this.pos.add(vec(offset * Math.sin(startAngle), offset * Math.cos(startAngle))).scale(this.scale),
-				rotation: toRadians(180) - toRadians(90) * i,
-			});
+			}, this);
 
 			this.scene.add(fb);
 
