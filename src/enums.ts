@@ -22,5 +22,10 @@ export enum STAGE_EVENTS {
 export enum Z_INDEX {
 	BG,
 	FLOOR,
-	CASTER
+	CASTER,
+	OBJECT
+}
+
+export enum TAGS {
+	Z_AXIS_SORT = 'zAxisSort'
 }

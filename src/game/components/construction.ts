@@ -57,7 +57,8 @@ export default abstract class Construction extends Actor {
 		// @ts-ignore
 		this.events.on('move', scaleForm);
 		this.events.on('down', () => {
-				this.unregisterEvents();
+				this.addObjects();
+			this.unregisterEvents();
 			},
 		);
 

@@ -7,10 +7,13 @@ import type Construction from '@/game/components/construction';
 import { STAGE_EVENTS } from '@/enums';
 import StageBg from '@/game/components/stage-bg';
 import Caster from '@/game/components/caster';
+import ZAxisSortSystem from '@/game/partials/z-axis-sort-system';
 
 export default class Stage extends Scene {
 	onInitialize() {
 		this.camera.pos.setTo(0, 0);
+
+		this.world.add(new ZAxisSortSystem());
 	}
 
 	onActivate() {
