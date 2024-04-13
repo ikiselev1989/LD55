@@ -1,0 +1,100 @@
+// =============================================================================
+// String Replace
+// =============================================================================
+
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace +
+			str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+
+// =============================================================================
+// Font Face
+// =============================================================================
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+  $src: null;
+
+  $extmods: (
+          eot: '?',
+          svg: '#' + str-replace($name, ' ', '_')
+  );
+
+  $formats: (
+          otf: 'opentype',
+          ttf: 'truetype'
+  );
+
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + '.' + $extmod)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  $width: map-get($breakpoints, $size) - 1;
+
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin breakpoint-up($size) {
+  $width: map-get($breakpoints, $size);
+
+  @media (min-width: $width + 1px) {
+    @content;
+  }
+}
+
+@mixin typography() {
+  font-variant-ligatures: common-ligatures;
+  font-feature-settings: 'kern' 1, 'liga' 1;
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin scrollbar-styles() {
+  scrollbar-color: transparent transparent;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 4px;
+  }
+}
+
+@mixin reset-button() {
+  margin: 0;
+  padding: 0;
+  background-color: unset;
+  border: none;
+  outline: none;
+  color: inherit;
+}
+
+@mixin reset-link() {
+  color: inherit;
+  text-decoration: none;
+  pointer-events: auto;
+}
