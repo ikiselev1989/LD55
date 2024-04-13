@@ -7,12 +7,12 @@ import { screen } from '@/stores';
 class Main {
 	constructor() {
 		this.startGame();
-		this.initUi();
-		screen.game();
 	}
 
 	async startGame() {
-		return game.start();
+		await game.start();
+		this.initUi();
+		screen.game();
 	}
 
 	initUi() {
