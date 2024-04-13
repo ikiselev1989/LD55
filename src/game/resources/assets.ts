@@ -1,4 +1,6 @@
 export enum Assets {
+	'HANDS__2' = 'hands/2',
+	'HANDS__1' = 'hands/1',
 	'FORMS__TRIANGLE' = 'forms/triangle',
 	'FORMS__RHOMBUS' = 'forms/rhombus',
 	'FORMS__RECTANGLE' = 'forms/rectangle',

@@ -144,9 +144,57 @@
         "y": 0.644444
       }
     },
-    "candles/1": {
+    "hands/1": {
       "frame": {
         "x": 1810,
+        "y": 1086,
+        "w": 41,
+        "h": 83
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 41,
+        "h": 83
+      },
+      "sourceSize": {
+        "w": 41,
+        "h": 83
+      },
+      "pivot": {
+        "x": 0.3125,
+        "y": 0.867347
+      }
+    },
+    "hands/2": {
+      "frame": {
+        "x": 1810,
+        "y": 1173,
+        "w": 46,
+        "h": 78
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 46,
+        "h": 78
+      },
+      "sourceSize": {
+        "w": 46,
+        "h": 78
+      },
+      "pivot": {
+        "x": 0.454545,
+        "y": 0.98913
+      }
+    },
+    "candles/1": {
+      "frame": {
+        "x": 1855,
         "y": 1086,
         "w": 39,
         "h": 69
@@ -170,7 +218,7 @@
     },
     "candles/2": {
       "frame": {
-        "x": 1810,
+        "x": 1855,
         "y": 1086,
         "w": 39,
         "h": 69
@@ -194,7 +242,7 @@
     },
     "candles/3": {
       "frame": {
-        "x": 1810,
+        "x": 1855,
         "y": 1086,
         "w": 39,
         "h": 69
