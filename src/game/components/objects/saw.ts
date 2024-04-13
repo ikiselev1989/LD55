@@ -3,15 +3,48 @@ import { Actor, vec, Vector } from 'excalibur';
 import res from '@/res';
 import { Assets } from '@/game/resources/assets';
 import { TAGS } from '@/enums';
+import game from '@/game/game';
+import { lerp } from '@/game/utils';
+import type Construction from '@/game/components/construction';
 
 export default class Saw extends Actor {
-	constructor(props: ActorArgs, private constructionIndex: number) {
+	private startPos!: Vector;
+	private interval = 1500;
+	private speed = 1000;
+
+	constructor(props: ActorArgs, private construct: Construction, private constructionIndex: number) {
 		super(props);
 	}
 
-	onInitialize() {
+	async onInitialize() {
+		this.startPos = this.pos.clone();
+		this.scale.setTo(0, 0);
 		this.addTag(TAGS.Z_AXIS_SORT);
+
 		this.initGraphics();
+
+		await this.moveAnimation();
+		this.startMovingInterval();
+	}
+
+	private moveAnimation() {
+		this.pos = this.startPos;
+
+		switch (this.constructionIndex) {
+			case 0:
+			case 1:
+				return this.horizontalMoveAnimation(this.constructionIndex === 1);
+
+			default:
+				return this.verticalMoveAnimation(this.constructionIndex === 3);
+		}
+	}
+
+	private async startMovingInterval() {
+		game.clock.schedule(async () => {
+			await this.moveAnimation();
+			this.startMovingInterval();
+		}, this.interval);
 	}
 
 	private initGraphics() {
@@ -29,5 +62,33 @@ export default class Saw extends Actor {
 			anchor: sprite.origin || Vector.Zero,
 			offset: sprite.flipHorizontal ? vec(20, 0) : Vector.Zero,
 		});
+	}
+
+	private async horizontalMoveAnimation(reverse: boolean) {
+		await game.tween(progress => {
+			this.scale.x = 1;
+			this.scale.y = progress;
+		}, 50);
+		await game.tween(progress => {
+			this.pos.setTo(lerp(this.startPos.x, this.startPos.x + 410 * 2 * (reverse ? 1 : -1) * this.construct.scale.x, progress), this.startPos.y);
+		}, this.speed * this.construct.scale.x);
+		await game.tween(progress => {
+			this.scale.x = 1;
+			this.scale.y = 1 - progress;
+		}, 50);
+	}
+
+	private async verticalMoveAnimation(reverse: boolean) {
+		await game.tween(progress => {
+			this.scale.x = progress;
+			this.scale.y = 1;
+		}, 50);
+		await game.tween(progress => {
+			this.pos.setTo(this.startPos.x, lerp(this.startPos.y, this.startPos.y + 410 * 2 * (reverse ? 1 : -1) * this.construct.scale.y, progress));
+		}, this.speed * this.construct.scale.x);
+		await game.tween(progress => {
+			this.scale.x = 1 - progress;
+			this.scale.y = 1;
+		}, 50);
 	}
 }

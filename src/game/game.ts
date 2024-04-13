@@ -6,7 +6,6 @@ import {
 	DefaultLoader,
 	DisplayMode,
 	Engine,
-	EventEmitter,
 	Gamepad,
 	PointerScope,
 	ScrollPreventionMode,
@@ -72,21 +71,19 @@ class Game extends Engine {
 	tween(
 		cb: (progress: number) => void,
 		duration: number,
-		cancelEmitter: EventEmitter | null = null,
+		abortController = new AbortController(),
 	) {
-		let cancel = false;
-
-		if (cancelEmitter) cancelEmitter.on('cancelCoroutine', () => (cancel = true));
+		const signal = abortController.signal;
 
 		// @ts-ignore
 		return coroutine(this, function* (): Generator<void, void, number> {
 			let totalTime = 0;
 
-			while (!cancel) {
+			while (!signal.aborted) {
 				let elapsed = yield;
 				totalTime += elapsed;
 
-				const currentTime = clamp((totalTime % duration) / duration, 0, 1);
+				const currentTime = clamp(totalTime / duration, 0, 1);
 
 				cb && cb(currentTime);
 

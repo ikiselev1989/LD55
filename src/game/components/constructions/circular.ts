@@ -19,7 +19,7 @@ export default class Circular extends Construction {
 		for (let [index, position] of positions.entries()) {
 			this.scene.add(new Saw({
 				pos: position.scale(this.scale),
-			}, index));
+			}, this, index));
 		}
 	}
 }
