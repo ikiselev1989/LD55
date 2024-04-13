@@ -18,3 +18,9 @@ export enum INPUT_EVENT {
 export enum STAGE_EVENTS {
 	CANCEL_CONSTRUCTION = 'cancelConstruction'
 }
+
+export enum Z_INDEX {
+	BG,
+	FLOOR,
+	CASTER
+}

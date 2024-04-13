@@ -1,7 +1,7 @@
 import { Actor, Material, PointerEvent, Sprite } from 'excalibur';
 import game from '@/game/game';
 import type Stage from '@/game/scenes/Stage';
-import { GLOBAL_KEYS_EVENTS, INPUT_EVENT, STAGE_EVENTS } from '@/enums';
+import { GLOBAL_KEYS_EVENTS, INPUT_EVENT, STAGE_EVENTS, Z_INDEX } from '@/enums';
 import constructionShader from '@//game/materials/construction.glsl';
 import res from '@/res';
 
@@ -11,6 +11,8 @@ export default abstract class Construction extends Actor {
 	private material!: Material;
 
 	onInitialize() {
+		this.z = Z_INDEX.FLOOR;
+
 		this.initGraphics();
 		this.registerEvents();
 
