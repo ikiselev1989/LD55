@@ -7,6 +7,9 @@ on:
 
 jobs:
   build:
+    concurrency:
+      group: stage-build
+      cancel-in-progress: true
     runs-on: ubuntu-latest
 
     steps:
