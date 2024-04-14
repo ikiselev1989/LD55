@@ -35,5 +35,6 @@ export enum TAGS {
 
 export enum NAMES {
 	FIREBALL = 'fireball',
-	SAW = 'saw'
+	SAW = 'saw',
+	TOMBSTONE = 'tombstone',
 }

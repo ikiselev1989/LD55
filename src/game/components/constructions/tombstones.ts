@@ -24,7 +24,7 @@ export default class Tombstones extends Construction {
 		for (let [, position] of positions.entries()) {
 			this.scene.add(new Tombstone({
 				pos: position.scale(this.scale).rotate(this.rotation % toRadians(90)),
-			}));
+			}, this));
 		}
 	}
 }
