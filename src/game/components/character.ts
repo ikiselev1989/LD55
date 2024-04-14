@@ -9,10 +9,11 @@ import { easeInOutSine } from '@/game/utils';
 import { TAGS } from '@/enums';
 
 export default class Character extends Actor {
+	protected live = 5;
 	private material!: Material;
 	private abortController!: AbortController;
 
-	constructor(props: ActorArgs) {
+	constructor(props: ActorArgs = {}) {
 		super({
 			...props,
 			collisionGroup: enemyGroup,
@@ -34,6 +35,10 @@ export default class Character extends Actor {
 		this.abortController && this.abortController.abort();
 		this.abortController = new AbortController();
 
+		this.live = Math.max(this.live - value, 0);
+
+		if (this.live === 0) return this.die();
+
 		game.tween(progress => {
 			this.material.update(shader => {
 				shader.trySetUniformFloat('hitAmount', Math.sin(Math.PI * easeInOutSine(progress)));
@@ -54,5 +59,9 @@ export default class Character extends Actor {
 		this.graphics.use(sprite, {
 			anchor: sprite.origin || Vector.Zero,
 		});
+	}
+
+	private die() {
+		this.kill();
 	}
 }
