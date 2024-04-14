@@ -6,7 +6,7 @@ import res from '@/res';
 import { enemyGroup } from '@/game/collisions';
 
 export default class Tombstone extends Actor {
-	constructor(props: ActorArgs, private inConstructIndex: number, private constructionRotated: boolean) {
+	constructor(props: ActorArgs) {
 		super({
 			...props,
 			collisionGroup: CollisionGroup.collidesWith([enemyGroup]),
@@ -21,16 +21,7 @@ export default class Tombstone extends Actor {
 	}
 
 	private initGraphics() {
-		const assetName = ([
-			[Assets.TOMBSTONES__3, Assets.TOMBSTONES__2],
-			[Assets.TOMBSTONES__3, Assets.TOMBSTONES__1],
-			[Assets.TOMBSTONES__1, Assets.TOMBSTONES__1],
-			[Assets.TOMBSTONES__2, Assets.TOMBSTONES__2],
-		][this.inConstructIndex][this.constructionRotated ? 1 : 0]);
-
-		const sprite = <Sprite>res.assets.getFrameSprite(assetName);
-
-		sprite.flipHorizontal = !this.constructionRotated && this.inConstructIndex === 1;
+		const sprite = <Sprite>res.assets.getFrameSprite(Assets.TOMBSTONES__1);
 
 		this.graphics.use(sprite, {
 			anchor: sprite.origin || Vector.Zero,

@@ -1,6 +1,4 @@
 export enum Assets {
-	'TOMBSTONES__3' = 'tombstones/3',
-	'TOMBSTONES__2' = 'tombstones/2',
 	'TOMBSTONES__1' = 'tombstones/1',
 	'SAW__VERT' = 'saw/vert',
 	'SAW__HOR' = 'saw/hor',
@@ -25,8 +23,6 @@ export enum Assets {
 	'CARDS__FILLED__1' = 'cards/filled/1',
 	'CARDS__EMPTY__3' = 'cards/empty/3',
 	'CARDS__EMPTY__1' = 'cards/empty/1',
-	'CANDLES__3' = 'candles/3',
-	'CANDLES__2' = 'candles/2',
 	'CANDLES__1' = 'candles/1',
 	'BG' = 'bg'
 }
