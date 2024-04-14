@@ -66,8 +66,7 @@ export default class Statue extends Character implements CanBeDamaged {
 		this.graphics.flipHorizontal = this.index !== 1;
 
 		this.graphics.use(this.animation, {
-			anchor: this.animation.origin || Vector.Zero,
-			offset: this.graphics.flipHorizontal ? vec(-20, 0) : vec(0, 0),
+			anchor: this.graphics.flipHorizontal ? vec(1 - this.animation.origin!.x, this.animation.origin!.y) : this.animation.origin || Vector.Half,
 		});
 	}
 
