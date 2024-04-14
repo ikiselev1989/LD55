@@ -10,7 +10,8 @@ import DamageObject from '@/game/components/damage-object';
 import config from '@/config';
 
 export default class Saw extends DamageObject {
-	damageValue = config.objects.sawDamage;
+	protected damageValue = config.objects.sawDamage;
+	protected strengthValue = config.objects.sawStrength;
 	private startPos!: Vector;
 	private interval = 1500;
 	private speed = 1000;

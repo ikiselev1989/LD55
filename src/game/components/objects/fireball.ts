@@ -9,7 +9,8 @@ import DamageObject from '@/game/components/damage-object';
 import config from '@/config';
 
 export default class Fireball extends DamageObject {
-	damageValue = config.objects.fireBallDamage;
+	protected damageValue = config.objects.fireBallDamage;
+	protected strengthValue = config.objects.fireBallStrength;
 	private starPos!: Vector;
 	private speed = 8000;
 

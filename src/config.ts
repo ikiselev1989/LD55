@@ -17,6 +17,8 @@ export default {
 	},
 	objects: {
 		sawDamage: 1,
+		sawStrength: 5,
 		fireBallDamage: 2,
+		fireBallStrength: 3,
 	},
 };
