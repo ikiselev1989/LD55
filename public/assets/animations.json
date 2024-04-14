@@ -2856,6 +2856,366 @@
         "y": 0.923077
       }
     },
+    "animations/a_candle/02020200001": {
+      "frame": {
+        "x": 989,
+        "y": 1056,
+        "w": 26,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 26,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 26,
+        "h": 48
+      },
+      "pivot": {
+        "x": 0.576923,
+        "y": 0.895833
+      }
+    },
+    "animations/a_candle/02020200003": {
+      "frame": {
+        "x": 989,
+        "y": 1108,
+        "w": 26,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 26,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 26,
+        "h": 48
+      },
+      "pivot": {
+        "x": 0.576923,
+        "y": 0.895833
+      }
+    },
+    "animations/a_candle/02020200005": {
+      "frame": {
+        "x": 906,
+        "y": 1330,
+        "w": 26,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 26,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 26,
+        "h": 48
+      },
+      "pivot": {
+        "x": 0.576923,
+        "y": 0.895833
+      }
+    },
+    "animations/a_candle/02020200007": {
+      "frame": {
+        "x": 936,
+        "y": 1330,
+        "w": 26,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 26,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 26,
+        "h": 48
+      },
+      "pivot": {
+        "x": 0.576923,
+        "y": 0.895833
+      }
+    },
+    "animations/a_candle/02020200009": {
+      "frame": {
+        "x": 966,
+        "y": 1330,
+        "w": 26,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 26,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 26,
+        "h": 48
+      },
+      "pivot": {
+        "x": 0.576923,
+        "y": 0.895833
+      }
+    },
+    "animations/a_candle/02020200011": {
+      "frame": {
+        "x": 1422,
+        "y": 625,
+        "w": 26,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 26,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 26,
+        "h": 48
+      },
+      "pivot": {
+        "x": 0.576923,
+        "y": 0.895833
+      }
+    },
+    "animations/a_candle/02020200013": {
+      "frame": {
+        "x": 1422,
+        "y": 677,
+        "w": 26,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 26,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 26,
+        "h": 48
+      },
+      "pivot": {
+        "x": 0.576923,
+        "y": 0.895833
+      }
+    },
+    "animations/a_candle/02020200015": {
+      "frame": {
+        "x": 1422,
+        "y": 729,
+        "w": 26,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 26,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 26,
+        "h": 48
+      },
+      "pivot": {
+        "x": 0.576923,
+        "y": 0.895833
+      }
+    },
+    "animations/a_candle/02020200002": {
+      "frame": {
+        "x": 989,
+        "y": 1056,
+        "w": 26,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 26,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 26,
+        "h": 48
+      },
+      "pivot": {
+        "x": 0.576923,
+        "y": 0.895833
+      }
+    },
+    "animations/a_candle/02020200004": {
+      "frame": {
+        "x": 989,
+        "y": 1108,
+        "w": 26,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 26,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 26,
+        "h": 48
+      },
+      "pivot": {
+        "x": 0.576923,
+        "y": 0.895833
+      }
+    },
+    "animations/a_candle/02020200006": {
+      "frame": {
+        "x": 906,
+        "y": 1330,
+        "w": 26,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 26,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 26,
+        "h": 48
+      },
+      "pivot": {
+        "x": 0.576923,
+        "y": 0.895833
+      }
+    },
+    "animations/a_candle/02020200008": {
+      "frame": {
+        "x": 936,
+        "y": 1330,
+        "w": 26,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 26,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 26,
+        "h": 48
+      },
+      "pivot": {
+        "x": 0.576923,
+        "y": 0.895833
+      }
+    },
+    "animations/a_candle/02020200010": {
+      "frame": {
+        "x": 966,
+        "y": 1330,
+        "w": 26,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 26,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 26,
+        "h": 48
+      },
+      "pivot": {
+        "x": 0.576923,
+        "y": 0.895833
+      }
+    },
+    "animations/a_candle/02020200012": {
+      "frame": {
+        "x": 1422,
+        "y": 625,
+        "w": 26,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 26,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 26,
+        "h": 48
+      },
+      "pivot": {
+        "x": 0.576923,
+        "y": 0.895833
+      }
+    },
+    "animations/a_candle/02020200014": {
+      "frame": {
+        "x": 1422,
+        "y": 677,
+        "w": 26,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 26,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 26,
+        "h": 48
+      },
+      "pivot": {
+        "x": 0.576923,
+        "y": 0.895833
+      }
+    },
     "animations/a_enemy1/death/11110002": {
       "frame": {
         "x": 678,

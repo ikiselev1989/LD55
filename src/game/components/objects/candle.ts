@@ -1,13 +1,12 @@
-import type { ActorArgs } from 'excalibur';
-import { Actor, CollisionGroup, Sprite, Vector } from 'excalibur';
+import type { ActorArgs, Animation } from 'excalibur';
+import { Actor, CollisionGroup, Vector } from 'excalibur';
 import res from '@/res';
-import { Assets } from '@/game/resources/assets';
 import { TAGS } from '@/enums';
 import { enemyGroup } from '@/game/collisions';
+import { Animations } from '@/game/resources/animations';
+import { random } from '@/game/utils';
 
 export default class Candle extends Actor {
-	private sprite = <Sprite>res.assets.getFrameSprite(Assets.CANDLES__1);
-
 	constructor(props: ActorArgs) {
 		super({
 			...props,
@@ -22,8 +21,13 @@ export default class Candle extends Actor {
 	}
 
 	private initGraphics() {
-		this.graphics.use(this.sprite, {
-			anchor: this.sprite.origin || Vector.Zero,
+		const anim = <Animation>res.animation.getAnimation(Animations.ANIMATIONS__A_CANDLE)?.clone();
+		anim.pause();
+		anim.goToFrame(random.integer(0, anim.frames.length - 1));
+		anim.play();
+
+		this.graphics.use(anim, {
+			anchor: anim.origin || Vector.Zero,
 		});
 	}
 }
