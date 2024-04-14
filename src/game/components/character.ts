@@ -1,9 +1,7 @@
 import type { ActorArgs, Material } from 'excalibur';
-import { Actor, Engine, Sprite, Vector } from 'excalibur';
+import { Actor, Animation, AnimationStrategy, Engine, Vector } from 'excalibur';
 import game from '@/game/game';
 import character from '@/game/materials/character.glsl';
-import res from '@/res';
-import { Assets } from '@/game/resources/assets';
 import { enemyGroup } from '@/game/collisions';
 import { easeInOutSine, random } from '@/game/utils';
 import { TAGS } from '@/enums';
@@ -11,6 +9,8 @@ import type Stage from '@/game/scenes/Stage';
 import config from '@/config';
 import BonusBone from '@/game/components/bonus-bone';
 import Bone from '@/game/components/bone';
+import { Animations } from '@/game/resources/animations';
+import res from '@/res';
 
 export default class Character extends Actor {
 	declare scene: Stage;
@@ -68,9 +68,21 @@ export default class Character extends Actor {
 			fragmentSource: character,
 		});
 
-		const sprite = <Sprite>res.assets.getFrameSprite(random.pickOne([Assets.ENEMIES__1, Assets.ENEMIES__2]));
-		this.graphics.use(sprite, {
-			anchor: sprite.origin || Vector.Zero,
+		this.playAnimation(Animations.ANIMATIONS__A_ENEMY1__WALK);
+	}
+
+	private playAnimation(animation: Animations, strategy: AnimationStrategy = AnimationStrategy.Loop) {
+		return new Promise(resolve => {
+			const sprite = <Animation>res.animation.getAnimation(animation, strategy);
+
+			sprite.reset();
+			sprite.play();
+
+			this.graphics.use(sprite, {
+				anchor: sprite.origin || Vector.Zero,
+			});
+
+			sprite.canFinish && sprite.events.on('end', resolve);
 		});
 	}
 
@@ -84,7 +96,12 @@ export default class Character extends Actor {
 		return <Actor>sorted[0];
 	}
 
-	private die() {
+	private async die() {
+		this.collider.clear();
+		this.actions.clearActions();
+
+		await this.playAnimation(Animations.ANIMATIONS__A_ENEMY1__DEATH, AnimationStrategy.Freeze);
+
 		this.kill();
 
 		this.scene.add(new Bone({

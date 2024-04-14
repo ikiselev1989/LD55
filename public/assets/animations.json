@@ -1,459 +1,435 @@
 {
   "frames": {
-    "animations/a_enemy1/death/050505050003": {
+    "animations/a_enemy1/death/11110001": {
       "frame": {
         "x": 2,
         "y": 2,
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "sourceSize": {
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "pivot": {
-        "x": 0,
-        "y": 0
+        "x": 0.473333,
+        "y": 0.983051
       }
     },
-    "animations/a_enemy1/death/050505050005": {
+    "animations/a_enemy1/death/11110003": {
       "frame": {
-        "x": 355,
+        "x": 156,
         "y": 2,
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "sourceSize": {
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "pivot": {
-        "x": 0,
-        "y": 0
+        "x": 0.473333,
+        "y": 0.983051
       }
     },
-    "animations/a_enemy1/death/050505050007": {
+    "animations/a_enemy1/death/11110005": {
       "frame": {
-        "x": 708,
+        "x": 310,
         "y": 2,
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "sourceSize": {
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "pivot": {
-        "x": 0,
-        "y": 0
+        "x": 0.473333,
+        "y": 0.983051
       }
     },
-    "animations/a_enemy1/death/050505050009": {
+    "animations/a_enemy1/death/11110007": {
       "frame": {
-        "x": 1061,
+        "x": 464,
         "y": 2,
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "sourceSize": {
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "pivot": {
-        "x": 0,
-        "y": 0
+        "x": 0.473333,
+        "y": 0.983051
       }
     },
-    "animations/a_enemy1/walk/05050500001": {
+    "animations/a_enemy1/walk/00000001": {
       "frame": {
-        "x": 1414,
+        "x": 618,
         "y": 2,
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "sourceSize": {
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "pivot": {
-        "x": 0.276316,
-        "y": 0.97351
+        "x": 0.382979,
+        "y": 0.992857
       }
     },
-    "animations/a_enemy1/walk/05050500003": {
+    "animations/a_enemy1/walk/00000003": {
       "frame": {
-        "x": 1722,
+        "x": 763,
         "y": 2,
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "sourceSize": {
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "pivot": {
-        "x": 0.276316,
-        "y": 0.97351
+        "x": 0.382979,
+        "y": 0.992857
       }
     },
-    "animations/a_enemy1/walk/05050500005": {
+    "animations/a_enemy1/walk/00000005": {
       "frame": {
-        "x": 2030,
+        "x": 908,
         "y": 2,
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "sourceSize": {
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "pivot": {
-        "x": 0.276316,
-        "y": 0.97351
+        "x": 0.382979,
+        "y": 0.992857
       }
     },
-    "animations/a_enemy1/walk/05050500007": {
+    "animations/a_enemy1/walk/00000007": {
       "frame": {
-        "x": 2338,
+        "x": 1053,
         "y": 2,
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "sourceSize": {
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "pivot": {
-        "x": 0.276316,
-        "y": 0.97351
+        "x": 0.382979,
+        "y": 0.992857
       }
     },
-    "animations/a_enemy1/walk/05050500009": {
+    "animations/a_enemy1/walk/00000009": {
       "frame": {
-        "x": 2646,
+        "x": 1198,
         "y": 2,
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "sourceSize": {
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "pivot": {
-        "x": 0.276316,
-        "y": 0.97351
+        "x": 0.382979,
+        "y": 0.992857
       }
     },
-    "animations/a_enemy1/death/050505050004": {
+    "animations/a_enemy1/death/11110002": {
       "frame": {
         "x": 2,
         "y": 2,
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "sourceSize": {
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "pivot": {
-        "x": 0,
-        "y": 0
+        "x": 0.473333,
+        "y": 0.983051
       }
     },
-    "animations/a_enemy1/death/050505050006": {
+    "animations/a_enemy1/death/11110004": {
       "frame": {
-        "x": 355,
+        "x": 156,
         "y": 2,
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "sourceSize": {
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "pivot": {
-        "x": 0,
-        "y": 0
+        "x": 0.473333,
+        "y": 0.983051
       }
     },
-    "animations/a_enemy1/death/050505050008": {
+    "animations/a_enemy1/death/11110006": {
       "frame": {
-        "x": 708,
+        "x": 310,
         "y": 2,
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "sourceSize": {
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "pivot": {
-        "x": 0,
-        "y": 0
+        "x": 0.473333,
+        "y": 0.983051
       }
     },
-    "animations/a_enemy1/death/050505050010": {
+    "animations/a_enemy1/death/11110008": {
       "frame": {
-        "x": 1061,
+        "x": 464,
         "y": 2,
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "sourceSize": {
-        "w": 349,
-        "h": 305
+        "w": 150,
+        "h": 118
       },
       "pivot": {
-        "x": 0,
-        "y": 0
+        "x": 0.473333,
+        "y": 0.983051
       }
     },
-    "animations/a_enemy1/walk/05050500002": {
+    "animations/a_enemy1/walk/00000002": {
       "frame": {
-        "x": 1414,
+        "x": 618,
         "y": 2,
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "sourceSize": {
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "pivot": {
-        "x": 0.276316,
-        "y": 0.97351
+        "x": 0.382979,
+        "y": 0.992857
       }
     },
-    "animations/a_enemy1/walk/05050500011": {
+    "animations/a_enemy1/walk/00000004": {
       "frame": {
-        "x": 1414,
+        "x": 763,
         "y": 2,
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "sourceSize": {
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "pivot": {
-        "x": 0.276316,
-        "y": 0.97351
+        "x": 0.382979,
+        "y": 0.992857
       }
     },
-    "animations/a_enemy1/walk/05050500004": {
+    "animations/a_enemy1/walk/00000006": {
       "frame": {
-        "x": 1722,
+        "x": 908,
         "y": 2,
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "sourceSize": {
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "pivot": {
-        "x": 0.276316,
-        "y": 0.97351
+        "x": 0.382979,
+        "y": 0.992857
       }
     },
-    "animations/a_enemy1/walk/05050500006": {
+    "animations/a_enemy1/walk/00000008": {
       "frame": {
-        "x": 2030,
+        "x": 1053,
         "y": 2,
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "sourceSize": {
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "pivot": {
-        "x": 0.276316,
-        "y": 0.97351
+        "x": 0.382979,
+        "y": 0.992857
       }
     },
-    "animations/a_enemy1/walk/05050500008": {
+    "animations/a_enemy1/walk/00000010": {
       "frame": {
-        "x": 2338,
+        "x": 1198,
         "y": 2,
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "sourceSize": {
-        "w": 304,
-        "h": 302
+        "w": 141,
+        "h": 140
       },
       "pivot": {
-        "x": 0.276316,
-        "y": 0.97351
-      }
-    },
-    "animations/a_enemy1/walk/05050500010": {
-      "frame": {
-        "x": 2646,
-        "y": 2,
-        "w": 304,
-        "h": 302
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 304,
-        "h": 302
-      },
-      "sourceSize": {
-        "w": 304,
-        "h": 302
-      },
-      "pivot": {
-        "x": 0.276316,
-        "y": 0.97351
+        "x": 0.382979,
+        "y": 0.992857
       }
     }
   },
@@ -463,8 +439,8 @@
     "image": "animations.png",
     "format": "RGBA8888",
     "size": {
-      "w": 2952,
-      "h": 309
+      "w": 1341,
+      "h": 144
     },
     "scale": 1
   }
