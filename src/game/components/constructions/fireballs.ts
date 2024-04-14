@@ -7,6 +7,7 @@ import Fireball from '@/game/components/objects/fireball';
 
 export default class Fireballs extends Construction {
 	formSprite = <Sprite>res.assets.getFrameSprite(Assets.FORMS__ELLIPSE);
+	iconAsset = Assets.CARDS__CONSTRUCTIONS__FIRE;
 
 	protected addObjects() {
 		const length = Math.floor(8 * this.scale.x);

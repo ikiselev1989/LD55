@@ -7,6 +7,7 @@ import Saw from '@/game/components/objects/saw';
 
 export default class Circular extends Construction {
 	formSprite = <Sprite>res.assets.getFrameSprite(Assets.FORMS__RECTANGLE);
+	iconAsset = Assets.CARDS__CONSTRUCTIONS__SAW;
 
 	protected addObjects() {
 		const positions = [

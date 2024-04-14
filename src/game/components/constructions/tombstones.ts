@@ -7,6 +7,7 @@ import Tombstone from '@/game/components/objects/tombstone';
 
 export default class Tombstones extends Construction {
 	formSprite = <Sprite>res.assets.getFrameSprite(Assets.FORMS__RHOMBUS);
+	iconAsset = Assets.CARDS__CONSTRUCTIONS__TOMBSTONE;
 
 	protected rotate() {
 		this.rotation += toRadians(45);

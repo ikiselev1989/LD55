@@ -1,6 +1,7 @@
 import type { INPUT_EVENT } from '@/enums';
 import type { Buttons, Keys } from 'excalibur';
 import { PointerButton } from 'excalibur';
+import type { Assets } from '@/game/resources/assets';
 
 export interface ISpriteSheetJSON {
 	frames: {
@@ -25,3 +26,8 @@ export type GlobalInputMapping = {
 		pointer?: PointerButton[];
 	};
 };
+
+export interface ConstructionBuild {
+	id: number;
+	iconAsset: Assets;
+}

@@ -3,6 +3,7 @@ import { SvelteComponent } from 'svelte';
 import StartMenu from '@/ui/screens/StartMenu.svelte';
 import Game from '@/ui/screens/Game.svelte';
 import config from '@/config';
+import type { ConstructionBuild } from '@/types';
 
 export const screen = (() => {
 	const { subscribe, set } = writable<typeof SvelteComponent>();
@@ -51,12 +52,12 @@ export const input = (() => {
 })();
 
 export const constructionsBuilt = (() => {
-	const { subscribe, update } = writable(0);
+	const { subscribe, update } = writable<ConstructionBuild[]>([]);
 
 	return {
 		subscribe,
-		build: () => update(value => (value + 1)),
-		available: () => get(constructionsBuilt) < get(constructionsPlaceAvailable),
+		build: (construction: ConstructionBuild) => update(value => [...value, construction]),
+		available: () => get(constructionsBuilt).length < get(constructionsPlaceAvailable),
 	};
 })();
 

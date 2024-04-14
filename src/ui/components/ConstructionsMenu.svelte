@@ -1,4 +1,5 @@
 <script lang='ts'>
+	import { fade } from 'svelte/transition';
 	import { constructionsBuilt, constructionsPlaceAvailable } from '@/stores';
 	import Button from '@/ui/components/Button.svelte';
 	import Sprite from '@/ui/components/Sprite.svelte';
@@ -15,10 +16,18 @@
 <div class='constructions-menu'>
 	{#key $constructionsBuilt}
 		{#each new Array($constructionsPlaceAvailable) as item, index}
-			{@const mapIndex = (index < $constructionsBuilt) ? 1 : 0}
-			<Button class='_construction-card'>
-				<Sprite sprite='{res.assets.getFrameSprite(cardsMapping[index%3][mapIndex])}' />
-			</Button>
+			{@const mapIndex = (index < $constructionsBuilt.length) ? 1 : 0}
+			<div class='button' transition:fade={{duration: 150}}>
+				<Button class='_construction-card'>
+					<Sprite sprite='{res.assets.getFrameSprite(cardsMapping[index%3][mapIndex])}' />
+
+					{#if $constructionsBuilt[index]}
+						<div class='icon'>
+							<Sprite sprite='{res.assets.getFrameSprite($constructionsBuilt[index].iconAsset)}' />
+						</div>
+					{/if}
+				</Button>
+			</div>
 		{/each}
 	{/key}
 </div>
@@ -31,13 +40,19 @@
     bottom: rem(20px);
     display: flex;
     justify-content: center;
-    gap: rem(40px);
+    gap: rem(30px);
   }
 
+  .icon {
+    position: absolute;
+  }
 
   :global(._construction-card) {
     width: rem(76px);
     height: rem(127px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 </style>
 

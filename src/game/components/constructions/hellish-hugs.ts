@@ -8,6 +8,7 @@ import { random } from '@/game/utils';
 
 export default class HellishHugs extends Construction {
 	formSprite = <Sprite>res.assets.getFrameSprite(Assets.FORMS__ELLIPSE);
+	iconAsset = Assets.CARDS__CONSTRUCTIONS__HAND;
 
 	protected addObjects() {
 		const length = Math.floor(16 * this.scale.x);

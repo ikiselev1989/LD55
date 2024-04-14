@@ -744,10 +744,106 @@
         "y": 0.98913
       }
     },
+    "cards/constructions/fire": {
+      "frame": {
+        "x": 410,
+        "y": 1990,
+        "w": 37,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 37,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 37,
+        "h": 52
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "cards/constructions/tombstone": {
+      "frame": {
+        "x": 451,
+        "y": 1990,
+        "w": 37,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 37,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 37,
+        "h": 52
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "cards/constructions/saw": {
+      "frame": {
+        "x": 492,
+        "y": 1990,
+        "w": 50,
+        "h": 50
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50
+      },
+      "sourceSize": {
+        "w": 50,
+        "h": 50
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "cards/constructions/candle": {
+      "frame": {
+        "x": 2810,
+        "y": 1033,
+        "w": 16,
+        "h": 44
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 44
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 44
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
     "candles/1": {
       "frame": {
         "x": 2796,
-        "y": 1033,
+        "y": 1081,
         "w": 24,
         "h": 43
       },
@@ -766,6 +862,30 @@
       "pivot": {
         "x": 0.564103,
         "y": 0.927536
+      }
+    },
+    "cards/constructions/hand": {
+      "frame": {
+        "x": 2796,
+        "y": 1128,
+        "w": 28,
+        "h": 42
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 28,
+        "h": 42
+      },
+      "sourceSize": {
+        "w": 28,
+        "h": 42
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
       }
     }
   },

@@ -5,9 +5,11 @@ import { GLOBAL_KEYS_EVENTS, INPUT_EVENT, STAGE_EVENTS, Z_INDEX } from '@/enums'
 import constructionShader from '@//game/materials/construction.glsl';
 import res from '@/res';
 import { constructionsBuilt } from '@/stores';
+import type { Assets } from '@/game/resources/assets';
 
 export default abstract class Construction extends Actor {
 	abstract formSprite: Sprite;
+	abstract iconAsset: Assets;
 	declare scene: Stage;
 	private material!: Material;
 
@@ -67,7 +69,10 @@ export default abstract class Construction extends Actor {
 	}
 
 	private build() {
-		constructionsBuilt.build();
+		constructionsBuilt.build({
+			id: this.id,
+			iconAsset: this.iconAsset,
+		});
 		this.addObjects();
 		this.unregisterEvents();
 	}

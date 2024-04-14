@@ -7,6 +7,7 @@ import Candle from '@/game/components/objects/candle';
 
 export default class ManaCandles extends Construction {
 	formSprite = <Sprite>res.assets.getFrameSprite(Assets.FORMS__TRIANGLE);
+	iconAsset = Assets.CARDS__CONSTRUCTIONS__CANDLE;
 
 	protected rotate() {
 		this.rotation += toRadians(180);
