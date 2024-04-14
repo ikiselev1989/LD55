@@ -22,11 +22,26 @@ export default {
 			damage: 1,
 			strength: 5,
 			cost: 10,
+			repairCost: 5,
 		},
 		fireBall: {
 			damage: 2,
 			strength: 3,
 			cost: 15,
+			repairCost: 8,
+		},
+		hands: {
+			cost: 12,
+			repairCost: 10,
+		},
+		candles: {
+			cost: 5,
+		},
+		tombstones: {
+			damage: 3,
+			strength: 5,
+			cost: 20,
+			repairCost: 15,
 		},
 	},
 };

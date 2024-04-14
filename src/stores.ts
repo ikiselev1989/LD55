@@ -75,5 +75,7 @@ export const bones = (() => {
 		subscribe,
 		bonusBoneCollect: () => update(value => (value + config.stage.bonusBoneCost)),
 		boneCollect: () => update(value => (value + config.stage.boneCost)),
+		buy: (cost: number) => update(value => (value - cost)),
+		payBack: (cost: number) => update(value => (value + cost)),
 	};
 })();

@@ -4,7 +4,6 @@ import HellishHugs from '@/game/components/constructions/hellish-hugs';
 import ManaCandles from '@/game/components/constructions/mana-candles';
 import Tombstones from '@/game/components/constructions/tombstones';
 import type Construction from '@/game/components/construction';
-import { STAGE_EVENTS } from '@/enums';
 import StageBg from '@/game/components/stage-bg';
 import Caster from '@/game/components/caster';
 import ZAxisSortSystem from '@/game/partials/z-axis-sort-system';
@@ -12,6 +11,9 @@ import Fireballs from '@/game/components/constructions/fireballs';
 import SpawnSystem from '@/game/spawn-system';
 import Statue from '@/game/components/statue';
 import { Assets } from '@/game/resources/assets';
+import { STAGE_EVENTS } from '@/enums';
+import { bones } from '@/stores';
+import config from '@/config';
 
 export default class Stage extends Scene {
 	private spawnSystem!: SpawnSystem;
@@ -30,23 +32,32 @@ export default class Stage extends Scene {
 	}
 
 	placeFireballs() {
+		bones.buy(config.objects.fireBall.cost);
 		this.placeConstruction(new Fireballs());
 	}
 
 	placeCircular() {
+		bones.buy(config.objects.saw.cost);
 		this.placeConstruction(new Circular());
 	}
 
 	placeHellishHugs() {
+		bones.buy(config.objects.hands.cost);
 		this.placeConstruction(new HellishHugs());
 	}
 
 	placeManaCandles() {
+		bones.buy(config.objects.candles.cost);
 		this.placeConstruction(new ManaCandles());
 	}
 
 	placeTombstone() {
+		bones.buy(config.objects.tombstones.cost);
 		this.placeConstruction(new Tombstones());
+	}
+
+	cancelConstruction() {
+		this.emit(STAGE_EVENTS.CANCEL_CONSTRUCTION);
 	}
 
 	private addBg() {
@@ -58,8 +69,7 @@ export default class Stage extends Scene {
 	}
 
 	private placeConstruction(construction: Construction) {
-		this.emit(STAGE_EVENTS.CANCEL_CONSTRUCTION);
-
+		this.cancelConstruction();
 		this.add(construction);
 	}
 
