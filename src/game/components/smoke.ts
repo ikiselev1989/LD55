@@ -27,8 +27,11 @@ export default class Smoke extends Actor {
 	}
 
 	private registerEvents() {
+		let collised = false;
+
 		this.on('collisionstart', async ({ other }) => {
-			if (other instanceof Character) {
+			if (other instanceof Character && !collised) {
+				collised = true;
 				other.damage(config.objects.tombstones.damage);
 
 				await game.tween(progress => {
