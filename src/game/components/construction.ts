@@ -4,6 +4,7 @@ import type Stage from '@/game/scenes/Stage';
 import { GLOBAL_KEYS_EVENTS, INPUT_EVENT, STAGE_EVENTS, Z_INDEX } from '@/enums';
 import constructionShader from '@//game/materials/construction.glsl';
 import res from '@/res';
+import { constructionsBuilt } from '@/stores';
 
 export default abstract class Construction extends Actor {
 	abstract formSprite: Sprite;
@@ -53,19 +54,22 @@ export default abstract class Construction extends Actor {
 			this.kill();
 		});
 
-		const scaleForm = (e: PointerEvent) => this.scaleForm(e.worldPos);
-
 		// @ts-ignore
-		this.events.on('move', scaleForm);
+		this.events.on('move', (e: PointerEvent) => this.scaleForm(e.worldPos));
 		this.events.on('down', () => {
-				this.addObjects();
-				this.unregisterEvents();
+				this.build();
 			},
 		);
 
 		this.events.on(GLOBAL_KEYS_EVENTS.wasPressed, event => {
 			if (event === INPUT_EVENT.CONSTRUCTION_ROTATE) this.rotate();
 		});
+	}
+
+	private build() {
+		constructionsBuilt.build();
+		this.addObjects();
+		this.unregisterEvents();
 	}
 
 	private scaleForm = (worldPos: Vector) => {

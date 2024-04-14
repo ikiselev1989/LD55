@@ -192,10 +192,154 @@
         "y": 0.967742
       }
     },
-    "fireballs/1": {
+    "cards/empty/1": {
       "frame": {
         "x": 2714,
         "y": 906,
+        "w": 75,
+        "h": 127
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 75,
+        "h": 127
+      },
+      "sourceSize": {
+        "w": 75,
+        "h": 127
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "cards/empty/2": {
+      "frame": {
+        "x": 2714,
+        "y": 1037,
+        "w": 75,
+        "h": 127
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 75,
+        "h": 127
+      },
+      "sourceSize": {
+        "w": 75,
+        "h": 127
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "cards/empty/3": {
+      "frame": {
+        "x": 2714,
+        "y": 1168,
+        "w": 76,
+        "h": 127
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 76,
+        "h": 127
+      },
+      "sourceSize": {
+        "w": 76,
+        "h": 127
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "cards/filled/1": {
+      "frame": {
+        "x": 2714,
+        "y": 1299,
+        "w": 76,
+        "h": 127
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 76,
+        "h": 127
+      },
+      "sourceSize": {
+        "w": 76,
+        "h": 127
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "cards/filled/2": {
+      "frame": {
+        "x": 2714,
+        "y": 1430,
+        "w": 75,
+        "h": 127
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 75,
+        "h": 127
+      },
+      "sourceSize": {
+        "w": 75,
+        "h": 127
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "cards/filled/3": {
+      "frame": {
+        "x": 2714,
+        "y": 1561,
+        "w": 75,
+        "h": 127
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 75,
+        "h": 127
+      },
+      "sourceSize": {
+        "w": 75,
+        "h": 127
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "fireballs/1": {
+      "frame": {
+        "x": 2714,
+        "y": 1692,
         "w": 70,
         "h": 124
       },
@@ -267,7 +411,7 @@
     "tombstones/1": {
       "frame": {
         "x": 2714,
-        "y": 1034,
+        "y": 1820,
         "w": 110,
         "h": 106
       },
@@ -291,7 +435,7 @@
     "saw/vert": {
       "frame": {
         "x": 2788,
-        "y": 906,
+        "y": 1692,
         "w": 37,
         "h": 99
       },
@@ -314,8 +458,8 @@
     },
     "saw/hor": {
       "frame": {
-        "x": 2495,
-        "y": 1025,
+        "x": 2714,
+        "y": 1930,
         "w": 92,
         "h": 52
       },
@@ -338,8 +482,8 @@
     },
     "hands/1": {
       "frame": {
-        "x": 2714,
-        "y": 1144,
+        "x": 2,
+        "y": 1990,
         "w": 41,
         "h": 83
       },
@@ -362,8 +506,8 @@
     },
     "hands/2": {
       "frame": {
-        "x": 2759,
-        "y": 1144,
+        "x": 47,
+        "y": 1990,
         "w": 46,
         "h": 78
       },
@@ -384,10 +528,130 @@
         "y": 0.98913
       }
     },
+    "craft-buttons/candles": {
+      "frame": {
+        "x": 97,
+        "y": 1990,
+        "w": 70,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 70
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "craft-buttons/circular": {
+      "frame": {
+        "x": 171,
+        "y": 1990,
+        "w": 70,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 70
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "craft-buttons/fire": {
+      "frame": {
+        "x": 245,
+        "y": 1990,
+        "w": 70,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 70
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "craft-buttons/hands": {
+      "frame": {
+        "x": 319,
+        "y": 1990,
+        "w": 70,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 70
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "craft-buttons/thombstone": {
+      "frame": {
+        "x": 393,
+        "y": 1990,
+        "w": 70,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 70
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
     "candles/1": {
       "frame": {
-        "x": 2759,
-        "y": 1226,
+        "x": 467,
+        "y": 1990,
         "w": 39,
         "h": 69
       },
@@ -408,130 +672,10 @@
         "y": 0.927536
       }
     },
-    "craft-buttons/thombstone": {
-      "frame": {
-        "x": 2714,
-        "y": 1299,
-        "w": 60,
-        "h": 60
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 60,
-        "h": 60
-      },
-      "sourceSize": {
-        "w": 60,
-        "h": 60
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "craft-buttons/candles": {
-      "frame": {
-        "x": 2591,
-        "y": 1025,
-        "w": 56,
-        "h": 51
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 56,
-        "h": 51
-      },
-      "sourceSize": {
-        "w": 56,
-        "h": 51
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "craft-buttons/circular": {
-      "frame": {
-        "x": 2651,
-        "y": 1025,
-        "w": 52,
-        "h": 52
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 52,
-        "h": 52
-      },
-      "sourceSize": {
-        "w": 52,
-        "h": 52
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "craft-buttons/fire": {
-      "frame": {
-        "x": 2714,
-        "y": 1363,
-        "w": 52,
-        "h": 52
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 52,
-        "h": 52
-      },
-      "sourceSize": {
-        "w": 52,
-        "h": 52
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "craft-buttons/hands": {
-      "frame": {
-        "x": 2770,
-        "y": 1363,
-        "w": 52,
-        "h": 52
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 52,
-        "h": 52
-      },
-      "sourceSize": {
-        "w": 52,
-        "h": 52
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
     "candles/2": {
       "frame": {
-        "x": 2759,
-        "y": 1226,
+        "x": 467,
+        "y": 1990,
         "w": 39,
         "h": 69
       },
@@ -554,8 +698,8 @@
     },
     "candles/3": {
       "frame": {
-        "x": 2759,
-        "y": 1226,
+        "x": 467,
+        "y": 1990,
         "w": 39,
         "h": 69
       },
@@ -584,7 +728,7 @@
     "format": "RGBA8888",
     "size": {
       "w": 2828,
-      "h": 1988
+      "h": 2075
     },
     "scale": 1
   }

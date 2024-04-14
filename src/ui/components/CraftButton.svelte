@@ -1,4 +1,4 @@
-<script>
+<script lang='ts'>
 	import Button from '@/ui/components/Button.svelte';
 </script>
 
@@ -8,9 +8,8 @@
 
 <style lang='scss'>
   :global(.craft-button) {
-    width: rem(52px);
-    height: rem(52px);
-    padding: 0 !important;
+    width: rem(70px);
+    height: rem(70px);
     display: flex;
     justify-content: center;
     align-items: center;

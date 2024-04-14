@@ -48,3 +48,21 @@ export const input = (() => {
 			),
 	};
 })();
+
+export const constructionsBuilt = (() => {
+	const { subscribe, update } = writable(0);
+
+	return {
+		subscribe,
+		build: () => update(value => (value + 1)),
+		available: () => get(constructionsBuilt) < get(constructionsPlaceAvailable),
+	};
+})();
+
+export const constructionsPlaceAvailable = (() => {
+	const { subscribe } = writable(3);
+
+	return {
+		subscribe,
+	};
+})();

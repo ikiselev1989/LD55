@@ -27,6 +27,8 @@
 <style lang='scss'>
   .sprite {
     display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
     position: relative;
 
     img {
