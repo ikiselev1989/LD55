@@ -1,5 +1,5 @@
 import type { ActorArgs, Material } from 'excalibur';
-import { Actor, Animation, AnimationStrategy, Engine, Vector } from 'excalibur';
+import { Actor, AnimationStrategy, Engine } from 'excalibur';
 import game from '@/game/game';
 import character from '@/game/materials/character.glsl';
 import { enemyGroup } from '@/game/collisions';
@@ -10,7 +10,6 @@ import config from '@/config';
 import BonusBone from '@/game/components/bonus-bone';
 import Bone from '@/game/components/bone';
 import { Animations } from '@/game/resources/animations';
-import res from '@/res';
 
 export default class Character extends Actor {
 	declare scene: Stage;
@@ -68,22 +67,7 @@ export default class Character extends Actor {
 			fragmentSource: character,
 		});
 
-		this.playAnimation(Animations.ANIMATIONS__A_ENEMY1__WALK);
-	}
-
-	private playAnimation(animation: Animations, strategy: AnimationStrategy = AnimationStrategy.Loop) {
-		return new Promise(resolve => {
-			const sprite = <Animation>res.animation.getAnimation(animation, strategy);
-
-			sprite.reset();
-			sprite.play();
-
-			this.graphics.use(sprite, {
-				anchor: sprite.origin || Vector.Zero,
-			});
-
-			sprite.canFinish && sprite.events.on('end', resolve);
-		});
+		game.playAnimation(this, Animations.ANIMATIONS__A_ENEMY1__WALK);
 	}
 
 	private getTarget() {
@@ -100,7 +84,7 @@ export default class Character extends Actor {
 		this.collider.clear();
 		this.actions.clearActions();
 
-		await this.playAnimation(Animations.ANIMATIONS__A_ENEMY1__DEATH, AnimationStrategy.Freeze);
+		await game.playAnimation(this, Animations.ANIMATIONS__A_ENEMY1__DEATH, AnimationStrategy.Freeze);
 
 		this.kill();
 

@@ -1,4 +1,7 @@
 import {
+	Actor,
+	Animation,
+	AnimationStrategy,
 	Buttons,
 	clamp,
 	Color,
@@ -9,15 +12,17 @@ import {
 	Gamepad,
 	PointerScope,
 	ScrollPreventionMode,
+	Vector,
 } from 'excalibur';
 import config from '@/config';
 import { Pane } from 'tweakpane';
 import res from '@/res';
 import { globalInputMapping } from '@/buttons.config';
-import { addToArrayWithoutDuplication } from '@/game/utils';
+import { addToArrayWithoutDuplication, random } from '@/game/utils';
 import { GLOBAL_KEYS_EVENTS } from '@/enums';
 import { input } from '@/stores';
 import Stage from '@/game/scenes/Stage';
+import { Animations } from '@/game/resources/animations';
 
 class Game extends Engine {
 	private gamepad!: Gamepad | null;
@@ -91,6 +96,22 @@ class Game extends Engine {
 
 				if (!endless && totalTime >= duration) return;
 			}
+		});
+	}
+
+	playAnimation(actor: Actor, animation: Animations, strategy: AnimationStrategy = AnimationStrategy.Loop) {
+		return new Promise(resolve => {
+			const sprite = <Animation>res.animation.getAnimation(animation, strategy);
+
+			sprite.reset();
+			sprite.goToFrame(random.integer(0, sprite.frames.length - 1));
+			sprite.play();
+
+			actor.graphics.use(sprite, {
+				anchor: sprite.origin || Vector.Zero,
+			});
+
+			sprite.canFinish && sprite.events.on('end', resolve);
 		});
 	}
 

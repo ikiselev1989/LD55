@@ -1,13 +1,12 @@
 import type { ActorArgs } from 'excalibur';
-import { Sprite, toRadians, vec, Vector } from 'excalibur';
-import res from '@/res';
-import { Assets } from '@/game/resources/assets';
+import { toRadians, vec, Vector } from 'excalibur';
 import { NAMES, TAGS } from '@/enums';
 import type Construction from '@/game/components/construction';
 import game from '@/game/game';
 import DamageObject from '@/game/components/damage-object';
 import config from '@/config';
 import type Stage from '@/game/scenes/Stage';
+import { Animations } from '@/game/resources/animations';
 
 export default class Fireball extends DamageObject {
 	declare scene: Stage;
@@ -34,11 +33,7 @@ export default class Fireball extends DamageObject {
 	}
 
 	private initGraphics() {
-		const sprite = <Sprite>res.assets.getFrameSprite(Assets.FIREBALLS__1)?.clone();
-
-		this.graphics.use(sprite, {
-			anchor: sprite.origin || Vector.Zero,
-		});
+		game.playAnimation(this, Animations.ANIMATIONS__A_FIREBALL);
 	}
 
 	private startMoving() {
