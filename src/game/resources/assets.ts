@@ -28,6 +28,7 @@ export enum Assets {
 	'CARDS__EMPTY__1' = 'cards/empty/1',
 	'CANDLES__1' = 'candles/1',
 	'BONES' = 'bones',
+	'GOLDEN_BONE' = 'golden-bone',
 	'BONE' = 'bone',
 	'BG' = 'bg'
 }

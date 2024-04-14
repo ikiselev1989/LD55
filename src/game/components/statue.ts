@@ -12,6 +12,8 @@ export default class Statue extends Actor {
 	onInitialize() {
 		this.addTag(TAGS.Z_AXIS_SORT);
 		this.addTag(TAGS.TARGET);
+		this.addTag(TAGS.STATUE);
+
 		this.initGraphics();
 	}
 

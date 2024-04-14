@@ -2,21 +2,25 @@
 	import Sprite from '@/ui/components/Sprite.svelte';
 	import res from '@/res';
 	import { Assets } from '@/game/resources/assets';
+	import { bones } from '@/stores';
 </script>
 
-<div class='craft'>
+<div class='bones'>
+	<div class='counter'>{$bones}</div>
 	<Sprite sprite='{res.assets.getFrameSprite(Assets.BONES)}' />
 </div>
 
 <style lang='scss'>
-  .craft {
+  .bones {
     position: absolute;
     right: rem(40px);
     bottom: rem(40px);
+    display: flex;
+    align-items: center;
+    gap: rem(24px);
   }
 
-  ._craft-button {
-    width: rem(84px);
-    height: rem(84px);
+  .counter {
+    font-size: rem(40px);
   }
 </style>

@@ -2,6 +2,7 @@ import { get, writable } from 'svelte/store';
 import { SvelteComponent } from 'svelte';
 import StartMenu from '@/ui/screens/StartMenu.svelte';
 import Game from '@/ui/screens/Game.svelte';
+import config from '@/config';
 
 export const screen = (() => {
 	const { subscribe, set } = writable<typeof SvelteComponent>();
@@ -64,5 +65,15 @@ export const constructionsPlaceAvailable = (() => {
 
 	return {
 		subscribe,
+	};
+})();
+
+export const bones = (() => {
+	const { subscribe, update } = writable(50);
+
+	return {
+		subscribe,
+		bonusBoneCollect: () => update(value => (value + config.stage.bonusBoneCost)),
+		boneCollect: () => update(value => (value + config.stage.boneCost)),
 	};
 })();

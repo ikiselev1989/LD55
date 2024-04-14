@@ -30,4 +30,5 @@ export enum TAGS {
 	MOB = 'mob',
 	Z_AXIS_SORT = 'zAxisSort',
 	TARGET = 'target',
+	STATUE = 'statue',
 }

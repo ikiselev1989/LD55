@@ -458,30 +458,6 @@
     },
     "bones": {
       "frame": {
-        "x": 2,
-        "y": 1990,
-        "w": 84,
-        "h": 84
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 84,
-        "h": 84
-      },
-      "sourceSize": {
-        "w": 84,
-        "h": 84
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "craft-buttons/candles": {
-      "frame": {
         "x": 2636,
         "y": 1002,
         "w": 70,
@@ -504,9 +480,33 @@
         "y": 0
       }
     },
+    "craft-buttons/candles": {
+      "frame": {
+        "x": 2,
+        "y": 1990,
+        "w": 70,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 70
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
     "craft-buttons/circular": {
       "frame": {
-        "x": 90,
+        "x": 76,
         "y": 1990,
         "w": 70,
         "h": 70
@@ -530,7 +530,7 @@
     },
     "craft-buttons/fire": {
       "frame": {
-        "x": 164,
+        "x": 150,
         "y": 1990,
         "w": 70,
         "h": 70
@@ -554,7 +554,7 @@
     },
     "craft-buttons/hands": {
       "frame": {
-        "x": 238,
+        "x": 224,
         "y": 1990,
         "w": 70,
         "h": 70
@@ -578,7 +578,7 @@
     },
     "craft-buttons/thombstone": {
       "frame": {
-        "x": 312,
+        "x": 298,
         "y": 1990,
         "w": 70,
         "h": 70
@@ -696,9 +696,33 @@
         "y": 0
       }
     },
+    "golden-bone": {
+      "frame": {
+        "x": 2315,
+        "y": 1054,
+        "w": 57,
+        "h": 28
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 57,
+        "h": 28
+      },
+      "sourceSize": {
+        "w": 57,
+        "h": 28
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
     "hands/2": {
       "frame": {
-        "x": 386,
+        "x": 372,
         "y": 1990,
         "w": 34,
         "h": 57
@@ -752,7 +776,7 @@
     "format": "RGBA8888",
     "size": {
       "w": 2828,
-      "h": 2076
+      "h": 2062
     },
     "scale": 1
   }

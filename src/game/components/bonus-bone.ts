@@ -2,6 +2,7 @@ import { Actor, randomInRange, Sprite } from 'excalibur';
 import res from '@/res';
 import { Assets } from '@/game/resources/assets';
 import { TAGS } from '@/enums';
+import { bones } from '@/stores';
 
 export default class BonusBone extends Actor {
 	onInitialize() {
@@ -12,11 +13,14 @@ export default class BonusBone extends Actor {
 	}
 
 	private registerEvents() {
-		this.on('pointerdown', () => this.kill());
+		this.once('pointerdown', () => {
+			bones.bonusBoneCollect();
+			this.kill();
+		});
 	}
 
 	private initGraphics() {
-		this.graphics.use(<Sprite>res.assets.getFrameSprite(Assets.BONE));
+		this.graphics.use(<Sprite>res.assets.getFrameSprite(Assets.GOLDEN_BONE));
 		this.rotation = randomInRange(0, Math.PI * 2);
 	}
 }

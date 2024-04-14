@@ -8,6 +8,8 @@ export default {
 		maxStageMobAmount: 16,
 		waveInterval: 1000,
 		bonusBone: 0.05,
+		bonusBoneCost: 10,
+		boneCost: 1,
 	},
 	character: {
 		minSpeed: 50,
@@ -16,9 +18,15 @@ export default {
 		maxHealth: 5,
 	},
 	objects: {
-		sawDamage: 1,
-		sawStrength: 5,
-		fireBallDamage: 2,
-		fireBallStrength: 3,
+		saw: {
+			damage: 1,
+			strength: 5,
+			cost: 10,
+		},
+		fireBall: {
+			damage: 2,
+			strength: 3,
+			cost: 15,
+		},
 	},
 };
