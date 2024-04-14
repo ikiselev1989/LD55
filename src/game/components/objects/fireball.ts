@@ -1,20 +1,24 @@
 import type { ActorArgs } from 'excalibur';
-import { Actor, Sprite, toRadians, vec, Vector } from 'excalibur';
+import { Sprite, toRadians, vec, Vector } from 'excalibur';
 import res from '@/res';
 import { Assets } from '@/game/resources/assets';
 import { TAGS } from '@/enums';
 import type Construction from '@/game/components/construction';
 import game from '@/game/game';
+import DamageObject from '@/game/components/damage-object';
 
-export default class Fireball extends Actor {
+export default class Fireball extends DamageObject {
 	private starPos!: Vector;
 	private speed = 8000;
+	damageValue = 1;
 
 	constructor(props: ActorArgs, private construction: Construction) {
 		super(props);
 	}
 
 	onInitialize() {
+		super.onInitialize();
+
 		this.starPos = this.pos.clone();
 		this.collider.useCircleCollider(40);
 		this.addTag(TAGS.Z_AXIS_SORT);

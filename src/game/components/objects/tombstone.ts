@@ -1,12 +1,16 @@
 import type { ActorArgs, Sprite } from 'excalibur';
-import { Actor, Vector } from 'excalibur';
+import { Actor, CollisionGroup, Vector } from 'excalibur';
 import { Assets } from '@/game/resources/assets';
 import { TAGS } from '@/enums';
 import res from '@/res';
+import { enemyGroup } from '@/game/collisions';
 
 export default class Tombstone extends Actor {
 	constructor(props: ActorArgs, private inConstructIndex: number, private constructionRotated: boolean) {
-		super(props);
+		super({
+			...props,
+			collisionGroup: CollisionGroup.collidesWith([enemyGroup]),
+		});
 	}
 
 	onInitialize() {

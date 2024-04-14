@@ -1,7 +1,7 @@
 #version 300 es
 precision mediump float;
 
-uniform bool enable;
+uniform float hitAmount;
 uniform float u_time_ms;
 uniform sampler2D u_graphic;
 
@@ -13,5 +13,5 @@ void main() {
     vec3 color = vec3(1.);
     vec4 col = texture(u_graphic, v_uv);
 
-    fragColor.rgb = mix(col.rgb, color.rgb, enable ? 1. : 0.) * col.a;
+    fragColor.rgb = mix(col.rgb, color.rgb, hitAmount) * col.a;
 }

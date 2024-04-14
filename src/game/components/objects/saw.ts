@@ -1,13 +1,15 @@
 import type { ActorArgs, Sprite } from 'excalibur';
-import { Actor, vec, Vector } from 'excalibur';
+import { vec, Vector } from 'excalibur';
 import res from '@/res';
 import { Assets } from '@/game/resources/assets';
 import { TAGS } from '@/enums';
 import game from '@/game/game';
 import { lerp } from '@/game/utils';
 import type Construction from '@/game/components/construction';
+import DamageObject from '@/game/components/damage-object';
 
-export default class Saw extends Actor {
+export default class Saw extends DamageObject {
+	damageValue = 1;
 	private startPos!: Vector;
 	private interval = 1500;
 	private speed = 1000;
@@ -17,6 +19,8 @@ export default class Saw extends Actor {
 	}
 
 	async onInitialize() {
+		super.onInitialize();
+
 		this.startPos = this.pos.clone();
 		this.scale.setTo(0, 0);
 		this.addTag(TAGS.Z_AXIS_SORT);

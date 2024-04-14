@@ -1,9 +1,10 @@
 import type { ActorArgs } from 'excalibur';
-import { Actor, Shape, Sprite, Vector } from 'excalibur';
+import { Actor, CollisionGroup, Shape, Sprite, Vector } from 'excalibur';
 import { TAGS } from '@/enums';
 import res from '@/res';
 import { random } from '@/game/utils';
 import { Assets } from '@/game/resources/assets';
+import { enemyGroup } from '@/game/collisions';
 
 export default class Hand extends Actor {
 	private sprite = <Sprite>res.assets.getFrameSprite(random.pickOne([Assets.HANDS__1, Assets.HANDS__2]));
@@ -14,6 +15,7 @@ export default class Hand extends Actor {
 			width: 100,
 			height: 100,
 			collider: Shape.Circle(50),
+			collisionGroup: CollisionGroup.collidesWith([enemyGroup]),
 		});
 	}
 

@@ -17,3 +17,5 @@ export const lerp = (start: number, end: number, time: number) => start * (1 - t
 export const addToArrayWithoutDuplication = (arr: any[], val: any) => {
 	return [...new Set([...arr, val])];
 };
+
+export const easeInOutSine = (x: number): number => -(Math.cos(Math.PI * x) - 1) / 2;
