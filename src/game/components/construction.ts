@@ -71,11 +71,12 @@ export default abstract class Construction extends Actor {
 	private scaleForm = (worldPos: Vector) => {
 		const { x, y } = worldPos;
 		const centerOffset = Math.max(Math.abs(x), Math.abs(y));
+		const step = 0.15;
 
-		const minScale = 600 / this.formSprite.width;
+		const minScale = 400 / this.formSprite.width;
 
 		let scale = Math.max(Math.min(centerOffset * 2 / this.formSprite.width, 1), minScale);
-		scale = Math.floor(scale / 0.1) * 0.1;
+		scale = Math.floor(scale / step) * step;
 
 		this.material.update(shader => {
 			shader.trySetUniformFloat('scale', scale);

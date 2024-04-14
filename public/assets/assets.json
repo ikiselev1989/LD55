@@ -26,54 +26,6 @@
     },
     "forms/ellipse": {
       "frame": {
-        "x": 1926,
-        "y": 2,
-        "w": 900,
-        "h": 900
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 900,
-        "h": 900
-      },
-      "sourceSize": {
-        "w": 900,
-        "h": 900
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "forms/rectangle": {
-      "frame": {
-        "x": 1926,
-        "y": 906,
-        "w": 900,
-        "h": 900
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 900,
-        "h": 900
-      },
-      "sourceSize": {
-        "w": 900,
-        "h": 900
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "forms/rhombus": {
-      "frame": {
         "x": 2,
         "y": 1086,
         "w": 900,
@@ -96,7 +48,7 @@
         "y": 0
       }
     },
-    "forms/triangle": {
+    "forms/rectangle": {
       "frame": {
         "x": 906,
         "y": 1086,
@@ -120,24 +72,72 @@
         "y": 0
       }
     },
-    "caster": {
+    "forms/rhombus": {
       "frame": {
         "x": 1810,
-        "y": 1810,
-        "w": 288,
-        "h": 180
+        "y": 1086,
+        "w": 900,
+        "h": 900
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 288,
-        "h": 180
+        "w": 900,
+        "h": 900
       },
       "sourceSize": {
-        "w": 288,
-        "h": 180
+        "w": 900,
+        "h": 900
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "forms/triangle": {
+      "frame": {
+        "x": 1926,
+        "y": 2,
+        "w": 900,
+        "h": 900
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 900,
+        "h": 900
+      },
+      "sourceSize": {
+        "w": 900,
+        "h": 900
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "caster": {
+      "frame": {
+        "x": 1926,
+        "y": 906,
+        "w": 245,
+        "h": 153
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 245,
+        "h": 153
+      },
+      "sourceSize": {
+        "w": 245,
+        "h": 153
       },
       "pivot": {
         "x": 0.545139,
@@ -146,8 +146,8 @@
     },
     "fireballs/1": {
       "frame": {
-        "x": 1810,
-        "y": 1086,
+        "x": 2714,
+        "y": 906,
         "w": 70,
         "h": 124
       },
@@ -168,10 +168,34 @@
         "y": 0.935484
       }
     },
+    "tombstones/2": {
+      "frame": {
+        "x": 2175,
+        "y": 906,
+        "w": 119,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 119,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 119,
+        "h": 108
+      },
+      "pivot": {
+        "x": 0.478992,
+        "y": 0.935185
+      }
+    },
     "tombstones/3": {
       "frame": {
-        "x": 1810,
-        "y": 1214,
+        "x": 2714,
+        "y": 1034,
         "w": 87,
         "h": 115
       },
@@ -192,34 +216,10 @@
         "y": 0.886957
       }
     },
-    "saw/vert": {
-      "frame": {
-        "x": 1884,
-        "y": 1086,
-        "w": 37,
-        "h": 99
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 37,
-        "h": 99
-      },
-      "sourceSize": {
-        "w": 37,
-        "h": 99
-      },
-      "pivot": {
-        "x": 0.810811,
-        "y": 0.555556
-      }
-    },
     "tombstones/1": {
       "frame": {
-        "x": 1810,
-        "y": 1333,
+        "x": 2714,
+        "y": 1153,
         "w": 110,
         "h": 106
       },
@@ -240,10 +240,58 @@
         "y": 0.943396
       }
     },
+    "saw/vert": {
+      "frame": {
+        "x": 2788,
+        "y": 906,
+        "w": 37,
+        "h": 99
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 37,
+        "h": 99
+      },
+      "sourceSize": {
+        "w": 37,
+        "h": 99
+      },
+      "pivot": {
+        "x": 0.810811,
+        "y": 0.555556
+      }
+    },
+    "saw/hor": {
+      "frame": {
+        "x": 2175,
+        "y": 1018,
+        "w": 92,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 92,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 92,
+        "h": 52
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.923077
+      }
+    },
     "hands/1": {
       "frame": {
-        "x": 1810,
-        "y": 1443,
+        "x": 2714,
+        "y": 1263,
         "w": 41,
         "h": 83
       },
@@ -266,8 +314,8 @@
     },
     "hands/2": {
       "frame": {
-        "x": 1810,
-        "y": 1530,
+        "x": 2759,
+        "y": 1263,
         "w": 46,
         "h": 78
       },
@@ -290,8 +338,8 @@
     },
     "candles/1": {
       "frame": {
-        "x": 1855,
-        "y": 1443,
+        "x": 2759,
+        "y": 1345,
         "w": 39,
         "h": 69
       },
@@ -312,58 +360,10 @@
         "y": 0.927536
       }
     },
-    "saw/hor": {
-      "frame": {
-        "x": 1810,
-        "y": 1612,
-        "w": 92,
-        "h": 52
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 92,
-        "h": 52
-      },
-      "sourceSize": {
-        "w": 92,
-        "h": 52
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.923077
-      }
-    },
-    "tombstones/2": {
-      "frame": {
-        "x": 2,
-        "y": 1990,
-        "w": 119,
-        "h": 108
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 119,
-        "h": 108
-      },
-      "sourceSize": {
-        "w": 119,
-        "h": 108
-      },
-      "pivot": {
-        "x": 0.478992,
-        "y": 0.935185
-      }
-    },
     "candles/2": {
       "frame": {
-        "x": 1855,
-        "y": 1443,
+        "x": 2759,
+        "y": 1345,
         "w": 39,
         "h": 69
       },
@@ -386,8 +386,8 @@
     },
     "candles/3": {
       "frame": {
-        "x": 1855,
-        "y": 1443,
+        "x": 2759,
+        "y": 1345,
         "w": 39,
         "h": 69
       },
@@ -416,7 +416,7 @@
     "format": "RGBA8888",
     "size": {
       "w": 2828,
-      "h": 2100
+      "h": 1988
     },
     "scale": 1
   }
