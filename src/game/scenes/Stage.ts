@@ -9,11 +9,15 @@ import StageBg from '@/game/components/stage-bg';
 import Caster from '@/game/components/caster';
 import ZAxisSortSystem from '@/game/partials/z-axis-sort-system';
 import Fireballs from '@/game/components/constructions/fireballs';
+import SpawnSystem from '@/game/spawn-system';
 
 export default class Stage extends Scene {
+	private spawnSystem!: SpawnSystem;
+
 	onInitialize() {
 		this.camera.pos.setTo(0, -25);
 
+		this.spawnSystem = new SpawnSystem(this);
 		this.world.add(new ZAxisSortSystem());
 	}
 

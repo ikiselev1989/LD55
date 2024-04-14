@@ -1,13 +1,13 @@
 import { Actor, Sprite, Vector } from 'excalibur';
 import res from '@/res';
 import { Assets } from '@/game/resources/assets';
-import { Z_INDEX } from '@/enums';
+import { TAGS } from '@/enums';
 
 export default class Caster extends Actor {
 	private sprite = <Sprite>res.assets.getFrameSprite(Assets.CASTER);
 
 	onInitialize() {
-		this.z = Z_INDEX.CASTER;
+		this.addTag(TAGS.Z_AXIS_SORT);
 
 		this.initGraphics();
 	}

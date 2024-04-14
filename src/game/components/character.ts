@@ -5,11 +5,11 @@ import character from '@/game/materials/character.glsl';
 import res from '@/res';
 import { Assets } from '@/game/resources/assets';
 import { enemyGroup } from '@/game/collisions';
-import { easeInOutSine } from '@/game/utils';
+import { easeInOutSine, random } from '@/game/utils';
 import { TAGS } from '@/enums';
 
 export default class Character extends Actor {
-	protected live = 5;
+	protected live!: number;
 	private material!: Material;
 	private abortController!: AbortController;
 
@@ -22,13 +22,21 @@ export default class Character extends Actor {
 
 
 	onInitialize(engine: Engine) {
-		this.pos.setTo(200, 200);
+		this.live = random.integer(3, 6);
+		this.abortController = new AbortController();
 		this.collider.useCircleCollider(40);
 
-		this.abortController = new AbortController();
 		this.addTag(TAGS.Z_AXIS_SORT);
+		this.addTag(TAGS.MOB);
+
 		this.initGraphics();
 		this.registerEvents();
+
+		this.actions.moveTo(Vector.Zero, 50 + random.floating(0, 1) * 50);
+	}
+
+	onPostUpdate(engine: Engine, delta: number) {
+		this.graphics.flipHorizontal = this.vel.x < 0;
 	}
 
 	damage(value: number) {
@@ -55,7 +63,7 @@ export default class Character extends Actor {
 			fragmentSource: character,
 		});
 
-		const sprite = <Sprite>res.assets.getFrameSprite(Assets.ENEMIES__2);
+		const sprite = <Sprite>res.assets.getFrameSprite(random.pickOne([Assets.ENEMIES__1, Assets.ENEMIES__2]));
 		this.graphics.use(sprite, {
 			anchor: sprite.origin || Vector.Zero,
 		});

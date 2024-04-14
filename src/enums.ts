@@ -27,5 +27,6 @@ export enum Z_INDEX {
 }
 
 export enum TAGS {
+	MOB = 'mob',
 	Z_AXIS_SORT = 'zAxisSort'
 }

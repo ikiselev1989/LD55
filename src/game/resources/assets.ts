@@ -12,6 +12,7 @@ export enum Assets {
 	'FORMS__ELLIPSE' = 'forms/ellipse',
 	'FIREBALLS__1' = 'fireballs/1',
 	'ENEMIES__2' = 'enemies/2',
+	'ENEMIES__1' = 'enemies/1',
 	'CASTER' = 'caster',
 	'CANDLES__3' = 'candles/3',
 	'CANDLES__2' = 'candles/2',
