@@ -16,6 +16,7 @@ export default class Fireball extends Actor {
 
 	onInitialize() {
 		this.starPos = this.pos.clone();
+		this.collider.useCircleCollider(40);
 		this.addTag(TAGS.Z_AXIS_SORT);
 
 		this.initGraphics();
@@ -36,7 +37,7 @@ export default class Fireball extends Actor {
 		const abortController = new AbortController();
 
 		game.tween(progress => {
-			this.pos = this.construction.pos.add(vec(offset * Math.sin(startAngle + Math.PI * 2 * -progress), offset * Math.cos(startAngle + Math.PI * 2 * -progress)));
+			this.pos = this.construction.pos.add(vec(offset * Math.sin(startAngle + Math.PI * 2 * progress), offset * Math.cos(startAngle + Math.PI * 2 * progress)));
 		}, this.speed * this.construction.scale.x, abortController, true);
 	}
 }

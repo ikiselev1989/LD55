@@ -21,10 +21,23 @@ export default class Saw extends Actor {
 		this.scale.setTo(0, 0);
 		this.addTag(TAGS.Z_AXIS_SORT);
 
+		this.setCollider();
+
 		this.initGraphics();
 
 		await this.moveAnimation();
 		this.startMovingInterval();
+	}
+
+	private setCollider() {
+		switch (this.constructionIndex) {
+			case 0:
+			case 1:
+				return this.collider.useBoxCollider(100, 20, vec(0.5, 1));
+
+			default:
+				return this.collider.useBoxCollider(20, 100, this.constructionIndex === 2 ? vec(1, 0.5) : vec(0, 0.5));
+		}
 	}
 
 	private moveAnimation() {
