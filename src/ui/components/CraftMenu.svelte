@@ -31,17 +31,17 @@
 	<CraftButton on:click={placeCircular}>
 		<Sprite sprite='{res.assets.getFrameSprite(Assets.CRAFT_BUTTONS__CIRCULAR)}' />
 	</CraftButton>
-	<CraftButton on:click={placeHellishHugs}>
-		<Sprite sprite='{res.assets.getFrameSprite(Assets.CRAFT_BUTTONS__HANDS)}' />
-	</CraftButton>
-	<CraftButton on:click={placeManaCandles}>
-		<Sprite sprite='{res.assets.getFrameSprite(Assets.CRAFT_BUTTONS__CANDLES)}' />
-	</CraftButton>
 	<CraftButton on:click={placeFireballs}>
 		<Sprite sprite='{res.assets.getFrameSprite(Assets.CRAFT_BUTTONS__FIRE)}' />
 	</CraftButton>
 	<CraftButton on:click={placeTombstone}>
 		<Sprite sprite='{res.assets.getFrameSprite(Assets.CRAFT_BUTTONS__THOMBSTONE)}' />
+	</CraftButton>
+	<CraftButton on:click={placeHellishHugs}>
+		<Sprite sprite='{res.assets.getFrameSprite(Assets.CRAFT_BUTTONS__HANDS)}' />
+	</CraftButton>
+	<CraftButton on:click={placeManaCandles}>
+		<Sprite sprite='{res.assets.getFrameSprite(Assets.CRAFT_BUTTONS__CANDLES)}' />
 	</CraftButton>
 </div>
 
