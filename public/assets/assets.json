@@ -887,6 +887,30 @@
         "x": 0,
         "y": 0
       }
+    },
+    "bones-cost": {
+      "frame": {
+        "x": 2376,
+        "y": 1054,
+        "w": 23,
+        "h": 28
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 23,
+        "h": 28
+      },
+      "sourceSize": {
+        "w": 23,
+        "h": 28
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
     }
   },
   "meta": {

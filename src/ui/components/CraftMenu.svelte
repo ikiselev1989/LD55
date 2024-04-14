@@ -6,14 +6,15 @@
 	import Sprite from '@/ui/components/Sprite.svelte';
 	import res from '@/res';
 	import { Assets } from '@/game/resources/assets';
-	import { constructionsBuilt } from '@/stores';
+	import { bones, constructionsBuilt } from '@/stores';
 	import { onDestroy, onMount } from 'svelte';
+	import config from '@/config';
 
-	const placeCircular = () => constructionsBuilt.available() && (<Stage>game.currentScene).placeCircular();
-	const placeHellishHugs = () => constructionsBuilt.available() && (<Stage>game.currentScene).placeHellishHugs();
-	const placeFireballs = () => constructionsBuilt.available() && (<Stage>game.currentScene).placeFireballs();
-	const placeManaCandles = () => constructionsBuilt.available() && (<Stage>game.currentScene).placeManaCandles();
-	const placeTombstone = () => constructionsBuilt.available() && (<Stage>game.currentScene).placeTombstone();
+	const placeCircular = () => constructionsBuilt.available() && bones.canBuy(config.objects.saw.cost) && (<Stage>game.currentScene).placeCircular();
+	const placeHellishHugs = () => constructionsBuilt.available() && bones.canBuy(config.objects.hands.cost) && (<Stage>game.currentScene).placeHellishHugs();
+	const placeFireballs = () => constructionsBuilt.available() && bones.canBuy(config.objects.fireBall.cost) && (<Stage>game.currentScene).placeFireballs();
+	const placeManaCandles = () => constructionsBuilt.available() && bones.canBuy(config.objects.candles.cost) && (<Stage>game.currentScene).placeManaCandles();
+	const placeTombstone = () => constructionsBuilt.available() && bones.canBuy(config.objects.tombstones.cost) && (<Stage>game.currentScene).placeTombstone();
 
 	let unSubscriber;
 	let available = true;
@@ -28,19 +29,19 @@
 </script>
 
 <div class='craft-menu' class:-available={available} transition:fade={{duration: 150}}>
-	<CraftButton on:click={placeCircular}>
+	<CraftButton cost='{config.objects.saw.cost}' on:click={placeCircular}>
 		<Sprite sprite='{res.assets.getFrameSprite(Assets.CRAFT_BUTTONS__CIRCULAR)}' />
 	</CraftButton>
-	<CraftButton on:click={placeFireballs}>
+	<CraftButton cost='{config.objects.fireBall.cost}' on:click={placeFireballs}>
 		<Sprite sprite='{res.assets.getFrameSprite(Assets.CRAFT_BUTTONS__FIRE)}' />
 	</CraftButton>
-	<CraftButton on:click={placeTombstone}>
+	<CraftButton cost='{config.objects.tombstones.cost}' on:click={placeTombstone}>
 		<Sprite sprite='{res.assets.getFrameSprite(Assets.CRAFT_BUTTONS__THOMBSTONE)}' />
 	</CraftButton>
-	<CraftButton on:click={placeHellishHugs}>
+	<CraftButton cost='{config.objects.hands.cost}' on:click={placeHellishHugs}>
 		<Sprite sprite='{res.assets.getFrameSprite(Assets.CRAFT_BUTTONS__HANDS)}' />
 	</CraftButton>
-	<CraftButton on:click={placeManaCandles}>
+	<CraftButton cost='{config.objects.candles.cost}' on:click={placeManaCandles}>
 		<Sprite sprite='{res.assets.getFrameSprite(Assets.CRAFT_BUTTONS__CANDLES)}' />
 	</CraftButton>
 </div>
