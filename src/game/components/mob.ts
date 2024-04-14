@@ -24,7 +24,6 @@ export default class Mob extends Character {
 		});
 	}
 
-
 	onInitialize(engine: Engine) {
 		this.scene.events.pipe(this.events);
 		this.canSearch = true;

@@ -5,13 +5,14 @@ import type { Sprite } from 'excalibur';
 import { vec } from 'excalibur';
 import Hand from '@/game/components/objects/hand';
 import { random } from '@/game/utils';
+import config from '@/config';
 
 export default class HellishHugs extends Construction {
 	formSprite = <Sprite>res.assets.getFrameSprite(Assets.FORMS__ELLIPSE);
 	iconAsset = Assets.CARDS__CONSTRUCTIONS__HAND;
 
 	protected addObjects() {
-		const length = Math.floor(16 * this.scale.x);
+		const length = Math.floor(config.objects.hands.maxAmount * this.scale.x);
 		let starAngle = 0;
 		const offset = 450;
 

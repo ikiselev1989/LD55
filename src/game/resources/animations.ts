@@ -6,6 +6,8 @@ export enum Animations {
 	'ANIMATIONS__A_STATUES__1' = 'animations/a_statues/1',
 	'ANIMATIONS__A_SAW__VERT' = 'animations/a_saw/vert',
 	'ANIMATIONS__A_SAW__HOR' = 'animations/a_saw/hor',
+	'ANIMATIONS__A_HAND__LEFT2' = 'animations/a_hand/left2',
+	'ANIMATIONS__A_HAND__LEFT1' = 'animations/a_hand/left1',
 	'ANIMATIONS__A_FIREBALL' = 'animations/a_fireball',
 	'ANIMATIONS__A_ENEMY1__WALK' = 'animations/a_enemy1/walk',
 	'ANIMATIONS__A_ENEMY1__DEATH' = 'animations/a_enemy1/death',

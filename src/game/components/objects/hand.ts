@@ -1,13 +1,16 @@
-import type { ActorArgs } from 'excalibur';
-import { Actor, CollisionGroup, Shape, Sprite, Vector } from 'excalibur';
+import type { ActorArgs, Animation, Scene } from 'excalibur';
+import { Actor, AnimationStrategy, CollisionGroup, Shape, Vector } from 'excalibur';
 import { TAGS } from '@/enums';
 import res from '@/res';
 import { random } from '@/game/utils';
-import { Assets } from '@/game/resources/assets';
 import { enemyGroup } from '@/game/collisions';
+import { Animations } from '@/game/resources/animations';
+import config from '@/config';
+import type Mob from '@/game/components/mob';
 
 export default class Hand extends Actor {
-	private sprite = <Sprite>res.assets.getFrameSprite(random.pickOne([Assets.HANDS__1, Assets.HANDS__2]));
+	private animation = <Animation>res.animation.getAnimation(random.pickOne([Animations.ANIMATIONS__A_HAND__LEFT1, Animations.ANIMATIONS__A_HAND__LEFT2]), AnimationStrategy.Freeze)?.clone();
+	private strength!: number;
 
 	constructor(props: ActorArgs) {
 		super({
@@ -19,16 +22,41 @@ export default class Hand extends Actor {
 		});
 	}
 
-
 	onInitialize() {
+		this.strength = config.objects.hands.strength;
 		this.addTag(TAGS.Z_AXIS_SORT);
 
 		this.initGraphics();
+		this.registerEvents();
+	}
+
+	onPostKill(scene: Scene) {
+		this.off('collisionstart');
+	}
+
+	private registerEvents() {
+		this.on('collisionstart', async ({ other }) => {
+			(<Mob>other).damage(config.objects.hands.damage);
+			this.animation.reset();
+			this.animation.play();
+
+			await new Promise(resolve => this.animation.events.on('end', resolve));
+
+			this.decreaseStrength();
+		});
 	}
 
 	private initGraphics() {
-		this.graphics.use(this.sprite, {
-			anchor: this.sprite.origin || Vector.Zero,
+		this.animation.pause();
+
+		this.graphics.use(this.animation, {
+			anchor: this.animation.origin || Vector.Zero,
 		});
+	}
+
+	private decreaseStrength() {
+		this.strength -= 1;
+
+		if (this.strength <= 0) this.kill();
 	}
 }

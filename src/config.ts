@@ -40,8 +40,11 @@ export default {
 			repairCost: 8,
 		},
 		hands: {
+			damage: 1,
 			cost: 12,
+			strength: 2,
 			repairCost: 10,
+			maxAmount: 16,
 		},
 		candles: {
 			cost: 5,
