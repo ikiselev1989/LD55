@@ -4,13 +4,21 @@ import { toRadians, vec } from 'excalibur';
 import res from '@/res';
 import { Assets } from '@/game/resources/assets';
 import Candle from '@/game/components/objects/candle';
+import { constructionsPlaceAvailable } from '@/stores';
 
 export default class ManaCandles extends Construction {
 	formSprite = <Sprite>res.assets.getFrameSprite(Assets.FORMS__TRIANGLE);
 	iconAsset = Assets.CARDS__CONSTRUCTIONS__CANDLE;
+	safePlace = true;
 
 	protected rotate() {
 		this.rotation += toRadians(180);
+	}
+
+	protected build() {
+		super.build();
+
+		constructionsPlaceAvailable.expand();
 	}
 
 	protected addObjects() {

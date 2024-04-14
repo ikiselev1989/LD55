@@ -12,6 +12,7 @@ export default abstract class Construction extends Actor {
 	abstract iconAsset: Assets;
 	declare scene: Stage;
 	objectAmount!: number;
+	protected safePlace = false;
 	private material!: Material;
 
 	onInitialize() {
@@ -69,8 +70,8 @@ export default abstract class Construction extends Actor {
 		});
 	}
 
-	private build() {
-		constructionsBuilt.build({
+	protected build() {
+		!this.safePlace && constructionsBuilt.build({
 			id: this.id,
 			iconAsset: this.iconAsset,
 			strength: 1,

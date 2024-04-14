@@ -73,10 +73,11 @@ export const constructionsBuilt = (() => {
 })();
 
 export const constructionsPlaceAvailable = (() => {
-	const { subscribe } = writable(3);
+	const { subscribe, update } = writable(3);
 
 	return {
 		subscribe,
+		expand: () => update(value => (value + 1)),
 	};
 })();
 
