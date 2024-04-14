@@ -7,8 +7,10 @@ import { Assets } from '@/game/resources/assets';
 import { enemyGroup } from '@/game/collisions';
 import { easeInOutSine, random } from '@/game/utils';
 import { TAGS } from '@/enums';
+import type Stage from '@/game/scenes/Stage';
 
 export default class Character extends Actor {
+	declare scene: Stage;
 	protected live!: number;
 	private material!: Material;
 	private abortController!: AbortController;
@@ -32,7 +34,7 @@ export default class Character extends Actor {
 		this.initGraphics();
 		this.registerEvents();
 
-		this.actions.moveTo(Vector.Zero, 50 + random.floating(0, 1) * 50);
+		this.actions.moveTo((this.getTarget()).pos, 50 + random.floating(0, 1) * 50);
 	}
 
 	onPostUpdate(engine: Engine, delta: number) {
@@ -67,6 +69,16 @@ export default class Character extends Actor {
 		this.graphics.use(sprite, {
 			anchor: sprite.origin || Vector.Zero,
 		});
+	}
+
+	private getTarget() {
+		const stageTargets = this.scene.world.queryTags([TAGS.TARGET]).entities;
+
+		const sorted = stageTargets.sort((a, b) => {
+			return (<Actor>a).pos.distance(this.pos) < (<Actor>b).pos.distance(this.pos) ? -1 : 1;
+		});
+
+		return <Actor>sorted[0];
 	}
 
 	private die() {

@@ -1,5 +1,8 @@
 export enum Assets {
 	'TOMBSTONES__1' = 'tombstones/1',
+	'STATUES__3' = 'statues/3',
+	'STATUES__2' = 'statues/2',
+	'STATUES__1' = 'statues/1',
 	'SAW__VERT' = 'saw/vert',
 	'SAW__HOR' = 'saw/hor',
 	'HANDS__2' = 'hands/2',

@@ -16,6 +16,7 @@ export default class Tombstone extends Actor {
 	onInitialize() {
 		this.collider.useCircleCollider(30);
 		this.addTag(TAGS.Z_AXIS_SORT);
+		this.addTag(TAGS.TARGET);
 
 		this.initGraphics();
 	}

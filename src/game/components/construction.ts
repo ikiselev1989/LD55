@@ -77,7 +77,7 @@ export default abstract class Construction extends Actor {
 		const centerOffset = Math.max(Math.abs(x), Math.abs(y));
 		const step = 0.15;
 
-		const minScale = 400 / this.formSprite.width;
+		const minScale = 500 / this.formSprite.width;
 
 		let scale = Math.max(Math.min(centerOffset * 2 / this.formSprite.width, 1), minScale);
 		scale = Math.floor(scale / step) * step;
