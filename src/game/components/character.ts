@@ -8,10 +8,11 @@ import { enemyGroup } from '@/game/collisions';
 import { easeInOutSine, random } from '@/game/utils';
 import { TAGS } from '@/enums';
 import type Stage from '@/game/scenes/Stage';
+import config from '@/config';
 
 export default class Character extends Actor {
 	declare scene: Stage;
-	protected live!: number;
+	protected health!: number;
 	private material!: Material;
 	private abortController!: AbortController;
 
@@ -24,7 +25,7 @@ export default class Character extends Actor {
 
 
 	onInitialize(engine: Engine) {
-		this.live = random.integer(3, 6);
+		this.health = random.integer(config.character.minHealth, config.character.maxHealth);
 		this.abortController = new AbortController();
 		this.collider.useCircleCollider(40);
 
@@ -34,7 +35,7 @@ export default class Character extends Actor {
 		this.initGraphics();
 		this.registerEvents();
 
-		this.actions.moveTo((this.getTarget()).pos, 50 + random.floating(0, 1) * 50);
+		this.actions.moveTo((this.getTarget()).pos, config.character.minSpeed + random.floating(0, 1) * config.character.speedOffset);
 	}
 
 	onPostUpdate(engine: Engine, delta: number) {
@@ -45,9 +46,9 @@ export default class Character extends Actor {
 		this.abortController && this.abortController.abort();
 		this.abortController = new AbortController();
 
-		this.live = Math.max(this.live - value, 0);
+		this.health = Math.max(this.health - value, 0);
 
-		if (this.live === 0) return this.die();
+		if (this.health === 0) return this.die();
 
 		game.tween(progress => {
 			this.material.update(shader => {
