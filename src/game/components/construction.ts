@@ -1,4 +1,4 @@
-import { Actor, Material, PointerEvent, Sprite } from 'excalibur';
+import { Actor, Material, PointerEvent, Sprite, Vector } from 'excalibur';
 import game from '@/game/game';
 import type Stage from '@/game/scenes/Stage';
 import { GLOBAL_KEYS_EVENTS, INPUT_EVENT, STAGE_EVENTS, Z_INDEX } from '@/enums';
@@ -15,6 +15,7 @@ export default abstract class Construction extends Actor {
 
 		this.initGraphics();
 		this.registerEvents();
+		this.scaleForm(game.input.pointers.at(0).lastWorldPos);
 
 		game.input.pointers.events.pipe(this.events);
 		game.events.pipe(this.events);
@@ -52,13 +53,13 @@ export default abstract class Construction extends Actor {
 			this.kill();
 		});
 
-		const scaleForm = (e: PointerEvent) => this.scaleForm(e);
+		const scaleForm = (e: PointerEvent) => this.scaleForm(e.worldPos);
 
 		// @ts-ignore
 		this.events.on('move', scaleForm);
 		this.events.on('down', () => {
 				this.addObjects();
-			this.unregisterEvents();
+				this.unregisterEvents();
 			},
 		);
 
@@ -67,14 +68,18 @@ export default abstract class Construction extends Actor {
 		});
 	}
 
-	private scaleForm = (event: PointerEvent) => {
-		const { x, y } = event.worldPos;
+	private scaleForm = (worldPos: Vector) => {
+		const { x, y } = worldPos;
 		const centerOffset = Math.max(Math.abs(x), Math.abs(y));
 
 		const minScale = 600 / this.formSprite.width;
 
 		let scale = Math.max(Math.min(centerOffset * 2 / this.formSprite.width, 1), minScale);
 		scale = Math.floor(scale / 0.1) * 0.1;
+
+		this.material.update(shader => {
+			shader.trySetUniformFloat('scale', scale);
+		});
 
 		this.scale.setTo(scale, scale);
 	};
