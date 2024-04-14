@@ -9,6 +9,7 @@ import { easeInOutSine, random } from '@/game/utils';
 import { TAGS } from '@/enums';
 import type Stage from '@/game/scenes/Stage';
 import config from '@/config';
+import BonusBone from '@/game/components/bonus-bone';
 
 export default class Character extends Actor {
 	declare scene: Stage;
@@ -84,5 +85,11 @@ export default class Character extends Actor {
 
 	private die() {
 		this.kill();
+
+		if (random.bool(config.stage.bonusBone)) {
+			this.scene.add(new BonusBone({
+				pos: this.pos,
+			}));
+		}
 	}
 }

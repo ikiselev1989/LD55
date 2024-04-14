@@ -7,6 +7,7 @@ export default {
 		startMobAmount: 3,
 		maxStageMobAmount: 16,
 		waveInterval: 1000,
+		bonusBone: 0.05,
 	},
 	character: {
 		minSpeed: 50,
