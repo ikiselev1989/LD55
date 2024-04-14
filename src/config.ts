@@ -23,6 +23,9 @@ export default {
 			strength: 3,
 			cost: 10,
 			repairCost: 5,
+			speed: 1500,
+			interval: 1000,
+			fadeSpeed: 100,
 		},
 		fireBall: {
 			damage: 2,
