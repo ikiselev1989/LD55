@@ -13,6 +13,7 @@ import type Mob from '@/game/components/mob';
 import Smoke from '@/game/components/smoke';
 import Character from '@/game/components/character';
 import { easeInOutSine } from '@/game/utils';
+import { constructionsBuilt } from '@/stores';
 
 export default class Tombstone extends Character implements HasConstruction, CanBeDamaged {
 	constructionId!: number;
@@ -40,6 +41,8 @@ export default class Tombstone extends Character implements HasConstruction, Can
 	}
 
 	onPostKill(scene: Stage) {
+		constructionsBuilt.damage(this.constructionId, 1 / this.construction.objectAmount);
+
 		const length = scene.world.entityManager.getByName(this.name).filter((obj) => {
 			return (<Tombstone>obj).constructionId === this.constructionId;
 		}).length;

@@ -57,6 +57,13 @@ export const constructionsBuilt = (() => {
 	return {
 		subscribe,
 		build: (construction: ConstructionBuild) => update(value => [...value, construction]),
+		damage: (id: number, value: number) =>
+			update(constructionBuilds => {
+				const build = constructionBuilds.find((build) => build.id === id);
+				build && (build.strength = Math.max(build.strength - value, 0));
+
+				return constructionBuilds;
+			}),
 		destroy: (id: number) =>
 			update(constructionBuilds => constructionBuilds.filter((build) => {
 				return build.id !== id;

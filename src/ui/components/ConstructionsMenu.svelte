@@ -17,7 +17,8 @@
 	{#key $constructionsBuilt}
 		{#each new Array($constructionsPlaceAvailable) as item, index}
 			{@const mapIndex = (index < $constructionsBuilt.length) ? 1 : 0}
-			<div class='button' transition:fade={{duration: 150}}>
+			<div class='button' transition:fade={{duration: 150}}
+					 style='filter: grayscale({$constructionsBuilt[index]?.strength ? 1 - $constructionsBuilt[index].strength : 0})'>
 				<Button class='_construction-card'>
 					<Sprite sprite='{res.assets.getFrameSprite(cardsMapping[index%3][mapIndex])}' />
 

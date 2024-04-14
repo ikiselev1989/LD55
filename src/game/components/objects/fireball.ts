@@ -15,7 +15,7 @@ export default class Fireball extends DamageObject {
 	private starPos!: Vector;
 	private speed = 8000;
 
-	constructor(props: ActorArgs, private construction: Construction) {
+	constructor(props: ActorArgs, protected construction: Construction) {
 		super(props);
 	}
 

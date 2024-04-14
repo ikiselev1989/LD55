@@ -14,7 +14,7 @@ export default class Saw extends DamageObject {
 	protected strengthValue = config.objects.saw.strength;
 	private startPos!: Vector;
 
-	constructor(props: ActorArgs, private construct: Construction, private constructionIndex: number) {
+	constructor(props: ActorArgs, protected construction: Construction, private constructionIndex: number) {
 		super(props);
 	}
 
@@ -22,7 +22,7 @@ export default class Saw extends DamageObject {
 		super.onInitialize();
 
 		this.name = NAMES.SAW;
-		this.constructionId = this.construct.id;
+		this.constructionId = this.construction.id;
 		this.startPos = this.pos.clone();
 		this.scale.setTo(0, 0);
 		this.addTag(TAGS.Z_AXIS_SORT);
@@ -90,8 +90,8 @@ export default class Saw extends DamageObject {
 			this.scale.y = progress;
 		}, config.objects.saw.fadeSpeed);
 		await game.tween(progress => {
-			this.pos.setTo(lerp(this.startPos.x, this.startPos.x + 410 * 2 * (reverse ? 1 : -1) * this.construct.scale.x, progress), this.startPos.y);
-		}, config.objects.saw.speed * this.construct.scale.x);
+			this.pos.setTo(lerp(this.startPos.x, this.startPos.x + 410 * 2 * (reverse ? 1 : -1) * this.construction.scale.x, progress), this.startPos.y);
+		}, config.objects.saw.speed * this.construction.scale.x);
 		await game.tween(progress => {
 			this.scale.x = 1;
 			this.scale.y = 1 - progress;
@@ -104,8 +104,8 @@ export default class Saw extends DamageObject {
 			this.scale.y = 1;
 		}, config.objects.saw.fadeSpeed);
 		await game.tween(progress => {
-			this.pos.setTo(this.startPos.x, lerp(this.startPos.y, this.startPos.y + 410 * 2 * (reverse ? 1 : -1) * this.construct.scale.y, progress));
-		}, config.objects.saw.speed * this.construct.scale.x);
+			this.pos.setTo(this.startPos.x, lerp(this.startPos.y, this.startPos.y + 410 * 2 * (reverse ? 1 : -1) * this.construction.scale.y, progress));
+		}, config.objects.saw.speed * this.construction.scale.x);
 		await game.tween(progress => {
 			this.scale.x = 1 - progress;
 			this.scale.y = 1;

@@ -13,6 +13,7 @@ export default class HellishHugs extends Construction {
 
 	protected addObjects() {
 		const length = Math.floor(config.objects.hands.maxAmount * this.scale.x);
+		this.objectAmount = length;
 		let starAngle = 0;
 		const offset = 450;
 
@@ -22,7 +23,7 @@ export default class HellishHugs extends Construction {
 			this.scene.add(
 				new Hand({
 					pos: this.pos.add(vec(customOffset * Math.sin(starAngle), customOffset * Math.cos(starAngle))).scale(this.scale),
-				}),
+				}, this),
 			);
 
 			starAngle += (Math.PI * 2) / length;

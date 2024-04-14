@@ -38,6 +38,7 @@ export default {
 			strength: 4,
 			cost: 15,
 			repairCost: 8,
+			maxAmount: 8,
 		},
 		hands: {
 			damage: 1,

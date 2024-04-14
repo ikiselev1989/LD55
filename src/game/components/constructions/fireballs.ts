@@ -4,13 +4,15 @@ import { toRadians, vec } from 'excalibur';
 import res from '@/res';
 import { Assets } from '@/game/resources/assets';
 import Fireball from '@/game/components/objects/fireball';
+import config from '@/config';
 
 export default class Fireballs extends Construction {
 	formSprite = <Sprite>res.assets.getFrameSprite(Assets.FORMS__ELLIPSE);
 	iconAsset = Assets.CARDS__CONSTRUCTIONS__FIRE;
 
 	protected addObjects() {
-		const length = Math.floor(8 * this.scale.x);
+		const length = Math.floor(config.objects.fireBall.maxAmount * this.scale.x);
+		this.objectAmount = length;
 		let startAngle = toRadians(0);
 		const offset = 440;
 

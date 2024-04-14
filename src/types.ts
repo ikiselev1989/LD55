@@ -30,6 +30,7 @@ export type GlobalInputMapping = {
 export interface ConstructionBuild {
 	id: number;
 	iconAsset: Assets;
+	strength: number;
 }
 
 export interface HasConstruction {

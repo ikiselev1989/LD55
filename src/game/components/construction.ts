@@ -11,6 +11,7 @@ export default abstract class Construction extends Actor {
 	abstract formSprite: Sprite;
 	abstract iconAsset: Assets;
 	declare scene: Stage;
+	objectAmount!: number;
 	private material!: Material;
 
 	onInitialize() {
@@ -72,6 +73,7 @@ export default abstract class Construction extends Actor {
 		constructionsBuilt.build({
 			id: this.id,
 			iconAsset: this.iconAsset,
+			strength: 1,
 		});
 		this.addObjects();
 		this.unregisterEvents();
