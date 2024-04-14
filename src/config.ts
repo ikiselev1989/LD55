@@ -20,13 +20,13 @@ export default {
 	objects: {
 		saw: {
 			damage: 1,
-			strength: 5,
+			strength: 3,
 			cost: 10,
 			repairCost: 5,
 		},
 		fireBall: {
 			damage: 2,
-			strength: 3,
+			strength: 4,
 			cost: 15,
 			repairCost: 8,
 		},
@@ -42,6 +42,8 @@ export default {
 			strength: 5,
 			cost: 20,
 			repairCost: 15,
+			attackInterval: 5000,
+			smokeSpeed: 500,
 		},
 	},
 };

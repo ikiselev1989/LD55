@@ -1,10 +1,18 @@
-import { Actor, randomInRange, Sprite } from 'excalibur';
+import { Actor, CollisionType, randomInRange, Sprite } from 'excalibur';
 import res from '@/res';
 import { Assets } from '@/game/resources/assets';
 import { TAGS } from '@/enums';
 import { bones } from '@/stores';
 
 export default class BonusBone extends Actor {
+	constructor(props = {}) {
+		super({
+			...props,
+			collisionType: CollisionType.PreventCollision,
+		});
+	}
+
+
 	onInitialize() {
 		this.addTag(TAGS.Z_AXIS_SORT);
 		this.collider.useCircleCollider(40);

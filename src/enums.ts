@@ -37,4 +37,5 @@ export enum NAMES {
 	FIREBALL = 'fireball',
 	SAW = 'saw',
 	TOMBSTONE = 'tombstone',
+	SMOKE = 'smoke',
 }

@@ -64,7 +64,7 @@ export default class Saw extends DamageObject {
 	private async startMovingInterval() {
 		game.clock.schedule(async () => {
 			await this.moveAnimation();
-			this.startMovingInterval();
+			!this.isKilled() && this.startMovingInterval();
 		}, this.interval);
 	}
 

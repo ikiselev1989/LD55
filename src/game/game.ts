@@ -18,7 +18,7 @@ import config from '@/config';
 import { Pane } from 'tweakpane';
 import res from '@/res';
 import { globalInputMapping } from '@/buttons.config';
-import { addToArrayWithoutDuplication, random } from '@/game/utils';
+import { addToArrayWithoutDuplication } from '@/game/utils';
 import { GLOBAL_KEYS_EVENTS } from '@/enums';
 import { input } from '@/stores';
 import Stage from '@/game/scenes/Stage';
@@ -104,7 +104,6 @@ class Game extends Engine {
 			const sprite = <Animation>res.animation.getAnimation(animation, strategy);
 
 			sprite.reset();
-			sprite.goToFrame(random.integer(0, sprite.frames.length - 1));
 			sprite.play();
 
 			actor.graphics.use(sprite, {
