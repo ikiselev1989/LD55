@@ -12,7 +12,7 @@
   button {
     @include reset-button;
 
-    padding: 15px 20px;
+    padding: rem(15px) rem(20px);
     box-sizing: border-box;
     pointer-events: auto;
   }

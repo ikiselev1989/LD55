@@ -408,6 +408,126 @@
         "y": 0.927536
       }
     },
+    "craft-buttons/thombstone": {
+      "frame": {
+        "x": 2714,
+        "y": 1299,
+        "w": 60,
+        "h": 60
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 60,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 60,
+        "h": 60
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "craft-buttons/candles": {
+      "frame": {
+        "x": 2591,
+        "y": 1025,
+        "w": 56,
+        "h": 51
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 56,
+        "h": 51
+      },
+      "sourceSize": {
+        "w": 56,
+        "h": 51
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "craft-buttons/circular": {
+      "frame": {
+        "x": 2651,
+        "y": 1025,
+        "w": 52,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 52,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 52,
+        "h": 52
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "craft-buttons/fire": {
+      "frame": {
+        "x": 2714,
+        "y": 1363,
+        "w": 52,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 52,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 52,
+        "h": 52
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "craft-buttons/hands": {
+      "frame": {
+        "x": 2770,
+        "y": 1363,
+        "w": 52,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 52,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 52,
+        "h": 52
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
     "candles/2": {
       "frame": {
         "x": 2759,

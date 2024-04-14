@@ -15,6 +15,7 @@ export default defineConfig({
 			scss: {
 				additionalData: `
 				@import '@/ui/style/variables.scss';
+				@import '@/ui/style/functions.scss';
 				@import '@/ui/style/mixins.scss';
 				`,
 			},
