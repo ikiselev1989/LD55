@@ -1,7 +1,7 @@
 import type { ActorArgs } from 'excalibur';
 import { Actor, CollisionGroup, CollisionStartEvent } from 'excalibur';
 import { enemyGroup } from '@/game/collisions';
-import Character from '@/game/components/character';
+import Mob from '@/game/components/mob';
 import type { HasConstruction } from '@/types';
 import type Stage from '@/game/scenes/Stage';
 
@@ -30,7 +30,7 @@ export default class DamageObject extends Actor implements HasConstruction {
 	}
 
 	private damage(e: CollisionStartEvent) {
-		if (e.other instanceof Character) {
+		if (e.other instanceof Mob) {
 			this.decreaseStrength();
 			e.other.damage(this.damageValue);
 		}

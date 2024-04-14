@@ -9,7 +9,7 @@ import Stage from '@/game/scenes/Stage';
 import game from '@/game/game';
 import config from '@/config';
 import { Animations } from '@/game/resources/animations';
-import type Character from '@/game/components/character';
+import type Mob from '@/game/components/mob';
 import Smoke from '@/game/components/smoke';
 
 export default class Tombstone extends Actor implements HasConstruction {
@@ -52,10 +52,10 @@ export default class Tombstone extends Actor implements HasConstruction {
 
 	private attack() {
 		const sorted = this.scene.world.queryTags([TAGS.MOB]).entities.sort((a, b) => {
-			return (<Character>a).pos.distance(this.pos) < (<Character>b).pos.distance(this.pos) ? -1 : 1;
+			return (<Mob>a).pos.distance(this.pos) < (<Mob>b).pos.distance(this.pos) ? -1 : 1;
 		});
 
-		const nearest = (<Character>sorted[0]);
+		const nearest = (<Mob>sorted[0]);
 
 		if (nearest) {
 			this.animation.reset();

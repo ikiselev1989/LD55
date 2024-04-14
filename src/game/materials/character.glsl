@@ -13,5 +13,8 @@ void main() {
     vec3 color = vec3(1.);
     vec4 col = texture(u_graphic, v_uv);
 
+    //    fragColor.rgb = col.rgb * col.a;
     fragColor.rgb = mix(col.rgb, color.rgb, hitAmount) * col.a;
+    fragColor.a = col.a;
+
 }

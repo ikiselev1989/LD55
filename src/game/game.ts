@@ -101,7 +101,7 @@ class Game extends Engine {
 
 	playAnimation(actor: Actor, animation: Animations, strategy: AnimationStrategy = AnimationStrategy.Loop) {
 		return new Promise(resolve => {
-			const sprite = <Animation>res.animation.getAnimation(animation, strategy);
+			const sprite = <Animation>res.animation.getAnimation(animation, strategy)?.clone();
 
 			sprite.reset();
 			sprite.play();

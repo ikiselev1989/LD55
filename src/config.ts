@@ -18,6 +18,9 @@ export default {
 		maxHealth: 5,
 	},
 	objects: {
+		statue: {
+			strength: 3,
+		},
 		saw: {
 			damage: 1,
 			strength: 3,

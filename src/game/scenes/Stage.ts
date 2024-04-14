@@ -10,7 +10,6 @@ import ZAxisSortSystem from '@/game/partials/z-axis-sort-system';
 import Fireballs from '@/game/components/constructions/fireballs';
 import SpawnSystem from '@/game/spawn-system';
 import Statue from '@/game/components/statue';
-import { Assets } from '@/game/resources/assets';
 import { STAGE_EVENTS } from '@/enums';
 import { bones, constructionsBuilt } from '@/stores';
 import config from '@/config';
@@ -85,16 +84,10 @@ export default class Stage extends Scene {
 			vec(0, -120),
 		];
 
-		const assets = [
-			Assets.STATUES__1,
-			Assets.STATUES__3,
-			Assets.STATUES__2,
-		];
-
 		for (let [index, position] of positions.entries()) {
 			this.add(new Statue({
 				pos: position,
-			}, assets[index]));
+			}, index));
 		}
 	}
 }

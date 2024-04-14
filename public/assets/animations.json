@@ -1,9 +1,849 @@
 {
   "frames": {
-    "animations/a_enemy1/walk/00000001": {
+    "animations/a_statues/1/-00000001": {
       "frame": {
         "x": 2,
         "y": 2,
+        "w": 82,
+        "h": 169
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.390244,
+        "y": 0.970414
+      }
+    },
+    "animations/a_statues/1/-00000002": {
+      "frame": {
+        "x": 88,
+        "y": 2,
+        "w": 82,
+        "h": 169
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.390244,
+        "y": 0.970414
+      }
+    },
+    "animations/a_statues/1/-00000003": {
+      "frame": {
+        "x": 174,
+        "y": 2,
+        "w": 82,
+        "h": 169
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.390244,
+        "y": 0.970414
+      }
+    },
+    "animations/a_statues/1/-00000004": {
+      "frame": {
+        "x": 2,
+        "y": 175,
+        "w": 82,
+        "h": 169
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.390244,
+        "y": 0.970414
+      }
+    },
+    "animations/a_statues/1/-00000005": {
+      "frame": {
+        "x": 88,
+        "y": 175,
+        "w": 82,
+        "h": 169
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.390244,
+        "y": 0.970414
+      }
+    },
+    "animations/a_statues/1/-00000006": {
+      "frame": {
+        "x": 174,
+        "y": 175,
+        "w": 82,
+        "h": 169
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.390244,
+        "y": 0.970414
+      }
+    },
+    "animations/a_statues/1/-00000007": {
+      "frame": {
+        "x": 260,
+        "y": 2,
+        "w": 82,
+        "h": 169
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.390244,
+        "y": 0.970414
+      }
+    },
+    "animations/a_statues/1/-00000008": {
+      "frame": {
+        "x": 260,
+        "y": 175,
+        "w": 82,
+        "h": 169
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.390244,
+        "y": 0.970414
+      }
+    },
+    "animations/a_statues/1/-00000009": {
+      "frame": {
+        "x": 346,
+        "y": 2,
+        "w": 82,
+        "h": 169
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.390244,
+        "y": 0.970414
+      }
+    },
+    "animations/a_statues/1/-00000010": {
+      "frame": {
+        "x": 346,
+        "y": 175,
+        "w": 82,
+        "h": 169
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.390244,
+        "y": 0.970414
+      }
+    },
+    "animations/a_statues/1/-00000011": {
+      "frame": {
+        "x": 2,
+        "y": 348,
+        "w": 82,
+        "h": 169
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.390244,
+        "y": 0.970414
+      }
+    },
+    "animations/a_statues/1/-00000012": {
+      "frame": {
+        "x": 88,
+        "y": 348,
+        "w": 82,
+        "h": 169
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.390244,
+        "y": 0.970414
+      }
+    },
+    "animations/a_statues/1/-00000013": {
+      "frame": {
+        "x": 174,
+        "y": 348,
+        "w": 82,
+        "h": 169
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.390244,
+        "y": 0.970414
+      }
+    },
+    "animations/a_statues/1/-00000014": {
+      "frame": {
+        "x": 260,
+        "y": 348,
+        "w": 82,
+        "h": 169
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.390244,
+        "y": 0.970414
+      }
+    },
+    "animations/a_statues/1/-00000015": {
+      "frame": {
+        "x": 346,
+        "y": 348,
+        "w": 82,
+        "h": 169
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.390244,
+        "y": 0.970414
+      }
+    },
+    "animations/a_statues/1/-00000016": {
+      "frame": {
+        "x": 432,
+        "y": 2,
+        "w": 82,
+        "h": 169
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.390244,
+        "y": 0.970414
+      }
+    },
+    "animations/a_statues/1/-00000017": {
+      "frame": {
+        "x": 432,
+        "y": 175,
+        "w": 82,
+        "h": 169
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.390244,
+        "y": 0.970414
+      }
+    },
+    "animations/a_statues/1/-00000018": {
+      "frame": {
+        "x": 432,
+        "y": 348,
+        "w": 82,
+        "h": 169
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.390244,
+        "y": 0.970414
+      }
+    },
+    "animations/a_statues/1/-00000019": {
+      "frame": {
+        "x": 518,
+        "y": 2,
+        "w": 82,
+        "h": 169
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.390244,
+        "y": 0.970414
+      }
+    },
+    "animations/a_statues/1/-00000020": {
+      "frame": {
+        "x": 518,
+        "y": 175,
+        "w": 82,
+        "h": 169
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.390244,
+        "y": 0.970414
+      }
+    },
+    "animations/a_saw/vert/---0001": {
+      "frame": {
+        "x": 518,
+        "y": 348,
+        "w": 70,
+        "h": 157
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 157
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.471338
+      }
+    },
+    "animations/a_saw/vert/---0002": {
+      "frame": {
+        "x": 2,
+        "y": 521,
+        "w": 70,
+        "h": 157
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 157
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.471338
+      }
+    },
+    "animations/a_saw/vert/---0003": {
+      "frame": {
+        "x": 76,
+        "y": 521,
+        "w": 70,
+        "h": 157
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 157
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.471338
+      }
+    },
+    "animations/a_saw/vert/---0004": {
+      "frame": {
+        "x": 150,
+        "y": 521,
+        "w": 70,
+        "h": 157
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 157
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.471338
+      }
+    },
+    "animations/a_saw/vert/---0005": {
+      "frame": {
+        "x": 224,
+        "y": 521,
+        "w": 70,
+        "h": 157
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 157
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.471338
+      }
+    },
+    "animations/a_saw/vert/---0006": {
+      "frame": {
+        "x": 298,
+        "y": 521,
+        "w": 70,
+        "h": 157
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 157
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.471338
+      }
+    },
+    "animations/a_saw/vert/---0007": {
+      "frame": {
+        "x": 372,
+        "y": 521,
+        "w": 70,
+        "h": 157
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 157
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.471338
+      }
+    },
+    "animations/a_saw/vert/---0008": {
+      "frame": {
+        "x": 446,
+        "y": 521,
+        "w": 70,
+        "h": 157
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 157
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.471338
+      }
+    },
+    "animations/a_saw/vert/---0009": {
+      "frame": {
+        "x": 520,
+        "y": 509,
+        "w": 70,
+        "h": 157
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 157
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.471338
+      }
+    },
+    "animations/a_saw/vert/---0010": {
+      "frame": {
+        "x": 592,
+        "y": 348,
+        "w": 70,
+        "h": 157
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 157
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.471338
+      }
+    },
+    "animations/a_saw/vert/---0011": {
+      "frame": {
+        "x": 604,
+        "y": 2,
+        "w": 70,
+        "h": 157
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 157
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.471338
+      }
+    },
+    "animations/a_enemy1/death/11110001": {
+      "frame": {
+        "x": 678,
+        "y": 2,
+        "w": 150,
+        "h": 118
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 150,
+        "h": 118
+      },
+      "sourceSize": {
+        "w": 150,
+        "h": 118
+      },
+      "pivot": {
+        "x": 0.473333,
+        "y": 0.983051
+      }
+    },
+    "animations/a_enemy1/death/11110003": {
+      "frame": {
+        "x": 678,
+        "y": 124,
+        "w": 150,
+        "h": 118
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 150,
+        "h": 118
+      },
+      "sourceSize": {
+        "w": 150,
+        "h": 118
+      },
+      "pivot": {
+        "x": 0.473333,
+        "y": 0.983051
+      }
+    },
+    "animations/a_enemy1/death/11110005": {
+      "frame": {
+        "x": 666,
+        "y": 246,
+        "w": 150,
+        "h": 118
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 150,
+        "h": 118
+      },
+      "sourceSize": {
+        "w": 150,
+        "h": 118
+      },
+      "pivot": {
+        "x": 0.473333,
+        "y": 0.983051
+      }
+    },
+    "animations/a_enemy1/death/11110007": {
+      "frame": {
+        "x": 666,
+        "y": 368,
+        "w": 150,
+        "h": 118
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 150,
+        "h": 118
+      },
+      "sourceSize": {
+        "w": 150,
+        "h": 118
+      },
+      "pivot": {
+        "x": 0.473333,
+        "y": 0.983051
+      }
+    },
+    "animations/a_enemy1/walk/00000001": {
+      "frame": {
+        "x": 666,
+        "y": 490,
         "w": 141,
         "h": 140
       },
@@ -27,7 +867,7 @@
     "animations/a_enemy1/walk/00000003": {
       "frame": {
         "x": 2,
-        "y": 146,
+        "y": 682,
         "w": 141,
         "h": 140
       },
@@ -51,7 +891,7 @@
     "animations/a_enemy1/walk/00000005": {
       "frame": {
         "x": 147,
-        "y": 2,
+        "y": 682,
         "w": 141,
         "h": 140
       },
@@ -74,8 +914,8 @@
     },
     "animations/a_enemy1/walk/00000007": {
       "frame": {
-        "x": 147,
-        "y": 146,
+        "x": 292,
+        "y": 682,
         "w": 141,
         "h": 140
       },
@@ -98,8 +938,8 @@
     },
     "animations/a_enemy1/walk/00000009": {
       "frame": {
-        "x": 2,
-        "y": 290,
+        "x": 437,
+        "y": 682,
         "w": 141,
         "h": 140
       },
@@ -120,850 +960,322 @@
         "y": 0.992857
       }
     },
-    "animations/a_tombstone/smoke/444440001": {
+    "animations/a_statues/2/222222220001": {
       "frame": {
-        "x": 147,
-        "y": 290,
-        "w": 137,
-        "h": 137
+        "x": 582,
+        "y": 670,
+        "w": 92,
+        "h": 139
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 137,
-        "h": 137
+        "w": 92,
+        "h": 139
       },
       "sourceSize": {
-        "w": 137,
-        "h": 137
+        "w": 92,
+        "h": 139
       },
       "pivot": {
-        "x": 0,
-        "y": 0
+        "x": 0.315217,
+        "y": 0.884892
       }
     },
-    "animations/a_tombstone/smoke/444440002": {
+    "animations/a_statues/2/222222220002": {
       "frame": {
-        "x": 288,
-        "y": 290,
-        "w": 137,
-        "h": 137
+        "x": 678,
+        "y": 634,
+        "w": 92,
+        "h": 139
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 137,
-        "h": 137
+        "w": 92,
+        "h": 139
       },
       "sourceSize": {
-        "w": 137,
-        "h": 137
+        "w": 92,
+        "h": 139
       },
       "pivot": {
-        "x": 0,
-        "y": 0
+        "x": 0.315217,
+        "y": 0.884892
       }
     },
-    "animations/a_tombstone/smoke/444440003": {
-      "frame": {
-        "x": 292,
-        "y": 2,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440004": {
-      "frame": {
-        "x": 292,
-        "y": 143,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440005": {
-      "frame": {
-        "x": 429,
-        "y": 284,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440006": {
-      "frame": {
-        "x": 433,
-        "y": 2,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440007": {
-      "frame": {
-        "x": 433,
-        "y": 143,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440008": {
-      "frame": {
-        "x": 429,
-        "y": 425,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440009": {
-      "frame": {
-        "x": 147,
-        "y": 431,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440010": {
-      "frame": {
-        "x": 288,
-        "y": 431,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440011": {
+    "animations/a_statues/2/222222220003": {
       "frame": {
         "x": 2,
-        "y": 434,
-        "w": 137,
-        "h": 137
+        "y": 826,
+        "w": 92,
+        "h": 139
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 137,
-        "h": 137
+        "w": 92,
+        "h": 139
       },
       "sourceSize": {
-        "w": 137,
-        "h": 137
+        "w": 92,
+        "h": 139
       },
       "pivot": {
-        "x": 0,
-        "y": 0
+        "x": 0.315217,
+        "y": 0.884892
       }
     },
-    "animations/a_tombstone/smoke/444440012": {
+    "animations/a_statues/2/222222220004": {
       "frame": {
-        "x": 570,
-        "y": 284,
-        "w": 137,
-        "h": 137
+        "x": 98,
+        "y": 826,
+        "w": 92,
+        "h": 139
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 137,
-        "h": 137
+        "w": 92,
+        "h": 139
       },
       "sourceSize": {
-        "w": 137,
-        "h": 137
+        "w": 92,
+        "h": 139
       },
       "pivot": {
-        "x": 0,
-        "y": 0
+        "x": 0.315217,
+        "y": 0.884892
       }
     },
-    "animations/a_tombstone/smoke/444440013": {
+    "animations/a_statues/2/222222220005": {
       "frame": {
-        "x": 570,
-        "y": 425,
-        "w": 137,
-        "h": 137
+        "x": 194,
+        "y": 826,
+        "w": 92,
+        "h": 139
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 137,
-        "h": 137
+        "w": 92,
+        "h": 139
       },
       "sourceSize": {
-        "w": 137,
-        "h": 137
+        "w": 92,
+        "h": 139
       },
       "pivot": {
-        "x": 0,
-        "y": 0
+        "x": 0.315217,
+        "y": 0.884892
       }
     },
-    "animations/a_tombstone/smoke/444440014": {
+    "animations/a_statues/2/222222220006": {
       "frame": {
-        "x": 574,
+        "x": 290,
+        "y": 826,
+        "w": 92,
+        "h": 139
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 92,
+        "h": 139
+      },
+      "sourceSize": {
+        "w": 92,
+        "h": 139
+      },
+      "pivot": {
+        "x": 0.315217,
+        "y": 0.884892
+      }
+    },
+    "animations/a_statues/2/222222220007": {
+      "frame": {
+        "x": 386,
+        "y": 826,
+        "w": 92,
+        "h": 139
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 92,
+        "h": 139
+      },
+      "sourceSize": {
+        "w": 92,
+        "h": 139
+      },
+      "pivot": {
+        "x": 0.315217,
+        "y": 0.884892
+      }
+    },
+    "animations/a_statues/2/222222220014": {
+      "frame": {
+        "x": 482,
+        "y": 826,
+        "w": 92,
+        "h": 139
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 92,
+        "h": 139
+      },
+      "sourceSize": {
+        "w": 92,
+        "h": 139
+      },
+      "pivot": {
+        "x": 0.315217,
+        "y": 0.884892
+      }
+    },
+    "animations/a_statues/2/222222220015": {
+      "frame": {
+        "x": 578,
+        "y": 826,
+        "w": 92,
+        "h": 139
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 92,
+        "h": 139
+      },
+      "sourceSize": {
+        "w": 92,
+        "h": 139
+      },
+      "pivot": {
+        "x": 0.315217,
+        "y": 0.884892
+      }
+    },
+    "animations/a_statues/2/222222220016": {
+      "frame": {
+        "x": 674,
+        "y": 813,
+        "w": 92,
+        "h": 139
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 92,
+        "h": 139
+      },
+      "sourceSize": {
+        "w": 92,
+        "h": 139
+      },
+      "pivot": {
+        "x": 0.315217,
+        "y": 0.884892
+      }
+    },
+    "animations/a_statues/2/222222220017": {
+      "frame": {
+        "x": 832,
         "y": 2,
-        "w": 137,
-        "h": 137
+        "w": 92,
+        "h": 139
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 137,
-        "h": 137
+        "w": 92,
+        "h": 139
       },
       "sourceSize": {
-        "w": 137,
-        "h": 137
+        "w": 92,
+        "h": 139
       },
       "pivot": {
-        "x": 0,
-        "y": 0
+        "x": 0.315217,
+        "y": 0.884892
       }
     },
-    "animations/a_tombstone/smoke/444440015": {
+    "animations/a_statues/2/222222220018": {
       "frame": {
-        "x": 574,
-        "y": 143,
-        "w": 137,
-        "h": 137
+        "x": 832,
+        "y": 145,
+        "w": 92,
+        "h": 139
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 137,
-        "h": 137
+        "w": 92,
+        "h": 139
       },
       "sourceSize": {
-        "w": 137,
-        "h": 137
+        "w": 92,
+        "h": 139
       },
       "pivot": {
-        "x": 0,
-        "y": 0
+        "x": 0.315217,
+        "y": 0.884892
       }
     },
-    "animations/a_tombstone/smoke/444440016": {
+    "animations/a_statues/2/222222220019": {
       "frame": {
-        "x": 429,
-        "y": 566,
-        "w": 137,
-        "h": 137
+        "x": 820,
+        "y": 288,
+        "w": 92,
+        "h": 139
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 137,
-        "h": 137
+        "w": 92,
+        "h": 139
       },
       "sourceSize": {
-        "w": 137,
-        "h": 137
+        "w": 92,
+        "h": 139
       },
       "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440017": {
-      "frame": {
-        "x": 570,
-        "y": 566,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440018": {
-      "frame": {
-        "x": 143,
-        "y": 572,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440019": {
-      "frame": {
-        "x": 2,
-        "y": 575,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440020": {
-      "frame": {
-        "x": 284,
-        "y": 572,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440021": {
-      "frame": {
-        "x": 711,
-        "y": 284,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440022": {
-      "frame": {
-        "x": 715,
-        "y": 2,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440023": {
-      "frame": {
-        "x": 715,
-        "y": 143,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440024": {
-      "frame": {
-        "x": 711,
-        "y": 425,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440025": {
-      "frame": {
-        "x": 711,
-        "y": 566,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440026": {
-      "frame": {
-        "x": 425,
-        "y": 707,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440027": {
-      "frame": {
-        "x": 143,
-        "y": 713,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440028": {
-      "frame": {
-        "x": 2,
-        "y": 716,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440029": {
-      "frame": {
-        "x": 284,
-        "y": 713,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440030": {
-      "frame": {
-        "x": 566,
-        "y": 707,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_tombstone/smoke/444440031": {
-      "frame": {
-        "x": 707,
-        "y": 707,
-        "w": 137,
-        "h": 137
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 137,
-        "h": 137
-      },
-      "sourceSize": {
-        "w": 137,
-        "h": 137
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "animations/a_enemy1/death/11110001": {
-      "frame": {
-        "x": 848,
-        "y": 707,
-        "w": 150,
-        "h": 118
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 150,
-        "h": 118
-      },
-      "sourceSize": {
-        "w": 150,
-        "h": 118
-      },
-      "pivot": {
-        "x": 0.473333,
-        "y": 0.983051
-      }
-    },
-    "animations/a_enemy1/death/11110003": {
-      "frame": {
-        "x": 852,
-        "y": 284,
-        "w": 150,
-        "h": 118
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 150,
-        "h": 118
-      },
-      "sourceSize": {
-        "w": 150,
-        "h": 118
-      },
-      "pivot": {
-        "x": 0.473333,
-        "y": 0.983051
-      }
-    },
-    "animations/a_enemy1/death/11110005": {
-      "frame": {
-        "x": 856,
-        "y": 2,
-        "w": 150,
-        "h": 118
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 150,
-        "h": 118
-      },
-      "sourceSize": {
-        "w": 150,
-        "h": 118
-      },
-      "pivot": {
-        "x": 0.473333,
-        "y": 0.983051
-      }
-    },
-    "animations/a_enemy1/death/11110007": {
-      "frame": {
-        "x": 856,
-        "y": 124,
-        "w": 150,
-        "h": 118
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 150,
-        "h": 118
-      },
-      "sourceSize": {
-        "w": 150,
-        "h": 118
-      },
-      "pivot": {
-        "x": 0.473333,
-        "y": 0.983051
+        "x": 0.315217,
+        "y": 0.884892
       }
     },
     "animations/a_tombstone/attack/33330001": {
       "frame": {
-        "x": 852,
-        "y": 406,
+        "x": 774,
+        "y": 634,
         "w": 128,
         "h": 138
       },
@@ -986,8 +1298,8 @@
     },
     "animations/a_tombstone/attack/33330002": {
       "frame": {
-        "x": 852,
-        "y": 548,
+        "x": 774,
+        "y": 776,
         "w": 128,
         "h": 138
       },
@@ -1010,8 +1322,8 @@
     },
     "animations/a_tombstone/attack/33330004": {
       "frame": {
-        "x": 848,
-        "y": 829,
+        "x": 928,
+        "y": 2,
         "w": 128,
         "h": 138
       },
@@ -1034,8 +1346,8 @@
     },
     "animations/a_tombstone/attack/33330006": {
       "frame": {
-        "x": 425,
-        "y": 848,
+        "x": 928,
+        "y": 144,
         "w": 128,
         "h": 138
       },
@@ -1058,8 +1370,8 @@
     },
     "animations/a_tombstone/attack/33330008": {
       "frame": {
-        "x": 143,
-        "y": 854,
+        "x": 928,
+        "y": 286,
         "w": 128,
         "h": 138
       },
@@ -1082,8 +1394,8 @@
     },
     "animations/a_tombstone/attack/33330010": {
       "frame": {
-        "x": 2,
-        "y": 857,
+        "x": 811,
+        "y": 490,
         "w": 128,
         "h": 138
       },
@@ -1106,8 +1418,8 @@
     },
     "animations/a_tombstone/attack/33330012": {
       "frame": {
-        "x": 275,
-        "y": 854,
+        "x": 906,
+        "y": 632,
         "w": 128,
         "h": 138
       },
@@ -1128,274 +1440,1066 @@
         "y": 0.956522
       }
     },
-    "animations/a_saw/vert/---0001": {
+    "animations/a_tombstone/smoke/444440001": {
       "frame": {
-        "x": 557,
-        "y": 971,
-        "w": 70,
-        "h": 157
+        "x": 906,
+        "y": 774,
+        "w": 137,
+        "h": 137
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 70,
-        "h": 157
+        "w": 137,
+        "h": 137
       },
       "sourceSize": {
-        "w": 70,
-        "h": 157
+        "w": 137,
+        "h": 137
       },
       "pivot": {
-        "x": 0.5,
-        "y": 0.471338
-      }
-    },
-    "animations/a_saw/vert/---0002": {
-      "frame": {
-        "x": 407,
-        "y": 990,
-        "w": 70,
-        "h": 157
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
         "x": 0,
-        "y": 0,
-        "w": 70,
-        "h": 157
-      },
-      "sourceSize": {
-        "w": 70,
-        "h": 157
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.471338
+        "y": 0
       }
     },
-    "animations/a_saw/vert/---0003": {
-      "frame": {
-        "x": 481,
-        "y": 990,
-        "w": 70,
-        "h": 157
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 70,
-        "h": 157
-      },
-      "sourceSize": {
-        "w": 70,
-        "h": 157
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.471338
-      }
-    },
-    "animations/a_saw/vert/---0004": {
-      "frame": {
-        "x": 134,
-        "y": 996,
-        "w": 70,
-        "h": 157
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 70,
-        "h": 157
-      },
-      "sourceSize": {
-        "w": 70,
-        "h": 157
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.471338
-      }
-    },
-    "animations/a_saw/vert/---0005": {
+    "animations/a_tombstone/smoke/444440002": {
       "frame": {
         "x": 2,
-        "y": 999,
-        "w": 70,
-        "h": 157
+        "y": 969,
+        "w": 137,
+        "h": 137
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 70,
-        "h": 157
+        "w": 137,
+        "h": 137
       },
       "sourceSize": {
-        "w": 70,
-        "h": 157
+        "w": 137,
+        "h": 137
       },
       "pivot": {
-        "x": 0.5,
-        "y": 0.471338
+        "x": 0,
+        "y": 0
       }
     },
-    "animations/a_saw/vert/---0006": {
+    "animations/a_tombstone/smoke/444440003": {
       "frame": {
-        "x": 208,
-        "y": 996,
-        "w": 70,
-        "h": 157
+        "x": 143,
+        "y": 969,
+        "w": 137,
+        "h": 137
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 70,
-        "h": 157
+        "w": 137,
+        "h": 137
       },
       "sourceSize": {
-        "w": 70,
-        "h": 157
+        "w": 137,
+        "h": 137
       },
       "pivot": {
-        "x": 0.5,
-        "y": 0.471338
+        "x": 0,
+        "y": 0
       }
     },
-    "animations/a_saw/vert/---0007": {
+    "animations/a_tombstone/smoke/444440004": {
       "frame": {
-        "x": 282,
-        "y": 996,
-        "w": 70,
-        "h": 157
+        "x": 284,
+        "y": 969,
+        "w": 137,
+        "h": 137
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 70,
-        "h": 157
+        "w": 137,
+        "h": 137
       },
       "sourceSize": {
-        "w": 70,
-        "h": 157
+        "w": 137,
+        "h": 137
       },
       "pivot": {
-        "x": 0.5,
-        "y": 0.471338
+        "x": 0,
+        "y": 0
       }
     },
-    "animations/a_saw/vert/---0008": {
+    "animations/a_tombstone/smoke/444440005": {
       "frame": {
-        "x": 631,
+        "x": 425,
+        "y": 969,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440006": {
+      "frame": {
+        "x": 566,
+        "y": 969,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440007": {
+      "frame": {
+        "x": 906,
+        "y": 915,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440008": {
+      "frame": {
+        "x": 707,
+        "y": 956,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440009": {
+      "frame": {
+        "x": 1060,
+        "y": 2,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440010": {
+      "frame": {
+        "x": 1060,
+        "y": 143,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440011": {
+      "frame": {
+        "x": 1060,
+        "y": 284,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440012": {
+      "frame": {
+        "x": 1060,
+        "y": 425,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440013": {
+      "frame": {
+        "x": 1047,
+        "y": 566,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440014": {
+      "frame": {
+        "x": 1047,
+        "y": 707,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440015": {
+      "frame": {
+        "x": 1047,
         "y": 848,
-        "w": 70,
-        "h": 157
+        "w": 137,
+        "h": 137
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 70,
-        "h": 157
+        "w": 137,
+        "h": 137
       },
       "sourceSize": {
-        "w": 70,
-        "h": 157
+        "w": 137,
+        "h": 137
       },
       "pivot": {
-        "x": 0.5,
-        "y": 0.471338
+        "x": 0,
+        "y": 0
       }
     },
-    "animations/a_saw/vert/---0009": {
+    "animations/a_tombstone/smoke/444440016": {
       "frame": {
-        "x": 705,
+        "x": 2,
+        "y": 1110,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440017": {
+      "frame": {
+        "x": 143,
+        "y": 1110,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440018": {
+      "frame": {
+        "x": 284,
+        "y": 1110,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440019": {
+      "frame": {
+        "x": 425,
+        "y": 1110,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440020": {
+      "frame": {
+        "x": 566,
+        "y": 1110,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440021": {
+      "frame": {
+        "x": 707,
+        "y": 1097,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440022": {
+      "frame": {
+        "x": 1047,
+        "y": 989,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440023": {
+      "frame": {
+        "x": 848,
+        "y": 1056,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440024": {
+      "frame": {
+        "x": 1201,
+        "y": 2,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440025": {
+      "frame": {
+        "x": 1201,
+        "y": 143,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440026": {
+      "frame": {
+        "x": 1201,
+        "y": 284,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440027": {
+      "frame": {
+        "x": 1201,
+        "y": 425,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440028": {
+      "frame": {
+        "x": 1188,
+        "y": 566,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440029": {
+      "frame": {
+        "x": 1188,
+        "y": 707,
+        "w": 137,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_tombstone/smoke/444440030": {
+      "frame": {
+        "x": 1188,
         "y": 848,
-        "w": 70,
-        "h": 157
+        "w": 137,
+        "h": 137
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 70,
-        "h": 157
+        "w": 137,
+        "h": 137
       },
       "sourceSize": {
-        "w": 70,
-        "h": 157
+        "w": 137,
+        "h": 137
       },
       "pivot": {
-        "x": 0.5,
-        "y": 0.471338
+        "x": 0,
+        "y": 0
       }
     },
-    "animations/a_saw/vert/---0010": {
+    "animations/a_tombstone/smoke/444440031": {
       "frame": {
-        "x": 779,
-        "y": 971,
-        "w": 70,
-        "h": 157
+        "x": 1188,
+        "y": 989,
+        "w": 137,
+        "h": 137
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 70,
-        "h": 157
+        "w": 137,
+        "h": 137
       },
       "sourceSize": {
-        "w": 70,
-        "h": 157
+        "w": 137,
+        "h": 137
       },
       "pivot": {
-        "x": 0.5,
-        "y": 0.471338
+        "x": 0,
+        "y": 0
       }
     },
-    "animations/a_saw/vert/---0011": {
+    "animations/a_statues/3/87660001": {
       "frame": {
-        "x": 853,
-        "y": 971,
-        "w": 70,
-        "h": 157
+        "x": 943,
+        "y": 428,
+        "w": 109,
+        "h": 129
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 70,
-        "h": 157
+        "w": 109,
+        "h": 129
       },
       "sourceSize": {
-        "w": 70,
-        "h": 157
+        "w": 109,
+        "h": 129
       },
       "pivot": {
-        "x": 0.5,
-        "y": 0.471338
+        "x": 0.449541,
+        "y": 0.852713
+      }
+    },
+    "animations/a_statues/3/87660002": {
+      "frame": {
+        "x": 2,
+        "y": 1251,
+        "w": 109,
+        "h": 129
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 129
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.449541,
+        "y": 0.852713
+      }
+    },
+    "animations/a_statues/3/87660003": {
+      "frame": {
+        "x": 115,
+        "y": 1251,
+        "w": 109,
+        "h": 129
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 129
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.449541,
+        "y": 0.852713
+      }
+    },
+    "animations/a_statues/3/87660004": {
+      "frame": {
+        "x": 228,
+        "y": 1251,
+        "w": 109,
+        "h": 129
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 129
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.449541,
+        "y": 0.852713
+      }
+    },
+    "animations/a_statues/3/87660005": {
+      "frame": {
+        "x": 341,
+        "y": 1251,
+        "w": 109,
+        "h": 129
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 129
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.449541,
+        "y": 0.852713
+      }
+    },
+    "animations/a_statues/3/87660006": {
+      "frame": {
+        "x": 454,
+        "y": 1251,
+        "w": 109,
+        "h": 129
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 129
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.449541,
+        "y": 0.852713
+      }
+    },
+    "animations/a_statues/3/87660007": {
+      "frame": {
+        "x": 567,
+        "y": 1251,
+        "w": 109,
+        "h": 129
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 129
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.449541,
+        "y": 0.852713
+      }
+    },
+    "animations/a_statues/3/87660014": {
+      "frame": {
+        "x": 680,
+        "y": 1251,
+        "w": 109,
+        "h": 129
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 129
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.449541,
+        "y": 0.852713
+      }
+    },
+    "animations/a_statues/3/87660015": {
+      "frame": {
+        "x": 793,
+        "y": 1238,
+        "w": 109,
+        "h": 129
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 129
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.449541,
+        "y": 0.852713
+      }
+    },
+    "animations/a_statues/3/87660016": {
+      "frame": {
+        "x": 906,
+        "y": 1197,
+        "w": 109,
+        "h": 129
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 129
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.449541,
+        "y": 0.852713
+      }
+    },
+    "animations/a_statues/3/87660017": {
+      "frame": {
+        "x": 1019,
+        "y": 1130,
+        "w": 109,
+        "h": 129
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 129
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.449541,
+        "y": 0.852713
+      }
+    },
+    "animations/a_statues/3/87660018": {
+      "frame": {
+        "x": 1132,
+        "y": 1130,
+        "w": 109,
+        "h": 129
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 129
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.449541,
+        "y": 0.852713
+      }
+    },
+    "animations/a_statues/3/87660019": {
+      "frame": {
+        "x": 1342,
+        "y": 2,
+        "w": 109,
+        "h": 129
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 129
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.449541,
+        "y": 0.852713
       }
     },
     "animations/a_saw/hor/LLL0001": {
       "frame": {
-        "x": 631,
-        "y": 1009,
+        "x": 1342,
+        "y": 135,
         "w": 89,
         "h": 94
       },
@@ -1418,8 +2522,8 @@
     },
     "animations/a_saw/hor/LLL0002": {
       "frame": {
-        "x": 927,
-        "y": 971,
+        "x": 1342,
+        "y": 233,
         "w": 89,
         "h": 94
       },
@@ -1442,8 +2546,8 @@
     },
     "animations/a_saw/hor/LLL0003": {
       "frame": {
-        "x": 980,
-        "y": 829,
+        "x": 1342,
+        "y": 331,
         "w": 89,
         "h": 94
       },
@@ -1466,8 +2570,8 @@
     },
     "animations/a_saw/hor/LLL0004": {
       "frame": {
-        "x": 984,
-        "y": 406,
+        "x": 1342,
+        "y": 429,
         "w": 89,
         "h": 94
       },
@@ -1490,8 +2594,8 @@
     },
     "animations/a_saw/hor/LLL0005": {
       "frame": {
-        "x": 1006,
-        "y": 246,
+        "x": 1342,
+        "y": 527,
         "w": 89,
         "h": 94
       },
@@ -1514,8 +2618,8 @@
     },
     "animations/a_saw/hor/LLL0006": {
       "frame": {
-        "x": 1010,
-        "y": 2,
+        "x": 1019,
+        "y": 1263,
         "w": 89,
         "h": 94
       },
@@ -1538,8 +2642,8 @@
     },
     "animations/a_saw/hor/LLL0007": {
       "frame": {
-        "x": 1010,
-        "y": 100,
+        "x": 1112,
+        "y": 1263,
         "w": 89,
         "h": 94
       },
@@ -1562,8 +2666,8 @@
     },
     "animations/a_saw/hor/LLL0008": {
       "frame": {
-        "x": 984,
-        "y": 504,
+        "x": 1205,
+        "y": 1263,
         "w": 89,
         "h": 94
       },
@@ -1586,8 +2690,8 @@
     },
     "animations/a_saw/hor/LLL0009": {
       "frame": {
-        "x": 984,
-        "y": 602,
+        "x": 1329,
+        "y": 625,
         "w": 89,
         "h": 94
       },
@@ -1610,8 +2714,8 @@
     },
     "animations/a_saw/hor/LLL0010": {
       "frame": {
-        "x": 1002,
-        "y": 700,
+        "x": 1329,
+        "y": 723,
         "w": 89,
         "h": 94
       },
@@ -1634,8 +2738,8 @@
     },
     "animations/a_saw/hor/LLL0011": {
       "frame": {
-        "x": 1020,
-        "y": 927,
+        "x": 1329,
+        "y": 821,
         "w": 89,
         "h": 94
       },
@@ -1658,8 +2762,8 @@
     },
     "animations/a_fireball/2020200001": {
       "frame": {
-        "x": 779,
-        "y": 848,
+        "x": 943,
+        "y": 561,
         "w": 65,
         "h": 65
       },
@@ -1682,8 +2786,8 @@
     },
     "animations/a_fireball/2020200003": {
       "frame": {
-        "x": 557,
-        "y": 848,
+        "x": 594,
+        "y": 509,
         "w": 65,
         "h": 65
       },
@@ -1706,8 +2810,8 @@
     },
     "animations/a_fireball/2020200005": {
       "frame": {
-        "x": 1073,
-        "y": 798,
+        "x": 594,
+        "y": 578,
         "w": 65,
         "h": 65
       },
@@ -1730,8 +2834,8 @@
     },
     "animations/a_fireball/2020200007": {
       "frame": {
-        "x": 1020,
-        "y": 1025,
+        "x": 604,
+        "y": 163,
         "w": 65,
         "h": 65
       },
@@ -1754,8 +2858,8 @@
     },
     "animations/a_enemy1/death/11110002": {
       "frame": {
-        "x": 848,
-        "y": 707,
+        "x": 678,
+        "y": 2,
         "w": 150,
         "h": 118
       },
@@ -1778,8 +2882,8 @@
     },
     "animations/a_enemy1/death/11110004": {
       "frame": {
-        "x": 852,
-        "y": 284,
+        "x": 678,
+        "y": 124,
         "w": 150,
         "h": 118
       },
@@ -1802,8 +2906,8 @@
     },
     "animations/a_enemy1/death/11110006": {
       "frame": {
-        "x": 856,
-        "y": 2,
+        "x": 666,
+        "y": 246,
         "w": 150,
         "h": 118
       },
@@ -1826,8 +2930,8 @@
     },
     "animations/a_enemy1/death/11110008": {
       "frame": {
-        "x": 856,
-        "y": 124,
+        "x": 666,
+        "y": 368,
         "w": 150,
         "h": 118
       },
@@ -1850,8 +2954,8 @@
     },
     "animations/a_enemy1/walk/00000002": {
       "frame": {
-        "x": 2,
-        "y": 2,
+        "x": 666,
+        "y": 490,
         "w": 141,
         "h": 140
       },
@@ -1875,7 +2979,7 @@
     "animations/a_enemy1/walk/00000004": {
       "frame": {
         "x": 2,
-        "y": 146,
+        "y": 682,
         "w": 141,
         "h": 140
       },
@@ -1899,7 +3003,7 @@
     "animations/a_enemy1/walk/00000006": {
       "frame": {
         "x": 147,
-        "y": 2,
+        "y": 682,
         "w": 141,
         "h": 140
       },
@@ -1922,8 +3026,8 @@
     },
     "animations/a_enemy1/walk/00000008": {
       "frame": {
-        "x": 147,
-        "y": 146,
+        "x": 292,
+        "y": 682,
         "w": 141,
         "h": 140
       },
@@ -1946,8 +3050,8 @@
     },
     "animations/a_enemy1/walk/00000010": {
       "frame": {
-        "x": 2,
-        "y": 290,
+        "x": 437,
+        "y": 682,
         "w": 141,
         "h": 140
       },
@@ -1970,8 +3074,8 @@
     },
     "animations/a_fireball/2020200002": {
       "frame": {
-        "x": 779,
-        "y": 848,
+        "x": 943,
+        "y": 561,
         "w": 65,
         "h": 65
       },
@@ -1994,8 +3098,8 @@
     },
     "animations/a_fireball/2020200004": {
       "frame": {
-        "x": 557,
-        "y": 848,
+        "x": 594,
+        "y": 509,
         "w": 65,
         "h": 65
       },
@@ -2018,8 +3122,8 @@
     },
     "animations/a_fireball/2020200006": {
       "frame": {
-        "x": 1073,
-        "y": 798,
+        "x": 594,
+        "y": 578,
         "w": 65,
         "h": 65
       },
@@ -2042,8 +3146,8 @@
     },
     "animations/a_saw/vert/---0012": {
       "frame": {
-        "x": 557,
-        "y": 971,
+        "x": 518,
+        "y": 348,
         "w": 70,
         "h": 157
       },
@@ -2064,10 +3168,418 @@
         "y": 0.471338
       }
     },
+    "animations/a_statues/1/-00000021": {
+      "frame": {
+        "x": 2,
+        "y": 2,
+        "w": 82,
+        "h": 169
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.390244,
+        "y": 0.970414
+      }
+    },
+    "animations/a_statues/2/222222220020": {
+      "frame": {
+        "x": 582,
+        "y": 670,
+        "w": 92,
+        "h": 139
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 92,
+        "h": 139
+      },
+      "sourceSize": {
+        "w": 92,
+        "h": 139
+      },
+      "pivot": {
+        "x": 0.315217,
+        "y": 0.884892
+      }
+    },
+    "animations/a_statues/2/222222220021": {
+      "frame": {
+        "x": 582,
+        "y": 670,
+        "w": 92,
+        "h": 139
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 92,
+        "h": 139
+      },
+      "sourceSize": {
+        "w": 92,
+        "h": 139
+      },
+      "pivot": {
+        "x": 0.315217,
+        "y": 0.884892
+      }
+    },
+    "animations/a_statues/2/222222220008": {
+      "frame": {
+        "x": 386,
+        "y": 826,
+        "w": 92,
+        "h": 139
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 92,
+        "h": 139
+      },
+      "sourceSize": {
+        "w": 92,
+        "h": 139
+      },
+      "pivot": {
+        "x": 0.315217,
+        "y": 0.884892
+      }
+    },
+    "animations/a_statues/2/222222220009": {
+      "frame": {
+        "x": 386,
+        "y": 826,
+        "w": 92,
+        "h": 139
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 92,
+        "h": 139
+      },
+      "sourceSize": {
+        "w": 92,
+        "h": 139
+      },
+      "pivot": {
+        "x": 0.315217,
+        "y": 0.884892
+      }
+    },
+    "animations/a_statues/2/222222220010": {
+      "frame": {
+        "x": 386,
+        "y": 826,
+        "w": 92,
+        "h": 139
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 92,
+        "h": 139
+      },
+      "sourceSize": {
+        "w": 92,
+        "h": 139
+      },
+      "pivot": {
+        "x": 0.315217,
+        "y": 0.884892
+      }
+    },
+    "animations/a_statues/2/222222220011": {
+      "frame": {
+        "x": 386,
+        "y": 826,
+        "w": 92,
+        "h": 139
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 92,
+        "h": 139
+      },
+      "sourceSize": {
+        "w": 92,
+        "h": 139
+      },
+      "pivot": {
+        "x": 0.315217,
+        "y": 0.884892
+      }
+    },
+    "animations/a_statues/2/222222220012": {
+      "frame": {
+        "x": 386,
+        "y": 826,
+        "w": 92,
+        "h": 139
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 92,
+        "h": 139
+      },
+      "sourceSize": {
+        "w": 92,
+        "h": 139
+      },
+      "pivot": {
+        "x": 0.315217,
+        "y": 0.884892
+      }
+    },
+    "animations/a_statues/2/222222220013": {
+      "frame": {
+        "x": 386,
+        "y": 826,
+        "w": 92,
+        "h": 139
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 92,
+        "h": 139
+      },
+      "sourceSize": {
+        "w": 92,
+        "h": 139
+      },
+      "pivot": {
+        "x": 0.315217,
+        "y": 0.884892
+      }
+    },
+    "animations/a_statues/3/87660020": {
+      "frame": {
+        "x": 943,
+        "y": 428,
+        "w": 109,
+        "h": 129
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 129
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.449541,
+        "y": 0.852713
+      }
+    },
+    "animations/a_statues/3/87660021": {
+      "frame": {
+        "x": 943,
+        "y": 428,
+        "w": 109,
+        "h": 129
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 129
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.449541,
+        "y": 0.852713
+      }
+    },
+    "animations/a_statues/3/87660008": {
+      "frame": {
+        "x": 567,
+        "y": 1251,
+        "w": 109,
+        "h": 129
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 129
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.449541,
+        "y": 0.852713
+      }
+    },
+    "animations/a_statues/3/87660009": {
+      "frame": {
+        "x": 567,
+        "y": 1251,
+        "w": 109,
+        "h": 129
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 129
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.449541,
+        "y": 0.852713
+      }
+    },
+    "animations/a_statues/3/87660010": {
+      "frame": {
+        "x": 567,
+        "y": 1251,
+        "w": 109,
+        "h": 129
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 129
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.449541,
+        "y": 0.852713
+      }
+    },
+    "animations/a_statues/3/87660011": {
+      "frame": {
+        "x": 567,
+        "y": 1251,
+        "w": 109,
+        "h": 129
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 129
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.449541,
+        "y": 0.852713
+      }
+    },
+    "animations/a_statues/3/87660012": {
+      "frame": {
+        "x": 567,
+        "y": 1251,
+        "w": 109,
+        "h": 129
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 129
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.449541,
+        "y": 0.852713
+      }
+    },
+    "animations/a_statues/3/87660013": {
+      "frame": {
+        "x": 567,
+        "y": 1251,
+        "w": 109,
+        "h": 129
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 129
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.449541,
+        "y": 0.852713
+      }
+    },
     "animations/a_tombstone/attack/33330013": {
       "frame": {
-        "x": 852,
-        "y": 406,
+        "x": 774,
+        "y": 634,
         "w": 128,
         "h": 138
       },
@@ -2090,8 +3602,8 @@
     },
     "animations/a_tombstone/attack/33330003": {
       "frame": {
-        "x": 852,
-        "y": 548,
+        "x": 774,
+        "y": 776,
         "w": 128,
         "h": 138
       },
@@ -2114,8 +3626,8 @@
     },
     "animations/a_tombstone/attack/33330005": {
       "frame": {
-        "x": 848,
-        "y": 829,
+        "x": 928,
+        "y": 2,
         "w": 128,
         "h": 138
       },
@@ -2138,8 +3650,8 @@
     },
     "animations/a_tombstone/attack/33330007": {
       "frame": {
-        "x": 425,
-        "y": 848,
+        "x": 928,
+        "y": 144,
         "w": 128,
         "h": 138
       },
@@ -2162,8 +3674,8 @@
     },
     "animations/a_tombstone/attack/33330009": {
       "frame": {
-        "x": 143,
-        "y": 854,
+        "x": 928,
+        "y": 286,
         "w": 128,
         "h": 138
       },
@@ -2186,8 +3698,8 @@
     },
     "animations/a_tombstone/attack/33330011": {
       "frame": {
-        "x": 2,
-        "y": 857,
+        "x": 811,
+        "y": 490,
         "w": 128,
         "h": 138
       },
@@ -2210,8 +3722,8 @@
     },
     "animations/a_tombstone/smoke/444440032": {
       "frame": {
-        "x": 147,
-        "y": 290,
+        "x": 906,
+        "y": 774,
         "w": 137,
         "h": 137
       },
@@ -2239,8 +3751,8 @@
     "image": "animations.png",
     "format": "RGBA8888",
     "size": {
-      "w": 1140,
-      "h": 1158
+      "w": 1453,
+      "h": 1382
     },
     "scale": 1
   }
