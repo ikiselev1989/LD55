@@ -1,0 +1,471 @@
+{
+  "frames": {
+    "animations/a_enemy1/death/050505050003": {
+      "frame": {
+        "x": 2,
+        "y": 2,
+        "w": 349,
+        "h": 305
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 349,
+        "h": 305
+      },
+      "sourceSize": {
+        "w": 349,
+        "h": 305
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_enemy1/death/050505050005": {
+      "frame": {
+        "x": 355,
+        "y": 2,
+        "w": 349,
+        "h": 305
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 349,
+        "h": 305
+      },
+      "sourceSize": {
+        "w": 349,
+        "h": 305
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_enemy1/death/050505050007": {
+      "frame": {
+        "x": 708,
+        "y": 2,
+        "w": 349,
+        "h": 305
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 349,
+        "h": 305
+      },
+      "sourceSize": {
+        "w": 349,
+        "h": 305
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_enemy1/death/050505050009": {
+      "frame": {
+        "x": 1061,
+        "y": 2,
+        "w": 349,
+        "h": 305
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 349,
+        "h": 305
+      },
+      "sourceSize": {
+        "w": 349,
+        "h": 305
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_enemy1/walk/05050500001": {
+      "frame": {
+        "x": 1414,
+        "y": 2,
+        "w": 304,
+        "h": 302
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 304,
+        "h": 302
+      },
+      "sourceSize": {
+        "w": 304,
+        "h": 302
+      },
+      "pivot": {
+        "x": 0.276316,
+        "y": 0.97351
+      }
+    },
+    "animations/a_enemy1/walk/05050500003": {
+      "frame": {
+        "x": 1722,
+        "y": 2,
+        "w": 304,
+        "h": 302
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 304,
+        "h": 302
+      },
+      "sourceSize": {
+        "w": 304,
+        "h": 302
+      },
+      "pivot": {
+        "x": 0.276316,
+        "y": 0.97351
+      }
+    },
+    "animations/a_enemy1/walk/05050500005": {
+      "frame": {
+        "x": 2030,
+        "y": 2,
+        "w": 304,
+        "h": 302
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 304,
+        "h": 302
+      },
+      "sourceSize": {
+        "w": 304,
+        "h": 302
+      },
+      "pivot": {
+        "x": 0.276316,
+        "y": 0.97351
+      }
+    },
+    "animations/a_enemy1/walk/05050500007": {
+      "frame": {
+        "x": 2338,
+        "y": 2,
+        "w": 304,
+        "h": 302
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 304,
+        "h": 302
+      },
+      "sourceSize": {
+        "w": 304,
+        "h": 302
+      },
+      "pivot": {
+        "x": 0.276316,
+        "y": 0.97351
+      }
+    },
+    "animations/a_enemy1/walk/05050500009": {
+      "frame": {
+        "x": 2646,
+        "y": 2,
+        "w": 304,
+        "h": 302
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 304,
+        "h": 302
+      },
+      "sourceSize": {
+        "w": 304,
+        "h": 302
+      },
+      "pivot": {
+        "x": 0.276316,
+        "y": 0.97351
+      }
+    },
+    "animations/a_enemy1/death/050505050004": {
+      "frame": {
+        "x": 2,
+        "y": 2,
+        "w": 349,
+        "h": 305
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 349,
+        "h": 305
+      },
+      "sourceSize": {
+        "w": 349,
+        "h": 305
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_enemy1/death/050505050006": {
+      "frame": {
+        "x": 355,
+        "y": 2,
+        "w": 349,
+        "h": 305
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 349,
+        "h": 305
+      },
+      "sourceSize": {
+        "w": 349,
+        "h": 305
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_enemy1/death/050505050008": {
+      "frame": {
+        "x": 708,
+        "y": 2,
+        "w": 349,
+        "h": 305
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 349,
+        "h": 305
+      },
+      "sourceSize": {
+        "w": 349,
+        "h": 305
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_enemy1/death/050505050010": {
+      "frame": {
+        "x": 1061,
+        "y": 2,
+        "w": 349,
+        "h": 305
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 349,
+        "h": 305
+      },
+      "sourceSize": {
+        "w": 349,
+        "h": 305
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "animations/a_enemy1/walk/05050500002": {
+      "frame": {
+        "x": 1414,
+        "y": 2,
+        "w": 304,
+        "h": 302
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 304,
+        "h": 302
+      },
+      "sourceSize": {
+        "w": 304,
+        "h": 302
+      },
+      "pivot": {
+        "x": 0.276316,
+        "y": 0.97351
+      }
+    },
+    "animations/a_enemy1/walk/05050500011": {
+      "frame": {
+        "x": 1414,
+        "y": 2,
+        "w": 304,
+        "h": 302
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 304,
+        "h": 302
+      },
+      "sourceSize": {
+        "w": 304,
+        "h": 302
+      },
+      "pivot": {
+        "x": 0.276316,
+        "y": 0.97351
+      }
+    },
+    "animations/a_enemy1/walk/05050500004": {
+      "frame": {
+        "x": 1722,
+        "y": 2,
+        "w": 304,
+        "h": 302
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 304,
+        "h": 302
+      },
+      "sourceSize": {
+        "w": 304,
+        "h": 302
+      },
+      "pivot": {
+        "x": 0.276316,
+        "y": 0.97351
+      }
+    },
+    "animations/a_enemy1/walk/05050500006": {
+      "frame": {
+        "x": 2030,
+        "y": 2,
+        "w": 304,
+        "h": 302
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 304,
+        "h": 302
+      },
+      "sourceSize": {
+        "w": 304,
+        "h": 302
+      },
+      "pivot": {
+        "x": 0.276316,
+        "y": 0.97351
+      }
+    },
+    "animations/a_enemy1/walk/05050500008": {
+      "frame": {
+        "x": 2338,
+        "y": 2,
+        "w": 304,
+        "h": 302
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 304,
+        "h": 302
+      },
+      "sourceSize": {
+        "w": 304,
+        "h": 302
+      },
+      "pivot": {
+        "x": 0.276316,
+        "y": 0.97351
+      }
+    },
+    "animations/a_enemy1/walk/05050500010": {
+      "frame": {
+        "x": 2646,
+        "y": 2,
+        "w": 304,
+        "h": 302
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 304,
+        "h": 302
+      },
+      "sourceSize": {
+        "w": 304,
+        "h": 302
+      },
+      "pivot": {
+        "x": 0.276316,
+        "y": 0.97351
+      }
+    }
+  },
+  "meta": {
+    "app": "http://github.com/odrick/free-tex-packer-core",
+    "version": "0.3.4",
+    "image": "animations.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 2952,
+      "h": 309
+    },
+    "scale": 1
+  }
+}
