@@ -12,14 +12,17 @@ export default {
 		boneCost: 1,
 	},
 	character: {
+		damage: 1,
 		minSpeed: 50,
 		speedOffset: 50,
 		minHealth: 1,
 		maxHealth: 5,
+		hitAnimationSpeed: 300,
+		attackInterval: 2000,
 	},
 	objects: {
 		statue: {
-			strength: 3,
+			strength: 10,
 		},
 		saw: {
 			damage: 1,

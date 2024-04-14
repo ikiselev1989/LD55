@@ -16,7 +16,8 @@ export enum INPUT_EVENT {
 }
 
 export enum STAGE_EVENTS {
-	CANCEL_CONSTRUCTION = 'cancelConstruction'
+	CANCEL_CONSTRUCTION = 'cancelConstruction',
+	GAME_OVER = 'gameOver',
 }
 
 export enum Z_INDEX {
@@ -38,4 +39,5 @@ export enum NAMES {
 	SAW = 'saw',
 	TOMBSTONE = 'tombstone',
 	SMOKE = 'smoke',
+	STATUE = 'statue',
 }

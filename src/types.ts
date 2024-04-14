@@ -35,3 +35,7 @@ export interface ConstructionBuild {
 export interface HasConstruction {
 	constructionId: number;
 }
+
+export interface CanBeDamaged {
+	damage: (val: number) => void;
+}
