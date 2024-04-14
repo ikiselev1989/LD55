@@ -1,5 +1,6 @@
 <script lang='ts'>
-	import CraftButton from '@/ui/components/CraftButton.svelte';
+	import { fade } from 'svelte/transition';
+	import CraftButton from '@/ui/components/ConstructionButton.svelte';
 	import game from '@/game/game';
 	import Stage from '@/game/scenes/Stage';
 	import Sprite from '@/ui/components/Sprite.svelte';
@@ -26,7 +27,7 @@
 	});
 </script>
 
-<div class='craft-menu' class:-available={available}>
+<div class='craft-menu' class:-available={available} transition:fade={{duration: 150}}>
 	<CraftButton on:click={placeCircular}>
 		<Sprite sprite='{res.assets.getFrameSprite(Assets.CRAFT_BUTTONS__CIRCULAR)}' />
 	</CraftButton>
@@ -46,9 +47,11 @@
 
 <style lang='scss'>
   .craft-menu {
-    padding: rem(40px);
+    position: absolute;
+    bottom: rem(160px);
+    right: rem(40px);
     display: flex;
-    gap: rem(30px);
+    gap: rem(25px);
     filter: brightness(0.5);
     transition: filter 0.15s ease;
 

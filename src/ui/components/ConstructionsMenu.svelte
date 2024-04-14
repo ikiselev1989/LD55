@@ -25,11 +25,10 @@
 
 <style lang='scss'>
   .constructions-menu {
-    padding: rem(40px);
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: rem(20px);
     display: flex;
     justify-content: center;
     gap: rem(40px);

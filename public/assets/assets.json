@@ -384,10 +384,34 @@
         "y": 0.935484
       }
     },
-    "craft-buttons/candles": {
+    "bones": {
       "frame": {
         "x": 2714,
         "y": 1895,
+        "w": 84,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 84,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 84,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "craft-buttons/candles": {
+      "frame": {
+        "x": 2468,
+        "y": 906,
         "w": 70,
         "h": 70
       },
@@ -411,30 +435,6 @@
     "craft-buttons/circular": {
       "frame": {
         "x": 2468,
-        "y": 906,
-        "w": 70,
-        "h": 70
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 70,
-        "h": 70
-      },
-      "sourceSize": {
-        "w": 70,
-        "h": 70
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "craft-buttons/fire": {
-      "frame": {
-        "x": 2468,
         "y": 980,
         "w": 70,
         "h": 70
@@ -456,7 +456,7 @@
         "y": 0
       }
     },
-    "craft-buttons/hands": {
+    "craft-buttons/fire": {
       "frame": {
         "x": 2542,
         "y": 906,
@@ -480,7 +480,7 @@
         "y": 0
       }
     },
-    "craft-buttons/thombstone": {
+    "craft-buttons/hands": {
       "frame": {
         "x": 2616,
         "y": 906,
@@ -504,9 +504,33 @@
         "y": 0
       }
     },
-    "saw/hor": {
+    "craft-buttons/thombstone": {
       "frame": {
         "x": 2542,
+        "y": 980,
+        "w": 70,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 70
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "saw/hor": {
+      "frame": {
+        "x": 2616,
         "y": 980,
         "w": 61,
         "h": 34
@@ -576,10 +600,34 @@
         "y": 0.867347
       }
     },
+    "bone": {
+      "frame": {
+        "x": 2175,
+        "y": 1054,
+        "w": 57,
+        "h": 28
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 57,
+        "h": 28
+      },
+      "sourceSize": {
+        "w": 57,
+        "h": 28
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
     "hands/2": {
       "frame": {
-        "x": 2788,
-        "y": 1799,
+        "x": 2616,
+        "y": 1018,
         "w": 34,
         "h": 57
       },
@@ -602,8 +650,8 @@
     },
     "candles/1": {
       "frame": {
-        "x": 2794,
-        "y": 1033,
+        "x": 2802,
+        "y": 1799,
         "w": 24,
         "h": 43
       },
