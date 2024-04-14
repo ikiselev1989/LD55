@@ -7,9 +7,10 @@ import game from '@/game/game';
 import { lerp } from '@/game/utils';
 import type Construction from '@/game/components/construction';
 import DamageObject from '@/game/components/damage-object';
+import config from '@/config';
 
 export default class Saw extends DamageObject {
-	damageValue = 1;
+	damageValue = config.objects.sawDamage;
 	private startPos!: Vector;
 	private interval = 1500;
 	private speed = 1000;

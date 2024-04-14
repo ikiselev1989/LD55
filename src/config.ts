@@ -15,4 +15,8 @@ export default {
 		minHealth: 1,
 		maxHealth: 5,
 	},
+	objects: {
+		sawDamage: 1,
+		fireBallDamage: 2,
+	},
 };

@@ -6,11 +6,12 @@ import { TAGS } from '@/enums';
 import type Construction from '@/game/components/construction';
 import game from '@/game/game';
 import DamageObject from '@/game/components/damage-object';
+import config from '@/config';
 
 export default class Fireball extends DamageObject {
+	damageValue = config.objects.fireBallDamage;
 	private starPos!: Vector;
 	private speed = 8000;
-	damageValue = 1;
 
 	constructor(props: ActorArgs, private construction: Construction) {
 		super(props);
