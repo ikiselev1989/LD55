@@ -12,7 +12,7 @@ import SpawnSystem from '@/game/spawn-system';
 import Statue from '@/game/components/statue';
 import { Assets } from '@/game/resources/assets';
 import { STAGE_EVENTS } from '@/enums';
-import { bones } from '@/stores';
+import { bones, constructionsBuilt } from '@/stores';
 import config from '@/config';
 
 export default class Stage extends Scene {
@@ -58,6 +58,11 @@ export default class Stage extends Scene {
 
 	cancelConstruction() {
 		this.emit(STAGE_EVENTS.CANCEL_CONSTRUCTION);
+	}
+
+	destroy(constructionId: number) {
+		constructionsBuilt.destroy(constructionId);
+		this.world.entityManager.getById(constructionId)?.kill();
 	}
 
 	private addBg() {

@@ -32,3 +32,8 @@ export enum TAGS {
 	TARGET = 'target',
 	STATUE = 'statue',
 }
+
+export enum NAMES {
+	FIREBALL = 'fireball',
+	SAW = 'saw'
+}

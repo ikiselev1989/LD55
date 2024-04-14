@@ -57,6 +57,10 @@ export const constructionsBuilt = (() => {
 	return {
 		subscribe,
 		build: (construction: ConstructionBuild) => update(value => [...value, construction]),
+		destroy: (id: number) =>
+			update(constructionBuilds => constructionBuilds.filter((build) => {
+				return build.id !== id;
+			})),
 		available: () => get(constructionsBuilt).length < get(constructionsPlaceAvailable),
 	};
 })();

@@ -31,3 +31,7 @@ export interface ConstructionBuild {
 	id: number;
 	iconAsset: Assets;
 }
+
+export interface HasConstruction {
+	constructionId: number;
+}

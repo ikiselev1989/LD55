@@ -2,13 +2,15 @@ import type { ActorArgs } from 'excalibur';
 import { Sprite, toRadians, vec, Vector } from 'excalibur';
 import res from '@/res';
 import { Assets } from '@/game/resources/assets';
-import { TAGS } from '@/enums';
+import { NAMES, TAGS } from '@/enums';
 import type Construction from '@/game/components/construction';
 import game from '@/game/game';
 import DamageObject from '@/game/components/damage-object';
 import config from '@/config';
+import type Stage from '@/game/scenes/Stage';
 
 export default class Fireball extends DamageObject {
+	declare scene: Stage;
 	protected damageValue = config.objects.fireBall.damage;
 	protected strengthValue = config.objects.fireBall.strength;
 	private starPos!: Vector;
@@ -19,6 +21,8 @@ export default class Fireball extends DamageObject {
 	}
 
 	onInitialize() {
+		this.name = NAMES.FIREBALL;
+		this.constructionId = this.construction.id;
 		super.onInitialize();
 
 		this.starPos = this.pos.clone();

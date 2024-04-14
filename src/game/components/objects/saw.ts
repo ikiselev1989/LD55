@@ -2,7 +2,7 @@ import type { ActorArgs, Sprite } from 'excalibur';
 import { vec, Vector } from 'excalibur';
 import res from '@/res';
 import { Assets } from '@/game/resources/assets';
-import { TAGS } from '@/enums';
+import { NAMES, TAGS } from '@/enums';
 import game from '@/game/game';
 import { lerp } from '@/game/utils';
 import type Construction from '@/game/components/construction';
@@ -23,6 +23,8 @@ export default class Saw extends DamageObject {
 	async onInitialize() {
 		super.onInitialize();
 
+		this.name = NAMES.SAW;
+		this.constructionId = this.construct.id;
 		this.startPos = this.pos.clone();
 		this.scale.setTo(0, 0);
 		this.addTag(TAGS.Z_AXIS_SORT);
