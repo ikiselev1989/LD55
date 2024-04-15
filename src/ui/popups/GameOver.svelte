@@ -5,7 +5,7 @@
 	import { Assets } from '@/game/resources/assets';
 	import Button from '@/ui/components/Button.svelte';
 	import i18n from '@/i18n/i18n';
-	import { popup } from '@/stores';
+	import { bones, popup } from '@/stores';
 	import game from '@/game/game';
 
 	const restart = () => {
@@ -26,7 +26,7 @@
 		</div>
 		<div class='bone-result'>
 			<div class='text'>{$i18n.t('gameOver.result')}</div>
-			<div class='bones'>1230
+			<div class='bones'>{bones.total()}
 				<Sprite sprite='{res.assets.getFrameSprite(Assets.RESULT_BONES)}' />
 			</div>
 		</div>

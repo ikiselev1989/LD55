@@ -96,14 +96,21 @@ export const bones = (() => {
 	const { subscribe, update } = writable(config.stage.startBones);
 
 	let reserve = 0;
+	let total = 0;
 
 	return {
 		subscribe,
-		bonusBoneCollect: () => update(value => (value + config.stage.bonusBoneCost)),
-		boneCollect: () => update(value => (value + config.stage.boneCost)),
+		bonusBoneCollect: () => {
+			total += config.stage.bonusBoneCost;
+			update(value => (value + config.stage.bonusBoneCost));
+		},
+		boneCollect: () => {
+			total += config.stage.boneCost;
+			update(value => (value + config.stage.boneCost));
+		},
 		canBuy: (cost: number = 0) => get(bones) >= cost,
 		buy: () => update(value => (value - reserve)),
 		reserve: (cost: number) => (reserve = cost),
-		payBack: (cost: number) => update(value => (value + cost)),
+		total: () => total,
 	};
 })();
