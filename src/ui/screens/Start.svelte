@@ -3,12 +3,14 @@
 	import Screen from '@/ui/components/Screen.svelte';
 	import Sprite from '@/ui/components/Sprite.svelte';
 	import { Assets } from '@/game/resources/assets';
+	import Button from '@/ui/components/Button.svelte';
+	import i18n from '@/i18n/i18n';
 
 	let started = false;
 </script>
 
 <Screen>
-	<div class='bg' class:-started={started} on:click={()=>{started=true}}>
+	<div class='bg' class:-started={started}>
 		<Sprite sprite='{res.assets.getFrameSprite(Assets.MAIN__BG)}' />
 	</div>
 	<div class='car' class:-started={started}>
@@ -22,7 +24,9 @@
 	</div>
 	<div class='field -top' class:-started={started}></div>
 	<div class='field -bottom' class:-started={started}></div>
-	<!--	<StartMenu />-->
+	{#if !started}
+		<Button class='_play-button' on:click={()=>(started=true)}>{$i18n.t('startMenu.play')}</Button>
+	{/if}
 </Screen>
 
 <style lang='scss'>
@@ -87,5 +91,17 @@
     &.-started {
       transform: translateX(#{rem(500px)}) scale(1.2);
     }
+  }
+
+  :global(._play-button) {
+    width: rem(330px);
+    padding: rem(40px) !important;
+    position: absolute;
+    bottom: rem(220px);
+    right: rem(265px);
+    font-size: rem(54px);
+    color: $black !important;
+    transform: rotate(-3deg) translateX(-50%);
+    text-transform: uppercase;
   }
 </style>
