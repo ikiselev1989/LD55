@@ -4,14 +4,14 @@ export default {
 	showFps: import.meta.env.VITE_DEBUG === 'true',
 	bugTracking: import.meta.env.VITE_BUG_TRACKING === 'true',
 	stage: {
-		startBones: 300,
+		startBones: 30,
 		minStageMobAmount: 3,
 		maxStageMobAmount: 16,
 		waveInterval: 3000,
 		bonusBone: 0.05,
 		bonusBoneCost: 10,
 		boneCost: 1,
-		startWavesAmount: 10,
+		startWavesAmount: 20,
 	},
 	character: {
 		damage: 1,
@@ -25,7 +25,7 @@ export default {
 	objects: {
 		boiler: {
 			damage: 10,
-			cost: 70,
+			cost: 50,
 			coolDown: 15000,
 		},
 		statue: {
@@ -43,23 +43,23 @@ export default {
 		},
 		saw: {
 			damage: 2,
-			strength: 3,
+			strength: 4,
 			cost: 12,
 			repairCost: 5,
 			speed: 1500,
-			interval: 1000,
+			interval: 500,
 			fadeSpeed: 100,
 		},
 		fireBall: {
 			damage: 3,
-			strength: 4,
+			strength: 5,
 			cost: 15,
 			repairCost: 8,
 			maxAmount: 8,
 		},
 		tombstones: {
 			damage: 4,
-			strength: 5,
+			strength: 6,
 			cost: 20,
 			repairCost: 15,
 			attackInterval: 5000,
