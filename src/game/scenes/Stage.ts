@@ -31,27 +31,27 @@ export default class Stage extends Scene {
 	}
 
 	placeFireballs() {
-		bones.buy(config.objects.fireBall.cost);
+		bones.reserve(config.objects.fireBall.cost);
 		this.placeConstruction(new Fireballs());
 	}
 
 	placeCircular() {
-		bones.buy(config.objects.saw.cost);
+		bones.reserve(config.objects.saw.cost);
 		this.placeConstruction(new Circular());
 	}
 
 	placeHellishHugs() {
-		bones.buy(config.objects.hands.cost);
+		bones.reserve(config.objects.hands.cost);
 		this.placeConstruction(new HellishHugs());
 	}
 
 	placeManaCandles() {
-		bones.buy(config.objects.candles.cost);
+		bones.reserve(config.objects.candles.cost);
 		this.placeConstruction(new ManaCandles());
 	}
 
 	placeTombstone() {
-		bones.buy(config.objects.tombstones.cost);
+		bones.reserve(config.objects.tombstones.cost);
 		this.placeConstruction(new Tombstones());
 	}
 

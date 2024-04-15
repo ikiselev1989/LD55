@@ -1,10 +1,10 @@
-import { Actor, Material, PointerEvent, Sprite, Vector } from 'excalibur';
+import { Actor, Material, PointerButton, PointerEvent, Sprite, Vector } from 'excalibur';
 import game from '@/game/game';
 import type Stage from '@/game/scenes/Stage';
 import { GLOBAL_KEYS_EVENTS, INPUT_EVENT, STAGE_EVENTS, Z_INDEX } from '@/enums';
 import constructionShader from '@//game/materials/construction.glsl';
 import res from '@/res';
-import { constructionsBuilt } from '@/stores';
+import { bones, constructionsBuilt } from '@/stores';
 import type { Assets } from '@/game/resources/assets';
 
 export default abstract class Construction extends Actor {
@@ -34,6 +34,17 @@ export default abstract class Construction extends Actor {
 	protected addObjects() {
 	}
 
+	protected build() {
+		!this.safePlace && constructionsBuilt.build({
+			id: this.id,
+			iconAsset: this.iconAsset,
+			strength: 1,
+		});
+		bones.buy();
+		this.addObjects();
+		this.unregisterEvents();
+	}
+
 	private unregisterEvents() {
 		game.input.pointers.events.unpipe(this.events);
 		game.events.unpipe(this.events);
@@ -60,24 +71,15 @@ export default abstract class Construction extends Actor {
 
 		// @ts-ignore
 		this.events.on('move', (e: PointerEvent) => this.scaleForm(e.worldPos));
-		this.events.on('down', () => {
-				this.build();
+		this.events.on('down', ({ button }) => {
+				button === PointerButton.Left && this.build();
+				button === PointerButton.Right && this.scene.cancelConstruction();
 			},
 		);
 
 		this.events.on(GLOBAL_KEYS_EVENTS.wasPressed, event => {
 			if (event === INPUT_EVENT.CONSTRUCTION_ROTATE) this.rotate();
 		});
-	}
-
-	protected build() {
-		!this.safePlace && constructionsBuilt.build({
-			id: this.id,
-			iconAsset: this.iconAsset,
-			strength: 1,
-		});
-		this.addObjects();
-		this.unregisterEvents();
 	}
 
 	private scaleForm = (worldPos: Vector) => {

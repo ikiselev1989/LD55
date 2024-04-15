@@ -84,12 +84,15 @@ export const constructionsPlaceAvailable = (() => {
 export const bones = (() => {
 	const { subscribe, update } = writable(50);
 
+	let reserve = 0;
+
 	return {
 		subscribe,
 		bonusBoneCollect: () => update(value => (value + config.stage.bonusBoneCost)),
 		boneCollect: () => update(value => (value + config.stage.boneCost)),
 		canBuy: (cost: number = 0) => get(bones) >= cost,
-		buy: (cost: number) => update(value => (value - cost)),
+		buy: () => update(value => (value - reserve)),
+		reserve: (cost: number) => (reserve = cost),
 		payBack: (cost: number) => update(value => (value + cost)),
 	};
 })();
