@@ -5,6 +5,7 @@
 	import { Assets } from '@/game/resources/assets';
 	import Button from '@/ui/components/Button.svelte';
 	import i18n from '@/i18n/i18n';
+	import IntroText from '@/ui/components/IntroText.svelte';
 
 	let started = false;
 </script>
@@ -26,6 +27,9 @@
 	<div class='field -bottom' class:-started={started}></div>
 	{#if !started}
 		<Button class='_play-button' on:click={()=>(started=true)}>{$i18n.t('startMenu.play')}</Button>
+	{/if}
+	{#if started}
+		<IntroText />
 	{/if}
 </Screen>
 

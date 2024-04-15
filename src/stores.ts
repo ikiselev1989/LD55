@@ -5,6 +5,7 @@ import Game from '@/ui/screens/Game.svelte';
 import config from '@/config';
 import type { ConstructionBuild } from '@/types';
 import GameOver from '@/ui/popups/GameOver.svelte';
+import game from '@/game/game';
 
 export const sound = writable(true);
 
@@ -14,9 +15,10 @@ export const screen = (() => {
 	return {
 		subscribe,
 		startMenu: () => set(StartMenu),
-		game: () => {
-			set(Game);
+		game: async () => {
 			bones.reset();
+			game.play();
+			set(Game);
 		},
 	};
 })();
