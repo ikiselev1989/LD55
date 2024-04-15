@@ -1,7 +1,7 @@
 import { Actor, Animation } from 'excalibur';
 import res from '@/res';
 import { Animations } from '@/game/resources/animations';
-import { TAGS } from '@/enums';
+import { Z_INDEX } from '@/enums';
 import type Mob from '@/game/components/mob';
 import game from '@/game/game';
 import config from '@/config';
@@ -12,7 +12,7 @@ export default class StatueAim extends Actor {
 	}
 
 	async onInitialize() {
-		this.addTag(TAGS.Z_AXIS_SORT);
+		this.z = Z_INDEX.FLOOR;
 		this.scale.setTo(1, 0.9);
 		this.initGraphics();
 
