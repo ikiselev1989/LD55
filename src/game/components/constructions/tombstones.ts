@@ -15,10 +15,8 @@ export default class Tombstones extends Construction {
 		super.onInitialize();
 
 		// @ts-ignore
-		this.events.on(STAGE_EVENTS.DESTROYED_CONSTRUCTION, (id: number) => {
-			if (id === this.id) {
-				this.scene.destroy(this.id);
-			}
+		this.scene.events.on(STAGE_EVENTS.DESTROYED_CONSTRUCTION, (id: number) => {
+			if (id === this.id) this.scene.destroy(this.id);
 		});
 	}
 

@@ -12,6 +12,7 @@ import { Animations } from '@/game/resources/animations';
 import type Mob from '@/game/components/mob';
 import Smoke from '@/game/components/smoke';
 import Character from '@/game/components/character';
+import { constructionsBuilt } from '@/stores';
 
 export default class Tombstone extends Character implements HasConstruction {
 	constructionId!: number;
@@ -50,7 +51,7 @@ export default class Tombstone extends Character implements HasConstruction {
 	}
 
 	private die() {
-		this.scene.events.emit(STAGE_EVENTS.DESTROYED_CONSTRUCTION, this.constructionId);
+		game.currentScene.events.emit(STAGE_EVENTS.DESTROYED_CONSTRUCTION, this.constructionId);
 		this.kill();
 	}
 
@@ -73,6 +74,8 @@ export default class Tombstone extends Character implements HasConstruction {
 		if (nearest) {
 			this.animation.reset();
 			this.animation.play();
+
+			constructionsBuilt.damage(this.constructionId, 0.25 / config.objects.tombstones.strength);
 
 			this.animation.events.once('end', () => {
 				this.scene.add(new Smoke({
