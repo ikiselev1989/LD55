@@ -7,12 +7,13 @@ import { enemyGroup } from '@/game/collisions';
 import { Animations } from '@/game/resources/animations';
 import config from '@/config';
 import type Mob from '@/game/components/mob';
-import type Stage from '@/game/scenes/Stage';
 import type Construction from '@/game/components/construction';
 import { constructionsBuilt } from '@/stores';
+import type Stage from '@/game/scenes/Stage';
 
 export default class Hand extends Actor {
 	constructionId!: number;
+	declare scene: Stage;
 	private animation = <Animation>res.animation.getAnimation(random.pickOne([Animations.ANIMATIONS__A_HAND__LEFT1, Animations.ANIMATIONS__A_HAND__LEFT2]), AnimationStrategy.Freeze)?.clone();
 	private strength!: number;
 
@@ -37,18 +38,6 @@ export default class Hand extends Actor {
 		this.registerEvents();
 	}
 
-	onPostKill(scene: Stage) {
-		constructionsBuilt.damage(this.constructionId, 1 / this.construction.objectAmount);
-
-		this.off('collisionstart');
-
-		const length = scene.world.entityManager.getByName(this.name).filter((obj) => {
-			return (<Hand>obj).constructionId === this.constructionId;
-		}).length;
-
-		if (length === 1) scene.destroy(this.constructionId);
-	}
-
 	private registerEvents() {
 		this.on('collisionstart', async ({ other }) => {
 			(<Mob>other).damage(config.objects.hands.damage);
@@ -69,9 +58,21 @@ export default class Hand extends Actor {
 		});
 	}
 
+	private die() {
+		constructionsBuilt.damage(this.constructionId, 1 / this.construction.objectAmount);
+
+		this.off('collisionstart');
+
+		const length = this.scene.world.entityManager.getByName(this.name).filter((obj) => {
+			return (<Hand>obj).constructionId === this.constructionId;
+		}).length;
+
+		if (length === 1) this.scene.destroy(this.constructionId);
+	}
+
 	private decreaseStrength() {
 		this.strength -= 1;
 
-		if (this.strength <= 0) this.kill();
+		if (this.strength <= 0) this.die();
 	}
 }

@@ -41,20 +41,10 @@ export default class Tombstone extends Character implements HasConstruction, Can
 		this.startAttacking();
 	}
 
-	onPostKill(scene: Stage) {
-		constructionsBuilt.damage(this.constructionId, 1 / this.construction.objectAmount);
-
-		const length = scene.world.entityManager.getByName(this.name).filter((obj) => {
-			return (<Tombstone>obj).constructionId === this.constructionId;
-		}).length;
-
-		if (length === 1) scene.destroy(this.constructionId);
-	}
-
 	damage(val: number) {
 		this.strength -= val;
 
-		if (this.strength <= 0) return this.kill();
+		if (this.strength <= 0) return this.die();
 
 		game.tween(progress => {
 			this.material.update(shader => {
@@ -72,6 +62,16 @@ export default class Tombstone extends Character implements HasConstruction, Can
 		this.graphics.use(this.animation, {
 			anchor: this.animation.origin || Vector.Zero,
 		});
+	}
+
+	private die() {
+		constructionsBuilt.damage(this.constructionId, 1 / this.construction.objectAmount);
+
+		const length = this.scene.world.entityManager.getByName(this.name).filter((obj) => {
+			return (<Tombstone>obj).constructionId === this.constructionId;
+		}).length;
+
+		if (length === 1) this.scene.destroy(this.constructionId);
 	}
 
 	private async startAttacking() {

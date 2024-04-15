@@ -78,6 +78,7 @@ export default abstract class Construction extends Actor {
 
 		// @ts-ignore
 		this.events.on('move', (e: PointerEvent) => this.scaleForm(e.worldPos));
+		// @ts-ignore
 		this.events.on('down', ({ button }) => {
 				button === PointerButton.Left && this.build();
 				button === PointerButton.Right && this.scene.cancelConstruction();
