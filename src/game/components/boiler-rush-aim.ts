@@ -40,7 +40,7 @@ export default class BoilerRushAim extends Actor {
 				bones.buy();
 				boilerRushAvailable.set(false);
 				game.currentScene.add(new BoilerJump());
-				await game.waitFor(500);
+				await game.waitFor(750);
 				game.currentScene.add(new BoilerRushExplosion({
 					pos: e.worldPos,
 				}));

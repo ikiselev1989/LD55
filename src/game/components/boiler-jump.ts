@@ -13,7 +13,7 @@ export default class BoilerJump extends Actor {
 	}
 
 	private move() {
-		this.vel.setTo(0, -1000);
+		this.vel.setTo(0, -2000);
 	}
 
 	private initGraphics() {
