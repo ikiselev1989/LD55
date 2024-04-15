@@ -4,13 +4,14 @@ export default {
 	showFps: import.meta.env.VITE_DEBUG === 'true',
 	bugTracking: import.meta.env.VITE_BUG_TRACKING === 'true',
 	stage: {
-		startBones: 50,
-		startMobAmount: 3,
+		startBones: 30,
+		minStageMobAmount: 3,
 		maxStageMobAmount: 16,
-		waveInterval: 1000,
+		waveInterval: 3000,
 		bonusBone: 0.05,
 		bonusBoneCost: 10,
 		boneCost: 1,
+		startWavesAmount: 10,
 	},
 	character: {
 		damage: 1,

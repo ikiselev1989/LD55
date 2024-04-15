@@ -1,31 +1,34 @@
 import type Stage from '@/game/scenes/Stage';
 import Mob from '@/game/components/mob';
 import { vec } from 'excalibur';
-import { random } from '@/game/utils';
+import { lerp, random } from '@/game/utils';
 import { TAGS } from '@/enums';
 import config from '@/config';
 import game from '@/game/game';
 
 export default class SpawnSystem {
+	currentWave = 0;
+
 	constructor(private stage: Stage) {
 		stage.on('activate', () => {
 			setTimeout(() => {
 				this.spawn();
-				this.start();
+				this.waveSchedule();
 			}, 1000);
 		});
 	}
 
-	private start() {
+	private waveSchedule() {
 		game.clock.schedule(() => {
 			this.spawn();
-			this.start();
+			this.waveSchedule();
 		}, config.stage.waveInterval);
 	}
 
 	private spawn() {
+		const startWavesMultiplier = Math.min(this.currentWave / config.stage.startWavesAmount, 1);
+		const maxMobInWave = Math.floor(lerp(config.stage.minStageMobAmount, config.stage.maxStageMobAmount, startWavesMultiplier));
 		const mobLength = this.stage.world.queryTags([TAGS.MOB]).entities.length;
-		const maxMobInWave = config.stage.maxStageMobAmount;
 		const screenOffset = 500;
 		const rangeOffset = (Math.PI * 2) / 16;
 		const angles = new Array(16).fill(0).map((value, index) => rangeOffset * index);
@@ -37,5 +40,7 @@ export default class SpawnSystem {
 
 			this.stage.add(character);
 		}
+
+		this.currentWave++;
 	}
 }
