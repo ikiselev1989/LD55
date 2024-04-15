@@ -93,7 +93,7 @@ export const constructionsPlaceAvailable = (() => {
 })();
 
 export const bones = (() => {
-	const { subscribe, update } = writable(50);
+	const { subscribe, update } = writable(config.stage.startBones);
 
 	let reserve = 0;
 

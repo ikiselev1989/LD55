@@ -29,6 +29,9 @@
 </script>
 
 <div class='craft-menu' class:-available={available} transition:fade={{duration: 150}}>
+	<CraftButton cost='{config.objects.hands.cost}' on:click={placeHellishHugs}>
+		<Sprite sprite='{res.assets.getFrameSprite(Assets.CRAFT_BUTTONS__HANDS)}' />
+	</CraftButton>
 	<CraftButton cost='{config.objects.saw.cost}' on:click={placeCircular}>
 		<Sprite sprite='{res.assets.getFrameSprite(Assets.CRAFT_BUTTONS__CIRCULAR)}' />
 	</CraftButton>
@@ -37,9 +40,6 @@
 	</CraftButton>
 	<CraftButton cost='{config.objects.tombstones.cost}' on:click={placeTombstone}>
 		<Sprite sprite='{res.assets.getFrameSprite(Assets.CRAFT_BUTTONS__THOMBSTONE)}' />
-	</CraftButton>
-	<CraftButton cost='{config.objects.hands.cost}' on:click={placeHellishHugs}>
-		<Sprite sprite='{res.assets.getFrameSprite(Assets.CRAFT_BUTTONS__HANDS)}' />
 	</CraftButton>
 	<CraftButton cost='{config.objects.candles.cost}' on:click={placeManaCandles}>
 		<Sprite sprite='{res.assets.getFrameSprite(Assets.CRAFT_BUTTONS__CANDLES)}' />
