@@ -11,17 +11,19 @@ export default class StatueAim extends Actor {
 		super();
 	}
 
-	onInitialize() {
+	async onInitialize() {
 		this.addTag(TAGS.Z_AXIS_SORT);
 		this.scale.setTo(1, 0.9);
 		this.initGraphics();
+
+		await game.waitFor(config.objects.statue.aimTime / 2);
 		this.damage();
 		game.clock.schedule(async () => {
 			await game.tween(progress => {
 				this.graphics.opacity = 1 - progress;
 			}, 300);
 			this.kill();
-		}, config.objects.statue.aimTime);
+		}, config.objects.statue.aimTime / 2);
 	}
 
 	onPreUpdate() {
