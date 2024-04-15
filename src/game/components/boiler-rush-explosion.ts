@@ -5,7 +5,7 @@ import { TAGS } from '@/enums';
 import { enemyGroup } from '@/game/collisions';
 import type Mob from '@/game/components/mob';
 import config from '@/config';
-import { boilerRushAvailable, bones } from '@/stores';
+import { boilerRushAvailable } from '@/stores';
 import game from '@/game/game';
 
 export default class BoilerRushExplosion extends Actor {
@@ -18,9 +18,6 @@ export default class BoilerRushExplosion extends Actor {
 
 
 	onInitialize() {
-		bones.buy();
-		boilerRushAvailable.set(false);
-
 		game.clock.schedule(() => {
 			boilerRushAvailable.set(true);
 		}, config.objects.boiler.coolDown);

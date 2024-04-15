@@ -5,6 +5,8 @@ import game from '@/game/game';
 import { NAMES, STAGE_EVENTS, TAGS } from '@/enums';
 import BoilerRushExplosion from '@/game/components/boiler-rush-explosion';
 import type Stage from '@/game/scenes/Stage';
+import BoilerJump from '@/game/components/boiler-jump';
+import { boilerRushAvailable, bones } from '@/stores';
 
 export default class BoilerRushAim extends Actor {
 	declare scene: Stage;
@@ -31,12 +33,18 @@ export default class BoilerRushAim extends Actor {
 		});
 
 		// @ts-ignore
-		this.events.on('down', (e: PointerEvent) => {
+		this.events.on('down', async (e: PointerEvent) => {
 			this.kill();
 
-			e.button === PointerButton.Left && this.scene.add(new BoilerRushExplosion({
-				pos: e.worldPos,
-			}));
+			if (e.button === PointerButton.Left) {
+				bones.buy();
+				boilerRushAvailable.set(false);
+				game.currentScene.add(new BoilerJump());
+				await game.waitFor(500);
+				game.currentScene.add(new BoilerRushExplosion({
+					pos: e.worldPos,
+				}));
+			}
 		});
 
 		this.events.on(STAGE_EVENTS.CANCEL_CONSTRUCTION, () => {

@@ -24,7 +24,8 @@ export enum Z_INDEX {
 	BG,
 	FLOOR,
 	CASTER,
-	OBJECT
+	OBJECT,
+	JUMP = 1000,
 }
 
 export enum TAGS {

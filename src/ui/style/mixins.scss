@@ -91,6 +91,7 @@
   border: none;
   outline: none;
   color: inherit;
+  cursor: url("/cursor.png"), default;
 }
 
 @mixin reset-link() {
