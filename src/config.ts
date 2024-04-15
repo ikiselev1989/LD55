@@ -4,7 +4,7 @@ export default {
 	showFps: import.meta.env.VITE_DEBUG === 'true',
 	bugTracking: import.meta.env.VITE_BUG_TRACKING === 'true',
 	stage: {
-		startBones: 300,
+		startBones: 30,
 		minStageMobAmount: 3,
 		maxStageMobAmount: 16,
 		waveInterval: 3000,
