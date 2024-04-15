@@ -22,5 +22,6 @@
         aspect-ratio: 16 / 9;
         pointer-events: none;
         user-select: none;
+        overflow: hidden;
     }
 </style>

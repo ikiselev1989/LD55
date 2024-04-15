@@ -1,9 +1,33 @@
 {
   "frames": {
-    "bg": {
+    "main/bg": {
       "frame": {
         "x": 2,
         "y": 2,
+        "w": 2500,
+        "h": 1080
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 2500,
+        "h": 1080
+      },
+      "sourceSize": {
+        "w": 2500,
+        "h": 1080
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "bg": {
+      "frame": {
+        "x": 2,
+        "y": 1086,
         "w": 1920,
         "h": 1080
       },
@@ -24,9 +48,33 @@
         "y": 0
       }
     },
+    "main/car": {
+      "frame": {
+        "x": 2,
+        "y": 2170,
+        "w": 1804,
+        "h": 819
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1804,
+        "h": 819
+      },
+      "sourceSize": {
+        "w": 1804,
+        "h": 819
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
     "forms/ellipse": {
       "frame": {
-        "x": 1926,
+        "x": 2506,
         "y": 2,
         "w": 900,
         "h": 900
@@ -50,7 +98,7 @@
     },
     "forms/rectangle": {
       "frame": {
-        "x": 1926,
+        "x": 2506,
         "y": 906,
         "w": 900,
         "h": 900
@@ -74,8 +122,8 @@
     },
     "forms/rhombus": {
       "frame": {
-        "x": 2,
-        "y": 1086,
+        "x": 1926,
+        "y": 1810,
         "w": 900,
         "h": 900
       },
@@ -98,8 +146,8 @@
     },
     "forms/triangle": {
       "frame": {
-        "x": 906,
-        "y": 1086,
+        "x": 1810,
+        "y": 2714,
         "w": 900,
         "h": 900
       },
@@ -114,6 +162,30 @@
       "sourceSize": {
         "w": 900,
         "h": 900
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "main/fence": {
+      "frame": {
+        "x": 2,
+        "y": 2993,
+        "w": 1147,
+        "h": 493
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1147,
+        "h": 493
+      },
+      "sourceSize": {
+        "w": 1147,
+        "h": 493
       },
       "pivot": {
         "x": 0,
@@ -122,8 +194,8 @@
     },
     "game-over-card": {
       "frame": {
-        "x": 1810,
-        "y": 1810,
+        "x": 1153,
+        "y": 2993,
         "w": 562,
         "h": 836
       },
@@ -144,10 +216,130 @@
         "y": 0
       }
     },
+    "main/green": {
+      "frame": {
+        "x": 2,
+        "y": 3490,
+        "w": 610,
+        "h": 284
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 610,
+        "h": 284
+      },
+      "sourceSize": {
+        "w": 610,
+        "h": 284
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "game-over-cover": {
+      "frame": {
+        "x": 616,
+        "y": 3490,
+        "w": 307,
+        "h": 192
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 307,
+        "h": 192
+      },
+      "sourceSize": {
+        "w": 307,
+        "h": 192
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "caster": {
+      "frame": {
+        "x": 616,
+        "y": 3686,
+        "w": 245,
+        "h": 153
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 245,
+        "h": 153
+      },
+      "sourceSize": {
+        "w": 245,
+        "h": 153
+      },
+      "pivot": {
+        "x": 0.546939,
+        "y": 0.928105
+      }
+    },
+    "enemies/2": {
+      "frame": {
+        "x": 865,
+        "y": 3686,
+        "w": 145,
+        "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 145,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 145,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.255172,
+        "y": 0.993056
+      }
+    },
+    "enemies/1": {
+      "frame": {
+        "x": 927,
+        "y": 3490,
+        "w": 140,
+        "h": 139
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 140,
+        "h": 139
+      },
+      "sourceSize": {
+        "w": 140,
+        "h": 139
+      },
+      "pivot": {
+        "x": 0.3,
+        "y": 0.985612
+      }
+    },
     "statues/3": {
       "frame": {
-        "x": 1810,
-        "y": 1086,
+        "x": 1071,
+        "y": 3490,
         "w": 75,
         "h": 149
       },
@@ -168,10 +360,82 @@
         "y": 0.966443
       }
     },
+    "statues/1": {
+      "frame": {
+        "x": 1014,
+        "y": 3643,
+        "w": 92,
+        "h": 116
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 92,
+        "h": 116
+      },
+      "sourceSize": {
+        "w": 92,
+        "h": 116
+      },
+      "pivot": {
+        "x": 0.445652,
+        "y": 0.87069
+      }
+    },
+    "boiler-rush/aim": {
+      "frame": {
+        "x": 2,
+        "y": 3778,
+        "w": 263,
+        "h": 37
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 263,
+        "h": 37
+      },
+      "sourceSize": {
+        "w": 263,
+        "h": 37
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "statues/2": {
+      "frame": {
+        "x": 1014,
+        "y": 3763,
+        "w": 78,
+        "h": 125
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 78,
+        "h": 125
+      },
+      "sourceSize": {
+        "w": 78,
+        "h": 125
+      },
+      "pivot": {
+        "x": 0.551282,
+        "y": 0.888
+      }
+    },
     "cards/empty/3": {
       "frame": {
         "x": 1810,
-        "y": 1239,
+        "y": 2170,
         "w": 76,
         "h": 127
       },
@@ -192,58 +456,10 @@
         "y": 0
       }
     },
-    "saw/vert": {
-      "frame": {
-        "x": 1889,
-        "y": 1086,
-        "w": 22,
-        "h": 60
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 22,
-        "h": 60
-      },
-      "sourceSize": {
-        "w": 22,
-        "h": 60
-      },
-      "pivot": {
-        "x": 0.810811,
-        "y": 0.555556
-      }
-    },
-    "hands/1": {
-      "frame": {
-        "x": 1889,
-        "y": 1150,
-        "w": 30,
-        "h": 59
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 30,
-        "h": 59
-      },
-      "sourceSize": {
-        "w": 30,
-        "h": 59
-      },
-      "pivot": {
-        "x": 0.3125,
-        "y": 0.867347
-      }
-    },
     "cards/filled/1": {
       "frame": {
         "x": 1810,
-        "y": 1370,
+        "y": 2301,
         "w": 76,
         "h": 127
       },
@@ -267,7 +483,7 @@
     "cards/empty/1": {
       "frame": {
         "x": 1810,
-        "y": 1501,
+        "y": 2432,
         "w": 75,
         "h": 127
       },
@@ -291,7 +507,7 @@
     "cards/empty/2": {
       "frame": {
         "x": 1810,
-        "y": 1632,
+        "y": 2563,
         "w": 75,
         "h": 127
       },
@@ -310,396 +526,12 @@
       "pivot": {
         "x": 0,
         "y": 0
-      }
-    },
-    "saw/hor": {
-      "frame": {
-        "x": 1810,
-        "y": 1763,
-        "w": 61,
-        "h": 34
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 61,
-        "h": 34
-      },
-      "sourceSize": {
-        "w": 61,
-        "h": 34
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.923077
-      }
-    },
-    "result-bones": {
-      "frame": {
-        "x": 1875,
-        "y": 1763,
-        "w": 43,
-        "h": 37
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 43,
-        "h": 37
-      },
-      "sourceSize": {
-        "w": 43,
-        "h": 37
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "cards/constructions/candle": {
-      "frame": {
-        "x": 1889,
-        "y": 1501,
-        "w": 16,
-        "h": 44
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 16,
-        "h": 44
-      },
-      "sourceSize": {
-        "w": 16,
-        "h": 44
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "candles/1": {
-      "frame": {
-        "x": 1889,
-        "y": 1549,
-        "w": 24,
-        "h": 43
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 24,
-        "h": 43
-      },
-      "sourceSize": {
-        "w": 24,
-        "h": 43
-      },
-      "pivot": {
-        "x": 0.564103,
-        "y": 0.927536
-      }
-    },
-    "cards/constructions/hand": {
-      "frame": {
-        "x": 1889,
-        "y": 1596,
-        "w": 28,
-        "h": 42
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 28,
-        "h": 42
-      },
-      "sourceSize": {
-        "w": 28,
-        "h": 42
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "bones-cost": {
-      "frame": {
-        "x": 1889,
-        "y": 1642,
-        "w": 23,
-        "h": 28
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 23,
-        "h": 28
-      },
-      "sourceSize": {
-        "w": 23,
-        "h": 28
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "game-over-cover": {
-      "frame": {
-        "x": 2,
-        "y": 1990,
-        "w": 307,
-        "h": 192
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 307,
-        "h": 192
-      },
-      "sourceSize": {
-        "w": 307,
-        "h": 192
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "caster": {
-      "frame": {
-        "x": 2,
-        "y": 2186,
-        "w": 245,
-        "h": 153
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 245,
-        "h": 153
-      },
-      "sourceSize": {
-        "w": 245,
-        "h": 153
-      },
-      "pivot": {
-        "x": 0.546939,
-        "y": 0.928105
-      }
-    },
-    "enemies/2": {
-      "frame": {
-        "x": 2,
-        "y": 2343,
-        "w": 145,
-        "h": 144
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 145,
-        "h": 144
-      },
-      "sourceSize": {
-        "w": 145,
-        "h": 144
-      },
-      "pivot": {
-        "x": 0.255172,
-        "y": 0.993056
-      }
-    },
-    "boiler-rush/aim": {
-      "frame": {
-        "x": 2,
-        "y": 2491,
-        "w": 263,
-        "h": 37
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 263,
-        "h": 37
-      },
-      "sourceSize": {
-        "w": 263,
-        "h": 37
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "enemies/1": {
-      "frame": {
-        "x": 251,
-        "y": 2186,
-        "w": 140,
-        "h": 139
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 140,
-        "h": 139
-      },
-      "sourceSize": {
-        "w": 140,
-        "h": 139
-      },
-      "pivot": {
-        "x": 0.3,
-        "y": 0.985612
-      }
-    },
-    "statues/1": {
-      "frame": {
-        "x": 313,
-        "y": 1990,
-        "w": 92,
-        "h": 116
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 92,
-        "h": 116
-      },
-      "sourceSize": {
-        "w": 92,
-        "h": 116
-      },
-      "pivot": {
-        "x": 0.445652,
-        "y": 0.87069
-      }
-    },
-    "bones": {
-      "frame": {
-        "x": 313,
-        "y": 2110,
-        "w": 70,
-        "h": 70
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 70,
-        "h": 70
-      },
-      "sourceSize": {
-        "w": 70,
-        "h": 70
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "craft-buttons/candles": {
-      "frame": {
-        "x": 387,
-        "y": 2110,
-        "w": 70,
-        "h": 70
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 70,
-        "h": 70
-      },
-      "sourceSize": {
-        "w": 70,
-        "h": 70
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "tombstones/1": {
-      "frame": {
-        "x": 409,
-        "y": 1990,
-        "w": 85,
-        "h": 103
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 85,
-        "h": 103
-      },
-      "sourceSize": {
-        "w": 85,
-        "h": 103
-      },
-      "pivot": {
-        "x": 0.481818,
-        "y": 0.943396
-      }
-    },
-    "statues/2": {
-      "frame": {
-        "x": 251,
-        "y": 2329,
-        "w": 78,
-        "h": 125
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 78,
-        "h": 125
-      },
-      "sourceSize": {
-        "w": 78,
-        "h": 125
-      },
-      "pivot": {
-        "x": 0.551282,
-        "y": 0.888
       }
     },
     "cards/filled/2": {
       "frame": {
-        "x": 151,
-        "y": 2343,
+        "x": 1719,
+        "y": 2993,
         "w": 75,
         "h": 127
       },
@@ -722,8 +554,8 @@
     },
     "cards/filled/3": {
       "frame": {
-        "x": 269,
-        "y": 2458,
+        "x": 1719,
+        "y": 3124,
         "w": 75,
         "h": 127
       },
@@ -744,10 +576,106 @@
         "y": 0
       }
     },
+    "tombstones/1": {
+      "frame": {
+        "x": 269,
+        "y": 3778,
+        "w": 85,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 85,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 85,
+        "h": 103
+      },
+      "pivot": {
+        "x": 0.481818,
+        "y": 0.943396
+      }
+    },
+    "fireballs/1": {
+      "frame": {
+        "x": 358,
+        "y": 3778,
+        "w": 60,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 60,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 60,
+        "h": 92
+      },
+      "pivot": {
+        "x": 0.485714,
+        "y": 0.935484
+      }
+    },
+    "bones": {
+      "frame": {
+        "x": 2,
+        "y": 3819,
+        "w": 70,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 70
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "craft-buttons/candles": {
+      "frame": {
+        "x": 76,
+        "y": 3819,
+        "w": 70,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 70
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
     "craft-buttons/circular": {
       "frame": {
-        "x": 333,
-        "y": 2329,
+        "x": 150,
+        "y": 3819,
         "w": 70,
         "h": 70
       },
@@ -770,8 +698,8 @@
     },
     "craft-buttons/fire": {
       "frame": {
-        "x": 395,
-        "y": 2184,
+        "x": 422,
+        "y": 3778,
         "w": 70,
         "h": 70
       },
@@ -794,8 +722,8 @@
     },
     "craft-buttons/hands": {
       "frame": {
-        "x": 461,
-        "y": 2097,
+        "x": 496,
+        "y": 3778,
         "w": 70,
         "h": 70
       },
@@ -818,8 +746,8 @@
     },
     "craft-buttons/thombstone": {
       "frame": {
-        "x": 498,
-        "y": 1990,
+        "x": 1719,
+        "y": 3255,
         "w": 70,
         "h": 70
       },
@@ -834,54 +762,6 @@
       "sourceSize": {
         "w": 70,
         "h": 70
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "bone": {
-      "frame": {
-        "x": 498,
-        "y": 2064,
-        "w": 57,
-        "h": 28
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 57,
-        "h": 28
-      },
-      "sourceSize": {
-        "w": 57,
-        "h": 28
-      },
-      "pivot": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    "golden-bone": {
-      "frame": {
-        "x": 395,
-        "y": 2258,
-        "w": 57,
-        "h": 28
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 57,
-        "h": 28
-      },
-      "sourceSize": {
-        "w": 57,
-        "h": 28
       },
       "pivot": {
         "x": 0,
@@ -890,8 +770,8 @@
     },
     "cards/constructions/saw": {
       "frame": {
-        "x": 333,
-        "y": 2403,
+        "x": 1096,
+        "y": 3763,
         "w": 50,
         "h": 50
       },
@@ -910,36 +790,12 @@
       "pivot": {
         "x": 0,
         "y": 0
-      }
-    },
-    "fireballs/1": {
-      "frame": {
-        "x": 2,
-        "y": 2532,
-        "w": 60,
-        "h": 92
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 60,
-        "h": 92
-      },
-      "sourceSize": {
-        "w": 60,
-        "h": 92
-      },
-      "pivot": {
-        "x": 0.485714,
-        "y": 0.935484
       }
     },
     "cards/constructions/boiler": {
       "frame": {
-        "x": 66,
-        "y": 2532,
+        "x": 224,
+        "y": 3819,
         "w": 38,
         "h": 64
       },
@@ -960,10 +816,34 @@
         "y": 0
       }
     },
+    "saw/hor": {
+      "frame": {
+        "x": 927,
+        "y": 3633,
+        "w": 61,
+        "h": 34
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 61,
+        "h": 34
+      },
+      "sourceSize": {
+        "w": 61,
+        "h": 34
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.923077
+      }
+    },
     "hands/2": {
       "frame": {
-        "x": 108,
-        "y": 2532,
+        "x": 1096,
+        "y": 3817,
         "w": 34,
         "h": 57
       },
@@ -986,8 +866,8 @@
     },
     "cards/constructions/fire": {
       "frame": {
-        "x": 146,
-        "y": 2532,
+        "x": 1110,
+        "y": 3643,
         "w": 37,
         "h": 52
       },
@@ -1010,8 +890,8 @@
     },
     "cards/constructions/tombstone": {
       "frame": {
-        "x": 146,
-        "y": 2588,
+        "x": 1110,
+        "y": 3699,
         "w": 37,
         "h": 52
       },
@@ -1031,6 +911,222 @@
         "x": 0,
         "y": 0
       }
+    },
+    "hands/1": {
+      "frame": {
+        "x": 570,
+        "y": 3778,
+        "w": 30,
+        "h": 59
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 59
+      },
+      "sourceSize": {
+        "w": 30,
+        "h": 59
+      },
+      "pivot": {
+        "x": 0.3125,
+        "y": 0.867347
+      }
+    },
+    "bone": {
+      "frame": {
+        "x": 865,
+        "y": 3834,
+        "w": 57,
+        "h": 28
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 57,
+        "h": 28
+      },
+      "sourceSize": {
+        "w": 57,
+        "h": 28
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "golden-bone": {
+      "frame": {
+        "x": 926,
+        "y": 3834,
+        "w": 57,
+        "h": 28
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 57,
+        "h": 28
+      },
+      "sourceSize": {
+        "w": 57,
+        "h": 28
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "result-bones": {
+      "frame": {
+        "x": 570,
+        "y": 3843,
+        "w": 43,
+        "h": 37
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 43,
+        "h": 37
+      },
+      "sourceSize": {
+        "w": 43,
+        "h": 37
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "saw/vert": {
+      "frame": {
+        "x": 1889,
+        "y": 2432,
+        "w": 22,
+        "h": 60
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 22,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 22,
+        "h": 60
+      },
+      "pivot": {
+        "x": 0.810811,
+        "y": 0.555556
+      }
+    },
+    "cards/constructions/hand": {
+      "frame": {
+        "x": 1889,
+        "y": 2496,
+        "w": 28,
+        "h": 42
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 28,
+        "h": 42
+      },
+      "sourceSize": {
+        "w": 28,
+        "h": 42
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "candles/1": {
+      "frame": {
+        "x": 1889,
+        "y": 2542,
+        "w": 24,
+        "h": 43
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 24,
+        "h": 43
+      },
+      "sourceSize": {
+        "w": 24,
+        "h": 43
+      },
+      "pivot": {
+        "x": 0.564103,
+        "y": 0.927536
+      }
+    },
+    "cards/constructions/candle": {
+      "frame": {
+        "x": 992,
+        "y": 3633,
+        "w": 16,
+        "h": 44
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 44
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 44
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "bones-cost": {
+      "frame": {
+        "x": 987,
+        "y": 3834,
+        "w": 23,
+        "h": 28
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 23,
+        "h": 28
+      },
+      "sourceSize": {
+        "w": 23,
+        "h": 28
+      },
+      "pivot": {
+        "x": 0,
+        "y": 0
+      }
     }
   },
   "meta": {
@@ -1039,8 +1135,8 @@
     "image": "assets.png",
     "format": "RGBA8888",
     "size": {
-      "w": 2828,
-      "h": 2648
+      "w": 3408,
+      "h": 3891
     },
     "scale": 1
   }

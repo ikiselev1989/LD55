@@ -12,8 +12,8 @@ class Main {
 	async startGame() {
 		await game.start();
 		this.initUi();
-		await game.play();
-		screen.game();
+		// await game.play();
+		screen.startMenu();
 	}
 
 	initUi() {

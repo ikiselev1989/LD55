@@ -1,6 +1,6 @@
 import { get, writable } from 'svelte/store';
 import { SvelteComponent } from 'svelte';
-import StartMenu from '@/ui/screens/StartMenu.svelte';
+import StartMenu from '@/ui/screens/Start.svelte';
 import Game from '@/ui/screens/Game.svelte';
 import config from '@/config';
 import type { ConstructionBuild } from '@/types';
