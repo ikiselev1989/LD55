@@ -1,9 +1,9 @@
 import type { ActorArgs, Animation } from 'excalibur';
 import { AnimationStrategy, CollisionGroup, vec, Vector } from 'excalibur';
-import { NAMES, TAGS } from '@/enums';
+import { NAMES, STAGE_EVENTS, TAGS } from '@/enums';
 import res from '@/res';
 import { enemyGroup } from '@/game/collisions';
-import type { CanBeDamaged, HasConstruction } from '@/types';
+import type { HasConstruction } from '@/types';
 import type Construction from '@/game/components/construction';
 import Stage from '@/game/scenes/Stage';
 import game from '@/game/game';
@@ -12,10 +12,8 @@ import { Animations } from '@/game/resources/animations';
 import type Mob from '@/game/components/mob';
 import Smoke from '@/game/components/smoke';
 import Character from '@/game/components/character';
-import { easeInOutSine } from '@/game/utils';
-import { constructionsBuilt } from '@/stores';
 
-export default class Tombstone extends Character implements HasConstruction, CanBeDamaged {
+export default class Tombstone extends Character implements HasConstruction {
 	constructionId!: number;
 	declare scene: Stage;
 	private animation!: Animation;
@@ -34,23 +32,10 @@ export default class Tombstone extends Character implements HasConstruction, Can
 		this.constructionId = this.construction.id;
 		this.collider.useCircleCollider(30);
 		this.addTag(TAGS.Z_AXIS_SORT);
-		this.addTag(TAGS.TARGET);
 		this.addTag(TAGS.OBJECT);
 
 		this.initGraphics();
 		this.startAttacking();
-	}
-
-	damage(val: number) {
-		this.strength -= val;
-
-		if (this.strength <= 0) return this.die();
-
-		game.tween(progress => {
-			this.material.update(shader => {
-				shader.trySetUniformFloat('hitAmount', Math.sin(Math.PI * easeInOutSine(progress)));
-			});
-		}, config.character.hitAnimationSpeed);
 	}
 
 	protected initGraphics() {
@@ -65,13 +50,8 @@ export default class Tombstone extends Character implements HasConstruction, Can
 	}
 
 	private die() {
-		constructionsBuilt.damage(this.constructionId, 1 / this.construction.objectAmount);
-
-		const length = this.scene.world.entityManager.getByName(this.name).filter((obj) => {
-			return (<Tombstone>obj).constructionId === this.constructionId;
-		}).length;
-
-		if (length === 1) this.scene.destroy(this.constructionId);
+		this.scene.events.emit(STAGE_EVENTS.DESTROYED_CONSTRUCTION, this.constructionId);
+		this.kill();
 	}
 
 	private async startAttacking() {
@@ -98,6 +78,10 @@ export default class Tombstone extends Character implements HasConstruction, Can
 				this.scene.add(new Smoke({
 					pos: this.pos.clone().add(vec(-40, 0)),
 				}, nearest));
+
+				this.strength -= 1;
+
+				if (this.strength <= 0) return this.die();
 			});
 		}
 	}

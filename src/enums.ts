@@ -17,6 +17,7 @@ export enum INPUT_EVENT {
 
 export enum STAGE_EVENTS {
 	CANCEL_CONSTRUCTION = 'cancelConstruction',
+	DESTROYED_CONSTRUCTION = 'destroyedConstruction',
 	GAME_OVER = 'gameOver',
 }
 
