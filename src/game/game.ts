@@ -6,7 +6,6 @@ import {
 	clamp,
 	Color,
 	coroutine,
-	DefaultLoader,
 	DisplayMode,
 	Engine,
 	FadeInOut,
@@ -24,6 +23,7 @@ import { GLOBAL_KEYS_EVENTS } from '@/enums';
 import { input } from '@/stores';
 import Stage from '@/game/scenes/Stage';
 import { Animations } from '@/game/resources/animations';
+import CustomLoader from '@/game/loader';
 
 class Game extends Engine {
 	private gamepad!: Gamepad | null;
@@ -64,7 +64,7 @@ class Game extends Engine {
 	}
 
 	public start() {
-		const loader = new DefaultLoader();
+		const loader = new CustomLoader();
 		loader.addResources(Object.values(res));
 
 		return super.start(loader);
