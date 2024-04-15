@@ -1,5 +1,5 @@
 import type { ActorArgs, Scene } from 'excalibur';
-import { Actor, AnimationStrategy, Engine, StateMachine } from 'excalibur';
+import { Actor, AnimationStrategy, Engine, StateMachine, vec, Vector } from 'excalibur';
 import game from '@/game/game';
 import { enemyGroup } from '@/game/collisions';
 import { easeInOutSine, random } from '@/game/utils';
@@ -72,6 +72,7 @@ export default class Mob extends Character {
 		if (this.vel.x === 0) return;
 
 		this.graphics.flipHorizontal = this.vel.x < 0;
+		this.graphics.offset = this.graphics.flipHorizontal ? vec(-30, 0) : Vector.Zero;
 	}
 
 	damage(value: number) {
