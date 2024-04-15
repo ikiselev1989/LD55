@@ -21,7 +21,7 @@ import res from '@/res';
 import { globalInputMapping } from '@/buttons.config';
 import { addToArrayWithoutDuplication } from '@/game/utils';
 import { GLOBAL_KEYS_EVENTS } from '@/enums';
-import { bones, input, screen } from '@/stores';
+import { input } from '@/stores';
 import Stage from '@/game/scenes/Stage';
 import { Animations } from '@/game/resources/animations';
 
@@ -192,8 +192,6 @@ class Game extends Engine {
 
 	async play() {
 		await this.goToScene('stage');
-		bones.reset();
-		screen.game();
 	}
 
 	private showFpsCounter() {

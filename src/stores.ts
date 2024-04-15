@@ -14,7 +14,10 @@ export const screen = (() => {
 	return {
 		subscribe,
 		startMenu: () => set(StartMenu),
-		game: () => set(Game),
+		game: () => {
+			set(Game);
+			bones.reset();
+		},
 	};
 })();
 
