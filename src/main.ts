@@ -2,7 +2,6 @@ import 'normalize.css';
 import '@/ui/style/app.scss';
 import App from '@/ui/App.svelte';
 import game from '@/game/game';
-import { screen } from '@/stores';
 
 class Main {
 	constructor() {
@@ -12,7 +11,7 @@ class Main {
 	async startGame() {
 		await game.start();
 		this.initUi();
-		screen.game();
+		await game.play();
 	}
 
 	initUi() {

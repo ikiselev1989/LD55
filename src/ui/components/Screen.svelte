@@ -1,10 +1,12 @@
 <script lang='ts'>
+	import { fade } from 'svelte/transition';
+
 	let className = '';
 
 	export { className as class };
 </script>
 
-<section class='screen {className}'>
+<section class='screen {className}' transition:fade>
 	<slot />
 </section>
 

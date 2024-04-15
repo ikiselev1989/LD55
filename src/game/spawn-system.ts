@@ -8,10 +8,12 @@ import game from '@/game/game';
 
 export default class SpawnSystem {
 	constructor(private stage: Stage) {
-		setTimeout(() => {
-			this.spawn();
-			this.start();
-		}, 1000);
+		stage.on('activate', () => {
+			setTimeout(() => {
+				this.spawn();
+				this.start();
+			}, 1000);
+		});
 	}
 
 	private start() {

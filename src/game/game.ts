@@ -9,6 +9,7 @@ import {
 	DefaultLoader,
 	DisplayMode,
 	Engine,
+	FadeInOut,
 	Gamepad,
 	PointerScope,
 	ScrollPreventionMode,
@@ -20,7 +21,7 @@ import res from '@/res';
 import { globalInputMapping } from '@/buttons.config';
 import { addToArrayWithoutDuplication } from '@/game/utils';
 import { GLOBAL_KEYS_EVENTS } from '@/enums';
-import { input } from '@/stores';
+import { input, screen } from '@/stores';
 import Stage from '@/game/scenes/Stage';
 import { Animations } from '@/game/resources/animations';
 
@@ -46,6 +47,10 @@ class Game extends Engine {
 			scenes: {
 				stage: {
 					scene: Stage,
+					transitions: {
+						in: new FadeInOut({ duration: 500, direction: 'in', color: Color.fromHex('#30322A') }),
+						out: new FadeInOut({ duration: 500, direction: 'out', color: Color.fromHex('#30322A') }),
+					},
 				},
 			},
 		});
@@ -56,8 +61,6 @@ class Game extends Engine {
 
 	onInitialize() {
 		this.registerEvents();
-
-		this.goToScene('stage');
 	}
 
 	public start() {
@@ -71,6 +74,12 @@ class Game extends Engine {
 		return new Promise(res => {
 			this.clock.schedule(() => res(), time);
 		});
+	}
+
+	restore() {
+		// Start the excalibur clock which drives the mainloop
+		this.browser.resume();
+		this.clock.start();
 	}
 
 	tween(
@@ -182,6 +191,8 @@ class Game extends Engine {
 	}
 
 	async play() {
+		await this.goToScene('stage');
+		screen.game();
 	}
 
 	private showFpsCounter() {

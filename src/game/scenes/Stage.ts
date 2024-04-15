@@ -33,6 +33,10 @@ export default class Stage extends Scene {
 		this.addStatues();
 	}
 
+	onDeactivate() {
+		for (let entity of this.world.entityManager.entities) this.remove(entity);
+	}
+
 	placeFireballs() {
 		bones.reserve(config.objects.fireBall.cost);
 		this.placeConstruction(new Fireballs());

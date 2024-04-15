@@ -5,6 +5,14 @@
 	import { Assets } from '@/game/resources/assets';
 	import Button from '@/ui/components/Button.svelte';
 	import i18n from '@/i18n/i18n';
+	import { popup } from '@/stores';
+	import game from '@/game/game';
+
+	const restart = () => {
+		popup.hide();
+		game.restore();
+		game.play();
+	};
 </script>
 
 <div class='game-over' transition:fade>
@@ -23,7 +31,7 @@
 			</div>
 		</div>
 		<div class='restart'>
-			<Button class='_restart-button'>&#x276F; {$i18n.t('gameOver.restart')} &#x276E;</Button>
+			<Button class='_restart-button' on:click={restart}>&#x276F; {$i18n.t('gameOver.restart')} &#x276E;</Button>
 		</div>
 	</div>
 </div>
