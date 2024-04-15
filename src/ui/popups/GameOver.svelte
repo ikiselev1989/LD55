@@ -4,6 +4,7 @@
 	import res from '@/res';
 	import { Assets } from '@/game/resources/assets';
 	import Button from '@/ui/components/Button.svelte';
+	import i18n from '@/i18n/i18n';
 </script>
 
 <div class='game-over' transition:fade>
@@ -11,22 +12,18 @@
 		<div class='bg'>
 			<Sprite sprite='{res.assets.getFrameSprite(Assets.GAME_OVER_CARD)}' />
 		</div>
-		<div class='title'>Помер</div>
+		<div class='title'>{$i18n.t('gameOver.title')}</div>
 		<div class='cover'>
 			<Sprite sprite='{res.assets.getFrameSprite(Assets.GAME_OVER_COVER)}' />
 		</div>
 		<div class='bone-result'>
-			<div class='text'>Ваш результат</div>
+			<div class='text'>{$i18n.t('gameOver.result')}</div>
 			<div class='bones'>1230
 				<Sprite sprite='{res.assets.getFrameSprite(Assets.RESULT_BONES)}' />
 			</div>
 		</div>
-		<div class='time-result'>
-			<div class='text'>Ваше время</div>
-			<div class='time'>1м 20с</div>
-		</div>
 		<div class='restart'>
-			<Button class='_restart-button'>&#x276F; Рестарт &#x276E;</Button>
+			<Button class='_restart-button'>&#x276F; {$i18n.t('gameOver.restart')} &#x276E;</Button>
 		</div>
 	</div>
 </div>
@@ -68,7 +65,7 @@
     .bone-result {
       margin-top: rem(82px);
       position: relative;
-      font-size: rem(24px);
+      font-size: rem(32px);
 
       .text {
         color: $black;
@@ -81,21 +78,6 @@
         justify-content: center;
         gap: rem(10px);
         font-size: rem(40px);
-      }
-    }
-
-    .time-result {
-      margin-top: rem(49px);
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: rem(30px);
-      font-size: rem(20px);
-
-      .text {
-        color: $black;
-        text-transform: uppercase;
       }
     }
 

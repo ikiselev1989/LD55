@@ -4,7 +4,7 @@ import en from '@/i18n/lang/en';
 import ru from '@/i18n/lang/ru';
 
 i18next.init({
-	lng: 'en',
+	lng: navigator.language === 'ru-RU' ? 'ru' : 'en',
 	resources: {
 		en,
 		ru,

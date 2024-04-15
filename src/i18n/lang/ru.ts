@@ -6,5 +6,11 @@ export default {
 			options: 'Опции',
 			exit: 'Выйти',
 		},
+		gameOver: {
+			title: 'Помер',
+			result: 'Ваш результат',
+			time: 'Ваше время',
+			restart: 'Рестарт',
+		},
 	},
 };
