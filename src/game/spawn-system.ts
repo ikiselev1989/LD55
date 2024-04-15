@@ -1,28 +1,21 @@
 import type Stage from '@/game/scenes/Stage';
 import Mob from '@/game/components/mob';
-import { vec } from 'excalibur';
+import { Timer, vec } from 'excalibur';
 import { lerp, random } from '@/game/utils';
 import { TAGS } from '@/enums';
 import config from '@/config';
-import game from '@/game/game';
 
 export default class SpawnSystem {
 	currentWave = 0;
+	private timer = new Timer({
+		fcn: () => this.spawn(),
+		interval: config.stage.waveInterval,
+		repeats: true,
+	});
 
 	constructor(private stage: Stage) {
-		stage.on('activate', () => {
-			setTimeout(() => {
-				this.spawn();
-				this.waveSchedule();
-			}, 1000);
-		});
-	}
-
-	private waveSchedule() {
-		game.clock.schedule(() => {
-			this.spawn();
-			this.waveSchedule();
-		}, config.stage.waveInterval);
+		stage.add(this.timer);
+		this.timer.start();
 	}
 
 	private spawn() {

@@ -36,6 +36,7 @@ export default class Stage extends Scene {
 
 	onDeactivate() {
 		for (let entity of this.world.entityManager.entities) this.remove(entity);
+		for (let entity of this.timers) entity.stop() && this.remove(entity);
 	}
 
 	placeFireballs() {
