@@ -44,9 +44,10 @@ export default class Statue extends Character implements CanBeDamaged {
 		this.abortController = new AbortController();
 
 		this.strength -= val;
-		this.updateGraphics();
 
 		if (this.strength <= 0) return this.kill();
+
+		this.updateGraphics();
 
 		game.tween(progress => {
 			this.material.update(shader => {

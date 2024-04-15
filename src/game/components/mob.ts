@@ -1,5 +1,5 @@
 import type { ActorArgs, Scene } from 'excalibur';
-import { Actor, AnimationStrategy, Engine } from 'excalibur';
+import { Actor, AnimationStrategy, Engine, StateMachine } from 'excalibur';
 import game from '@/game/game';
 import { enemyGroup } from '@/game/collisions';
 import { easeInOutSine, random } from '@/game/utils';
@@ -16,6 +16,23 @@ export default class Mob extends Character {
 	private abortController!: AbortController;
 	private target!: Actor & CanBeDamaged | null;
 	private canSearch!: boolean;
+	private fsm = StateMachine.create({
+		start: 'search',
+		states: {
+			search: {
+				onState: () => this.searchTarget(),
+				transitions: ['search', 'chase'],
+			},
+			chase: {
+				onState: () => this.chaseTarget(),
+				transitions: ['search', 'attack'],
+			},
+			attack: {
+				onState: () => this.attack(),
+				transitions: ['search'],
+			},
+		},
+	});
 
 	constructor(props: ActorArgs = {}) {
 		super({
@@ -37,7 +54,7 @@ export default class Mob extends Character {
 		this.initGraphics();
 		this.registerEvents();
 
-		this.chaseTarget();
+		this.fsm.go('search');
 	}
 
 	onPostUpdate(engine: Engine, delta: number) {
@@ -71,8 +88,7 @@ export default class Mob extends Character {
 				this.off('collisionstart');
 				this.actions.clearActions();
 				this.graphics.flipHorizontal = this.target.pos.x <= this.pos.x;
-				this.attack();
-				this.attackSchedule();
+				this.fsm.go('attack');
 			}
 		});
 
@@ -85,34 +101,39 @@ export default class Mob extends Character {
 		game.playAnimation(this, Animations.ANIMATIONS__A_ENEMY1__WALK);
 	}
 
-	private chaseTarget() {
+	private searchTarget() {
 		this.target = this.getTarget();
 
-		if (!this.target || this.target.isKilled()) {
-			game.clock.schedule(() => this.chaseTarget(), 1000);
+		if (this.target) this.fsm.go('chase');
+		if (!this.target) game.clock.schedule(() => this.fsm.go('search'), 1000);
+	}
+
+	private async chaseTarget() {
+		if (!this.target) {
+			this.fsm.go('search');
+			return;
+		}
+		if (this.target!.pos.distance(this.pos) < 100) {
+			this.fsm.go('attack');
+			return;
 		}
 
-		this.target && this.actions.moveTo(this.target.pos, config.character.minSpeed + random.floating(0, 1) * config.character.speedOffset).toPromise();
+		await this.actions.moveTo(this.target!.pos, config.character.minSpeed + random.floating(0, 1) * config.character.speedOffset).toPromise();
+		this.fsm.go('attack');
 	}
 
 	private attack() {
-		this.target && this.target.damage(config.character.damage);
+		this.hit();
+
+		game.clock.schedule(() => this.fsm.go('search'), config.character.attackInterval);
 	}
 
-	private attackSchedule() {
-		game.clock.schedule(() => {
-			if (this.isKilled()) return;
-			if (!this.target || this.target.isKilled()) return this.chaseTarget();
-
-			this.attack();
-			this.attackSchedule();
-		}, config.character.attackInterval);
+	private hit() {
+		this.target && this.target.damage(config.character.damage);
 	}
 
 	private getTarget() {
 		const stageTargets = this.scene.world.queryTags([TAGS.TARGET]).entities.filter(value => !value.isKilled());
-
-		if (!stageTargets.length) return null;
 
 		const sorted = stageTargets.sort((a, b) => {
 			return (<Actor>a).pos.distance(this.pos) < (<Actor>b).pos.distance(this.pos) ? -1 : 1;

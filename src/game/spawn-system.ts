@@ -11,7 +11,7 @@ export default class SpawnSystem {
 		setTimeout(() => {
 			this.spawn();
 			this.start();
-		}, 5000);
+		}, 1000);
 	}
 
 	private start() {
