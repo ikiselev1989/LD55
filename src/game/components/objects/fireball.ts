@@ -27,6 +27,7 @@ export default class Fireball extends DamageObject {
 		this.starPos = this.pos.clone();
 		this.collider.useCircleCollider(40);
 		this.addTag(TAGS.Z_AXIS_SORT);
+		this.addTag(TAGS.OBJECT);
 
 		this.initGraphics();
 		this.startMoving();

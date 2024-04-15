@@ -32,6 +32,7 @@ export enum TAGS {
 	Z_AXIS_SORT = 'zAxisSort',
 	TARGET = 'target',
 	STATUE = 'statue',
+	OBJECT = 'object',
 }
 
 export enum NAMES {

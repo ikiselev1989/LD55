@@ -68,7 +68,7 @@ export default class Stage extends Scene {
 
 	destroy(constructionId: number) {
 		constructionsBuilt.destroy(constructionId);
-		this.world.entityManager.getById(constructionId)?.kill();
+		(<Construction>this.world.entityManager.getById(constructionId))?.destroy();
 	}
 
 	private registerEvents() {

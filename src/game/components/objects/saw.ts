@@ -26,6 +26,7 @@ export default class Saw extends DamageObject {
 		this.startPos = this.pos.clone();
 		this.scale.setTo(0, 0);
 		this.addTag(TAGS.Z_AXIS_SORT);
+		this.addTag(TAGS.OBJECT);
 
 		this.setCollider();
 

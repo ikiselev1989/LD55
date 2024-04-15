@@ -1,11 +1,12 @@
 import { Actor, Material, PointerButton, PointerEvent, Sprite, Vector } from 'excalibur';
 import game from '@/game/game';
 import type Stage from '@/game/scenes/Stage';
-import { GLOBAL_KEYS_EVENTS, INPUT_EVENT, STAGE_EVENTS, Z_INDEX } from '@/enums';
+import { GLOBAL_KEYS_EVENTS, INPUT_EVENT, STAGE_EVENTS, TAGS, Z_INDEX } from '@/enums';
 import constructionShader from '@//game/materials/construction.glsl';
 import res from '@/res';
 import { bones, constructionsBuilt } from '@/stores';
 import type { Assets } from '@/game/resources/assets';
+import type { HasConstruction } from '@/types';
 
 export default abstract class Construction extends Actor {
 	abstract formSprite: Sprite;
@@ -25,6 +26,12 @@ export default abstract class Construction extends Actor {
 		game.input.pointers.events.pipe(this.events);
 		game.events.pipe(this.events);
 		this.scene.events.pipe(this.events);
+	}
+
+	destroy() {
+		const objs = this.scene.world.queryTags([TAGS.OBJECT]).entities.filter(en => (<Actor & HasConstruction>en).constructionId === this.id);
+		for (let obj of objs) obj.kill();
+		this.kill();
 	}
 
 	protected rotate() {

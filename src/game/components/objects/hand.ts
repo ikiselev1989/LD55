@@ -31,6 +31,7 @@ export default class Hand extends Actor {
 		this.strength = config.objects.hands.strength;
 		this.name = NAMES.HAND;
 		this.addTag(TAGS.Z_AXIS_SORT);
+		this.addTag(TAGS.OBJECT);
 
 		this.initGraphics();
 		this.registerEvents();

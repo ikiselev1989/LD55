@@ -35,6 +35,7 @@ export default class Tombstone extends Character implements HasConstruction, Can
 		this.collider.useCircleCollider(30);
 		this.addTag(TAGS.Z_AXIS_SORT);
 		this.addTag(TAGS.TARGET);
+		this.addTag(TAGS.OBJECT);
 
 		this.initGraphics();
 		this.startAttacking();
