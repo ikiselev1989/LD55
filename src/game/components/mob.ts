@@ -47,12 +47,18 @@ export default class Mob extends Character {
 	}
 
 	onInitialize(engine: Engine) {
+		const { minHealth, maxHealth } = config.character;
+
 		this.scene.events.pipe(this.events);
 		this.canSearch = true;
-		this.health = random.integer(config.character.minHealth, config.character.maxHealth);
+		this.health = random.integer(minHealth, maxHealth);
 		this.abortController = new AbortController();
 		this.collider.useCircleCollider(30);
 
+		const healthOffset = maxHealth - minHealth;
+		const scale = (this.health / healthOffset - minHealth / healthOffset) * 0.25;
+
+		this.scale.setTo(1 + scale, 1 + scale);
 		this.addTag(TAGS.Z_AXIS_SORT);
 		this.addTag(TAGS.MOB);
 
