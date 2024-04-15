@@ -11,8 +11,9 @@ import Fireballs from '@/game/components/constructions/fireballs';
 import SpawnSystem from '@/game/spawn-system';
 import Statue from '@/game/components/statue';
 import { STAGE_EVENTS } from '@/enums';
-import { bones, constructionsBuilt } from '@/stores';
+import { bones, constructionsBuilt, popup } from '@/stores';
 import config from '@/config';
+import game from '@/game/game';
 
 export default class Stage extends Scene {
 	private spawnSystem!: SpawnSystem;
@@ -22,6 +23,8 @@ export default class Stage extends Scene {
 
 		this.spawnSystem = new SpawnSystem(this);
 		this.world.add(new ZAxisSortSystem());
+
+		this.registerEvents();
 	}
 
 	onActivate() {
@@ -62,6 +65,13 @@ export default class Stage extends Scene {
 	destroy(constructionId: number) {
 		constructionsBuilt.destroy(constructionId);
 		this.world.entityManager.getById(constructionId)?.kill();
+	}
+
+	private registerEvents() {
+		this.events.on(STAGE_EVENTS.GAME_OVER, () => {
+			game.stop();
+			popup.gameOver();
+		});
 	}
 
 	private addBg() {

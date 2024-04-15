@@ -4,6 +4,7 @@ import StartMenu from '@/ui/screens/StartMenu.svelte';
 import Game from '@/ui/screens/Game.svelte';
 import config from '@/config';
 import type { ConstructionBuild } from '@/types';
+import GameOver from '@/ui/popups/GameOver.svelte';
 
 export const screen = (() => {
 	const { subscribe, set } = writable<typeof SvelteComponent>();
@@ -12,6 +13,16 @@ export const screen = (() => {
 		subscribe,
 		startMenu: () => set(StartMenu),
 		game: () => set(Game),
+	};
+})();
+
+export const popup = (() => {
+	const { subscribe, set } = writable<typeof SvelteComponent | null>();
+
+	return {
+		subscribe,
+		gameOver: () => set(GameOver),
+		hide: () => set(null),
 	};
 })();
 

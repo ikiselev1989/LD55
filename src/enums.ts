@@ -18,7 +18,6 @@ export enum INPUT_EVENT {
 export enum STAGE_EVENTS {
 	CANCEL_CONSTRUCTION = 'cancelConstruction',
 	GAME_OVER = 'gameOver',
-	OBJECT_KILLED = 'objectKilled',
 }
 
 export enum Z_INDEX {
