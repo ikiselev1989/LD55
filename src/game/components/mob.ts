@@ -11,6 +11,7 @@ import { Animations } from '@/game/resources/animations';
 import Character from '@/game/components/character';
 import type { CanBeDamaged } from '@/types';
 import StatueAim from '@/game/components/statue-aim';
+import soundController from '@/sound';
 
 export default class Mob extends Character {
 	protected health!: number;
@@ -80,6 +81,7 @@ export default class Mob extends Character {
 		this.abortController = new AbortController();
 
 		this.health = Math.max(this.health - value, 0);
+		soundController.play('hurt');
 
 		if (this.health === 0) return this.die();
 

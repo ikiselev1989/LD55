@@ -5,6 +5,12 @@
 	import CraftMenu from '@/ui/components/CraftMenu.svelte';
 	import { popup } from '@/stores';
 	import BoilerRushButton from '@/ui/components/BoilerRushButton.svelte';
+	import { onMount } from 'svelte';
+	import soundController from '@/sound';
+
+	onMount(() => {
+		soundController.play('bg', true);
+	});
 </script>
 
 <Screen>

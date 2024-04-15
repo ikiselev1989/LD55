@@ -7,6 +7,7 @@ import res from '@/res';
 import { bones, constructionsBuilt } from '@/stores';
 import type { Assets } from '@/game/resources/assets';
 import type { HasConstruction } from '@/types';
+import soundController from '@/sound';
 
 export default abstract class Construction extends Actor {
 	abstract formSprite: Sprite;
@@ -48,6 +49,7 @@ export default abstract class Construction extends Actor {
 			strength: 1,
 		});
 		bones.buy();
+		soundController.play('build');
 		this.addObjects();
 		this.unregisterEvents();
 	}

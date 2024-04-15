@@ -7,6 +7,7 @@ import type Mob from '@/game/components/mob';
 import config from '@/config';
 import { boilerRushAvailable } from '@/stores';
 import game from '@/game/game';
+import soundController from '@/sound';
 
 export default class BoilerRushExplosion extends Actor {
 	constructor(props = {}) {
@@ -22,6 +23,7 @@ export default class BoilerRushExplosion extends Actor {
 			boilerRushAvailable.set(true);
 		}, config.objects.boiler.coolDown);
 
+		soundController.play('expl');
 		this.collider.set(Shape.Capsule(250, 100));
 		this.addTag(TAGS.Z_AXIS_SORT);
 		this.initGraphics();

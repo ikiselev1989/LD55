@@ -6,6 +6,8 @@ import config from '@/config';
 import type { ConstructionBuild } from '@/types';
 import GameOver from '@/ui/popups/GameOver.svelte';
 
+export const sound = writable(true);
+
 export const screen = (() => {
 	const { subscribe, set } = writable<typeof SvelteComponent>();
 

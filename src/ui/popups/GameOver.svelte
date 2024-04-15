@@ -7,12 +7,18 @@
 	import i18n from '@/i18n/i18n';
 	import { bones, popup } from '@/stores';
 	import game from '@/game/game';
+	import { onMount } from 'svelte';
+	import soundController from '@/sound';
 
 	const restart = () => {
 		popup.hide();
 		game.restore();
 		game.play();
 	};
+
+	onMount(() => {
+		soundController.play('loose');
+	});
 </script>
 
 <div class='game-over' transition:fade>

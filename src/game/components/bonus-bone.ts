@@ -3,6 +3,7 @@ import res from '@/res';
 import { Assets } from '@/game/resources/assets';
 import { TAGS } from '@/enums';
 import { bones } from '@/stores';
+import soundController from '@/sound';
 
 export default class BonusBone extends Actor {
 	constructor(props = {}) {
@@ -23,6 +24,7 @@ export default class BonusBone extends Actor {
 	private registerEvents() {
 		this.once('pointerdown', () => {
 			bones.bonusBoneCollect();
+			soundController.play('coin');
 			this.kill();
 		});
 	}
