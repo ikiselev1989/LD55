@@ -120,7 +120,7 @@ export const bones = (() => {
 		canBuy: (cost: number = 0) => get(bones) >= cost,
 		buy: () => update(value => (value - reserve)),
 		reserve: (cost: number) => (reserve = cost),
-		total: () => total,
+		total: () => total * 10,
 		reset: () => (total = 0),
 	};
 })();
