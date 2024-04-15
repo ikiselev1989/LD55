@@ -112,5 +112,6 @@ export const bones = (() => {
 		buy: () => update(value => (value - reserve)),
 		reserve: (cost: number) => (reserve = cost),
 		total: () => total,
+		reset: () => (total = 0),
 	};
 })();
