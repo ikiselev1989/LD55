@@ -1,4 +1,4 @@
-import { Actor, Animation, AnimationStrategy, CollisionGroup, Shape, Vector } from 'excalibur';
+import { Actor, Animation, AnimationStrategy, CollisionGroup, Shape, Timer, Vector } from 'excalibur';
 import res from '@/res';
 import { Animations } from '@/game/resources/animations';
 import { TAGS } from '@/enums';
@@ -10,6 +10,11 @@ import game from '@/game/game';
 import soundController from '@/sound';
 
 export default class BoilerRushExplosion extends Actor {
+	timer = new Timer({
+		fcn: () => boilerRushAvailable.set(true),
+		interval: config.objects.boiler.coolDown,
+	});
+
 	constructor(props = {}) {
 		super({
 			...props,
@@ -19,9 +24,8 @@ export default class BoilerRushExplosion extends Actor {
 
 
 	onInitialize() {
-		game.clock.schedule(() => {
-			boilerRushAvailable.set(true);
-		}, config.objects.boiler.coolDown);
+		game.currentScene.add(this.timer);
+		this.timer.start();
 
 		soundController.play('expl');
 		this.collider.set(Shape.Capsule(250, 100));

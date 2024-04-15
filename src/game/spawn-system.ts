@@ -14,8 +14,11 @@ export default class SpawnSystem {
 	});
 
 	constructor(private stage: Stage) {
-		stage.add(this.timer);
-		this.timer.start();
+		stage.on('activate', () => {
+			stage.add(this.timer);
+			this.timer.reset();
+			this.timer.start();
+		});
 	}
 
 	private spawn() {

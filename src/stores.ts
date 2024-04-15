@@ -68,7 +68,7 @@ export const input = (() => {
 })();
 
 export const constructionsBuilt = (() => {
-	const { subscribe, update } = writable<ConstructionBuild[]>([]);
+	const { subscribe, update, set } = writable<ConstructionBuild[]>([]);
 
 	return {
 		subscribe,
@@ -85,15 +85,17 @@ export const constructionsBuilt = (() => {
 				return build.id !== id;
 			})),
 		available: () => get(constructionsBuilt).length < get(constructionsPlaceAvailable),
+		reset: () => set([]),
 	};
 })();
 
 export const constructionsPlaceAvailable = (() => {
-	const { subscribe, update } = writable(3);
+	const { subscribe, update, set } = writable(3);
 
 	return {
 		subscribe,
 		expand: () => update(value => (value + 1)),
+		reset: () => set(3),
 	};
 })();
 

@@ -11,7 +11,7 @@ import Fireballs from '@/game/components/constructions/fireballs';
 import SpawnSystem from '@/game/spawn-system';
 import Statue from '@/game/components/statue';
 import { NAMES, STAGE_EVENTS } from '@/enums';
-import { bones, constructionsBuilt, popup } from '@/stores';
+import { boilerRushAvailable, bones, constructionsBuilt, constructionsPlaceAvailable, popup } from '@/stores';
 import config from '@/config';
 import game from '@/game/game';
 import BoilerRushAim from '@/game/components/boiler-rush-aim';
@@ -36,7 +36,10 @@ export default class Stage extends Scene {
 
 	onDeactivate() {
 		for (let entity of this.world.entityManager.entities) this.remove(entity);
-		for (let entity of this.timers) entity.stop() && this.remove(entity);
+		for (let entity of this.timers) {
+			entity.stop();
+			this.remove(entity);
+		}
 	}
 
 	placeFireballs() {
@@ -84,6 +87,9 @@ export default class Stage extends Scene {
 		this.events.on(STAGE_EVENTS.GAME_OVER, () => {
 			game.stop();
 			popup.gameOver();
+			constructionsPlaceAvailable.reset();
+			boilerRushAvailable.set(true);
+			constructionsBuilt.reset();
 		});
 	}
 
