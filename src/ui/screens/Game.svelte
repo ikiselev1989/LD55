@@ -4,12 +4,14 @@
 	import Bones from '@/ui/components/Bones.svelte';
 	import CraftMenu from '@/ui/components/CraftMenu.svelte';
 	import { popup } from '@/stores';
+	import BoilerRushButton from '@/ui/components/BoilerRushButton.svelte';
 </script>
 
 <Screen>
 	<ConstructionsMenu />
 	<Bones />
 	<CraftMenu />
+	<BoilerRushButton />
 
 	{#key $popup}
 		<svelte:component this={$popup} />

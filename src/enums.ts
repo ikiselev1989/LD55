@@ -42,4 +42,5 @@ export enum NAMES {
 	SMOKE = 'smoke',
 	STATUE = 'statue',
 	HAND = 'hand',
+	BOILER_RUSH_AIM = 'boilerRushAim',
 }

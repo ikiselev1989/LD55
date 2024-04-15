@@ -10,10 +10,11 @@ import ZAxisSortSystem from '@/game/partials/z-axis-sort-system';
 import Fireballs from '@/game/components/constructions/fireballs';
 import SpawnSystem from '@/game/spawn-system';
 import Statue from '@/game/components/statue';
-import { STAGE_EVENTS } from '@/enums';
+import { NAMES, STAGE_EVENTS } from '@/enums';
 import { bones, constructionsBuilt, popup } from '@/stores';
 import config from '@/config';
 import game from '@/game/game';
+import BoilerRushAim from '@/game/components/boiler-rush-aim';
 
 export default class Stage extends Scene {
 	private spawnSystem!: SpawnSystem;
@@ -69,6 +70,13 @@ export default class Stage extends Scene {
 	destroy(constructionId: number) {
 		constructionsBuilt.destroy(constructionId);
 		(<Construction>this.world.entityManager.getById(constructionId))?.destroy();
+	}
+
+	boilerRushAim() {
+		bones.reserve(config.objects.boiler.cost);
+		for (let en of this.world.entityManager.getByName(NAMES.BOILER_RUSH_AIM)) en.kill();
+
+		this.add(new BoilerRushAim());
 	}
 
 	private registerEvents() {

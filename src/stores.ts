@@ -115,3 +115,5 @@ export const bones = (() => {
 		reset: () => (total = 0),
 	};
 })();
+
+export const boilerRushAvailable = writable(true);

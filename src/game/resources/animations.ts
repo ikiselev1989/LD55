@@ -12,5 +12,7 @@ export enum Animations {
 	'ANIMATIONS__A_FIREBALL' = 'animations/a_fireball',
 	'ANIMATIONS__A_ENEMY1__WALK' = 'animations/a_enemy1/walk',
 	'ANIMATIONS__A_ENEMY1__DEATH' = 'animations/a_enemy1/death',
-	'ANIMATIONS__A_CANDLE' = 'animations/a_candle'
+	'ANIMATIONS__A_CANDLE' = 'animations/a_candle',
+	'ANIMATIONS__A_BOILER_RUSH__JUMP' = 'animations/a_boiler-rush/jump',
+	'ANIMATIONS__A_BOILER_RUSH__EXPLOSION' = 'animations/a_boiler-rush/explosion'
 }

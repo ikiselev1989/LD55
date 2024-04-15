@@ -23,6 +23,11 @@ export default {
 		attackInterval: 2000,
 	},
 	objects: {
+		boiler: {
+			damage: 10,
+			cost: 70,
+			coolDown: 15000,
+		},
 		statue: {
 			strength: 30,
 			attackInterval: 5000,

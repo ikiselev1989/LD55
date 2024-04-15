@@ -34,10 +34,12 @@ export enum Assets {
 	'CARDS__CONSTRUCTIONS__TOMBSTONE' = 'cards/constructions/tombstone',
 	'CARDS__CONSTRUCTIONS__FIRE' = 'cards/constructions/fire',
 	'CARDS__CONSTRUCTIONS__CANDLE' = 'cards/constructions/candle',
+	'CARDS__CONSTRUCTIONS__BOILER' = 'cards/constructions/boiler',
 	'CANDLES__1' = 'candles/1',
 	'BONES' = 'bones',
 	'BONES_COST' = 'bones-cost',
 	'GOLDEN_BONE' = 'golden-bone',
 	'BONE' = 'bone',
+	'BOILER_RUSH__AIM' = 'boiler-rush/aim',
 	'BG' = 'bg'
 }
