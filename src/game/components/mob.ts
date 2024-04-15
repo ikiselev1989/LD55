@@ -10,6 +10,7 @@ import Bone from '@/game/components/bone';
 import { Animations } from '@/game/resources/animations';
 import Character from '@/game/components/character';
 import type { CanBeDamaged } from '@/types';
+import StatueAim from '@/game/components/statue-aim';
 
 export default class Mob extends Character {
 	protected health!: number;
@@ -39,6 +40,10 @@ export default class Mob extends Character {
 			...props,
 			collisionGroup: enemyGroup,
 		});
+	}
+
+	statueDamage() {
+		this.scene.add(new StatueAim(this));
 	}
 
 	onInitialize(engine: Engine) {
@@ -102,6 +107,7 @@ export default class Mob extends Character {
 	}
 
 	private searchTarget() {
+		if (this.isKilled()) return;
 		this.target = this.getTarget();
 
 		if (this.target) this.fsm.go('chase');

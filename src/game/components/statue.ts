@@ -1,5 +1,5 @@
-import type { ActorArgs, Animation, Scene } from 'excalibur';
-import { CollisionGroup, vec, Vector } from 'excalibur';
+import type { Actor, ActorArgs, Animation, Scene } from 'excalibur';
+import { AnimationStrategy, CollisionGroup, vec, Vector } from 'excalibur';
 import res from '@/res';
 import { NAMES, STAGE_EVENTS, TAGS } from '@/enums';
 import config from '@/config';
@@ -9,6 +9,7 @@ import { easeInOutSine } from '@/game/utils';
 import { Animations } from '@/game/resources/animations';
 import type { CanBeDamaged } from '@/types';
 import { enemyGroup } from '@/game/collisions';
+import type Mob from '@/game/components/mob';
 
 export default class Statue extends Character implements CanBeDamaged {
 	private strength!: number;
@@ -37,6 +38,7 @@ export default class Statue extends Character implements CanBeDamaged {
 		this.addTag(TAGS.STATUE);
 
 		this.initGraphics();
+		this.scheduleAttacking();
 	}
 
 	async damage(val: number) {
@@ -59,7 +61,7 @@ export default class Statue extends Character implements CanBeDamaged {
 	updateGraphics() {
 		const index = Math.floor((this.strength / config.objects.statue.strength) * 2);
 
-		this.animation = <Animation>res.animation.getAnimation(this.assets[index]);
+		this.animation = <Animation>res.animation.getAnimation(this.assets[index], AnimationStrategy.Freeze);
 
 		this.animation.reset();
 		this.animation.pause();
@@ -79,5 +81,29 @@ export default class Statue extends Character implements CanBeDamaged {
 		super.initGraphics();
 
 		this.updateGraphics();
+	}
+
+	private scheduleAttacking() {
+		game.clock.schedule(() => {
+			if (this.isKilled()) return;
+
+			this.attack();
+			this.scheduleAttacking();
+		}, config.objects.statue.attackInterval);
+	}
+
+	private attack() {
+		const targets = this.scene.world.queryTags([TAGS.MOB]).entities.sort((a, b) => {
+			return (<Actor>a).pos.distance(this.pos) < (<Actor>b).pos.distance(this.pos) ? -1 : 1;
+		});
+
+		const target = targets[0];
+
+		if (!target) return;
+
+		this.animation.reset();
+		this.animation.play();
+
+		(<Mob>target).statueDamage();
 	}
 }

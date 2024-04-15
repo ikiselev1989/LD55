@@ -23,6 +23,9 @@ export default {
 	objects: {
 		statue: {
 			strength: 10,
+			attackInterval: 5000,
+			aimTime: 2000,
+			damage: 3,
 		},
 		saw: {
 			damage: 1,
