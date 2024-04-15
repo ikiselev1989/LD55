@@ -14,19 +14,21 @@ export default class Bone extends Actor {
 	onInitialize() {
 		this.addTag(TAGS.Z_AXIS_SORT);
 		this.initGraphics();
-		this.moveToCaster();
+		this.moveToStatue();
 	}
 
-	private async moveToCaster() {
+	private async moveToStatue() {
 		const startPos = this.pos.clone();
 		const sorted = this.scene.world.queryTags([TAGS.STATUE]).entities.sort((a, b) => {
 			return (<Actor>a).pos.distance(this.pos) < (<Actor>b).pos.distance(this.pos) ? -1 : 1;
 		});
-		const caster = <Statue>(sorted[0]);
+		const statue = <Statue>(sorted[0]);
+
+		if (!statue) return;
 
 		await game.tween(progress => {
-			this.pos.x = lerp(startPos.x, caster.pos.x, easeInOutSine(progress));
-			this.pos.y = lerp(startPos.y, caster.pos.y, easeInOutSine(progress));
+			this.pos.x = lerp(startPos.x, statue.pos.x, easeInOutSine(progress));
+			this.pos.y = lerp(startPos.y, statue.pos.y, easeInOutSine(progress));
 		}, 500);
 
 		await game.tween(progress => {
