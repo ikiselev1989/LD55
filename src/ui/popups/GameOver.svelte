@@ -57,6 +57,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transform: rotate(-3deg);
 
     .bg {
       position: absolute;
