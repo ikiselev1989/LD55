@@ -115,12 +115,15 @@ export default class Mob extends Character {
 		game.playAnimation(this, Animations.ANIMATIONS__A_ENEMY1__WALK);
 	}
 
-	private searchTarget() {
+	private async searchTarget() {
 		if (this.isKilled()) return;
 		this.target = this.getTarget();
 
 		if (this.target) this.fsm.go('chase');
-		if (!this.target) game.clock.schedule(() => this.fsm.go('search'), 1000);
+		if (!this.target) {
+			await game.waitFor(1000);
+			this.fsm.go('search');
+		}
 	}
 
 	private async chaseTarget() {
@@ -137,10 +140,11 @@ export default class Mob extends Character {
 		this.fsm.go('attack');
 	}
 
-	private attack() {
+	private async attack() {
 		this.hit();
 
-		game.clock.schedule(() => this.fsm.go('search'), config.character.attackInterval);
+		await game.waitFor(config.character.attackInterval);
+		this.fsm.go('search');
 	}
 
 	private hit() {
