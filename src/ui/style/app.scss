@@ -17,7 +17,7 @@
   color: $white;
   background: $green-a;
   user-select: none;
-  cursor: url("cursor.png"), default !important;
+  //cursor: url("cursor.png"), default !important;
 
   @include typography;
 
