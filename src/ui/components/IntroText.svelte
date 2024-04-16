@@ -3,6 +3,9 @@
 	import i18n from '@/i18n/i18n';
 	import { get } from 'svelte/store';
 	import { screen } from '@/stores';
+	import Sprite from '@/ui/components/Sprite.svelte';
+	import res from '@/res';
+	import { Assets } from '@/game/resources/assets';
 
 	let i = -1;
 	let text = get(i18n).t(`intro.${i}`);
@@ -22,6 +25,9 @@
 <div class='intro-text' transition:fly={{delay: 1000}}>
 	{text}
 </div>
+<div class='icon' transition:fly={{delay: 1000}}>
+	<Sprite sprite='{res.assets.getFrameSprite(Assets.ML)}' />
+</div>
 
 <svelte:window on:click={next} />
 
@@ -40,5 +46,11 @@
     text-align: center;
     font-size: rem(28px);
     line-height: 1.5;
+  }
+
+  .icon {
+    position: absolute;
+    bottom: rem(24px);
+    right: rem(24px);
   }
 </style>

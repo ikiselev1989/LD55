@@ -6,6 +6,7 @@ export enum Assets {
 	'SAW__VERT' = 'saw/vert',
 	'SAW__HOR' = 'saw/hor',
 	'RESULT_BONES' = 'result-bones',
+	'ML' = 'ml',
 	'MAIN__GREEN' = 'main/green',
 	'MAIN__FENCE' = 'main/fence',
 	'MAIN__CAR' = 'main/car',
