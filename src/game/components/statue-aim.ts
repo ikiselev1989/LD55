@@ -12,7 +12,7 @@ export default class StatueAim extends Actor {
 	}
 
 	async onInitialize() {
-		this.z = Z_INDEX.FLOOR;
+		this.z = Z_INDEX.ON_FLOOR;
 		this.scale.setTo(1, 0.9);
 		this.initGraphics();
 

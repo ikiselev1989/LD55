@@ -24,7 +24,7 @@ export enum STAGE_EVENTS {
 export enum Z_INDEX {
 	BG,
 	FLOOR,
-	CASTER,
+	ON_FLOOR,
 	OBJECT,
 	JUMP = 1000,
 }
