@@ -16,7 +16,6 @@ export const screen = (() => {
 		subscribe,
 		startMenu: () => set(StartMenu),
 		game: async () => {
-			bones.reset();
 			game.play();
 			set(Game);
 		},
@@ -102,7 +101,7 @@ export const constructionsPlaceAvailable = (() => {
 })();
 
 export const bones = (() => {
-	const { subscribe, update } = writable(config.stage.startBones);
+	const { subscribe, update, set } = writable(config.stage.startBones);
 
 	let reserve = 0;
 	let total = 0;
@@ -121,7 +120,10 @@ export const bones = (() => {
 		buy: () => update(value => (value - reserve)),
 		reserve: (cost: number) => (reserve = cost),
 		total: () => total * 10,
-		reset: () => (total = 0),
+		reset: () => {
+			total = 0;
+			set(config.stage.startBones);
+		},
 	};
 })();
 

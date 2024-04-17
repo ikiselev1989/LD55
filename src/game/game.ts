@@ -20,7 +20,7 @@ import res from '@/res';
 import { globalInputMapping } from '@/buttons.config';
 import { addToArrayWithoutDuplication } from '@/game/utils';
 import { GLOBAL_KEYS_EVENTS } from '@/enums';
-import { input } from '@/stores';
+import { bones, input } from '@/stores';
 import Stage from '@/game/scenes/Stage';
 import { Animations } from '@/game/resources/animations';
 import CustomLoader from '@/game/loader';
@@ -191,6 +191,7 @@ class Game extends Engine {
 	}
 
 	async play() {
+		bones.reset();
 		await this.goToScene('stage');
 	}
 
