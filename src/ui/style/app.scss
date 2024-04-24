@@ -20,11 +20,6 @@
   //cursor: url("cursor.png"), default !important;
 
   @include typography;
-
-  &:focus,
-  &:focus-within {
-    visibility: hidden;
-  }
 }
 
 body {
