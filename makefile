@@ -1,5 +1,5 @@
 stage-up:
-	docker compose -f docker-compose.stage.yml up -d --force-recreate --build &
+	docker compose -f docker-compose.stage.yml up -d --force-recreate --build --remove-orphans &
 	docker system prune -af
 
 graphics:
